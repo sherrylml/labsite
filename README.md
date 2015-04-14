@@ -1,3 +1,3 @@
 # labsite
 a website of our laboratory
-conflict test finish
+##python 3.4 django1.7.5
