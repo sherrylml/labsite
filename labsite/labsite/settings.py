@@ -36,6 +36,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'bigdata'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -72,7 +74,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'zh_CN'
 
-TIME_ZONE = 'Asia/Beijing'
+TIME_ZONE = 'utc'
 
 USE_I18N = True
 

@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from bigdata.models import Members
+
+
+# admin.site.register(Members)
