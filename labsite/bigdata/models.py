@@ -1,6 +1,25 @@
 from django.db import models
 
 # Create your models here.
+from django.utils import timezone
+
+
+class Base(models.Model):
+    '''
+    基类
+    '''
+    # title = models.CharField(max_length=150, default='')
+    title = models.CharField(max_length=150, null=True)
+    content = models.TextField(null=True)
+    time_stamp = models.DateTimeField(auto_now_add=True, default=timezone.now())
+    link = models.URLField(blank=True, verbose_name='url_link')
+
+    class Meta:
+        abstract = True
+
+    def __str__(self):
+        return self.title
+
 
 class Members(models.Model):
     name = models.CharField(max_length=30)
@@ -22,49 +41,31 @@ class Team(models.Model):
         return None
 
 
-class Notation(models.Model):
-    '''
-    通知模板
-    '''
-    title = models.CharField(max_length=100)
-    content = models.TextField()
-    time_stamp = models.DateTimeField()
-    link = models.URLField()
-
-    def __str__(self):
-        return self.title
-
-
-class News(models.Model):
+class News(Base):
     '''
     新闻模板
     '''
-    title = models.CharField(max_length=150)
-    content = models.TextField()
-    time_stamp = models.DateTimeField()
-    link = models.URLField()
-
-    def __str__(self):
-        return self.title
+    pass
 
 
-class LearningMaterials(models.Model):
+class Notation(Base):
+    '''
+    通知模板
+    '''
+    pass
+
+
+class LearningMaterials(Base):
     '''
     科学研究、学术会议、学习资料
     '''
-    title = models.CharField(max_length=100)
     introduction = models.TextField()
     download_link = models.URLField()
 
-    def __str__(self):
-        return self.title
 
-
-class JoinUs(models.Model):
+class JoinUs(Base):
     '''
     招生信息, 人才招聘
     '''
-    content = models.TextField()
-    time_stamp = models.DateTimeField()
-
+    pass
 
