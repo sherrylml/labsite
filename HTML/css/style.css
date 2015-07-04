@@ -476,6 +476,7 @@ header .version{
 .home-add{
 	background: url(../img/border-bg-top.png) repeat-x top left;
 	padding-top: 50px;
+	border-bottom: 1px solid #CCC;
 }
 
 /* PAGE CONTENT ----------------------------------------------------*/
@@ -527,6 +528,7 @@ header .version{
 
 .address-block li{
 	padding-left: 20px;
+	padding-top: 5px;
 }
 
 .address-block .address{ background: url(../img/icon-address.png) no-repeat top left  }
@@ -566,9 +568,19 @@ header .version{
 	line-height: 1em;
 }
 
+.home-news .entry-date{
+	position: absolute;
+	top: 0px;
+	right: -17px;
+	padding: 17px;
+	font-family: 'Arvo', Arial, sans-serif;
+	line-height: 1em;
+}
+
 #posts-list .entry-date .number,
 #posts-content .entry-date .number,
-.home-posts .entry-date .number{
+.home-posts .entry-date .number,
+.home-news .entry-date .number{
 	font-size: 21px;
 	text-align: center;
 	margin-bottom: 3px;
@@ -576,14 +588,16 @@ header .version{
 
 #posts-list .entry-date .month,
 #posts-content .entry-date .month,
-.home-posts .entry-date .month{
+.home-posts .entry-date .month,
+.home-news .entry-date .month{
 	font-size: 14px;
 	text-align: center;
 }
 
 #posts-list .entry-date .year,
 #posts-content .entry-date .year,
-.home-posts .entry-date .year{
+.home-posts .entry-date .year,
+.home-news .entry-date .year,{
 	font-size: 12px;
 	text-align: center;
 }
@@ -598,6 +612,16 @@ header .version{
 	position: absolute;
 	bottom: -16px;
 	left: 0px;
+}
+
+.home-news .entry-date em{
+	display: block;
+	background: url(../img/fold-date2.png) no-repeat;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	bottom: -16px;
+	right: 0px;
 }
 
 #posts-list .post-heading,
@@ -686,19 +710,40 @@ header .version{
 	margin-bottom: 53px;
 }
 
+.left-home-block .heading2,
+.right-home-block .heading2{
+	margin-bottom: 35px;
+}
+
+
 .home-posts article{
 	position: relative;
 	padding-left: 60px;
 	margin-bottom: 50px;		
 }
 
+.home-news article{
+	position: relative;
+	padding-right: 60px;
+	margin-bottom: 50px;
+}
+
 .home-posts .entry-date{
 	left: -36px;	
 }
 
+.home-news .entry-date{
+	right: -41px;
+}
 
-.home-posts .post-heading{
+.home-posts .post-heading,
+.home-news .post-heading{
 	margin-bottom: 8px;
+}
+
+.left-home-block .text,
+.right-home-block .text{
+	font-size: 16px;
 }
 
 /* CLIENT LOGOS ---------------------------------------------------------*/
@@ -908,13 +953,13 @@ header .version{
 }
 
 .widget-cols>li{
-	width: 220px;
+	width: 280px;
 	float: left;
 	margin-left: 20px;
 }
 
-.widget-cols>li.fourth-col{
-	margin-right: 0px;
+.widget-cols>li.third-col{
+	margin-top: 60px;
 }
 
 /* FOOTER ------------------------------------------------------------*/
@@ -939,9 +984,10 @@ footer .wrapper{
 }
 
 .footer-bottom .left{
-	width: 50%;
-	padding-top: 10px;
-	float: left;
+	/*width: 50%;*/
+	padding-top: 20px;
+	text-align: center;
+	/*float: left;*/
 }
 
 .footer-bottom .right{

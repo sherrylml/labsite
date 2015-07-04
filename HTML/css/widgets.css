@@ -23,7 +23,8 @@
 .recent-post .post-head{
 	width: 140px;
 	display: block;
-	float: right;
+	float: left;
+	margin-left: 20px;
 }
 
 .recent-post span{

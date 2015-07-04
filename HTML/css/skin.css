@@ -114,7 +114,8 @@ body {-webkit-tap-highlight-color: background: #fbe471}
 
 #posts-list .entry-date,
 #posts-content .entry-date,
-.home-posts .entry-date{
+.home-posts .entry-date,
+.home-news .entry-date{
 	background: #3b424b;
 	/*color: #efe271;*/
 	color: #FD7343;
