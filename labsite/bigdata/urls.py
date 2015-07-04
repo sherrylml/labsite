@@ -5,6 +5,7 @@ from bigdata import views
 urlpatterns = patterns('',
         url(r'^index$',  views.index, name='index'),
         url(r'^news$', views.news, name='news'),
+        url(r'^team$', views.team, name='team')
     )
 
 
