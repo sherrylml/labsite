@@ -121,7 +121,7 @@ h6{ font-size: 14px; }
 .section-div{
 	height: 54px;
 	border-top: 1px solid #ccc;
-	
+	margin-top: 5px;
 }
 
 /* HEADER ------------------------------------------------------------*/
@@ -465,11 +465,15 @@ header .version{
 	margin-bottom: 11px;
 }
 
-.home-block .theme-link-button,
-.left-home-block .theme-link-button,
-.right-home-block .theme-link-button{
+.home-block .theme-link-button{
 	float: right;
 	margin-top: 13px;
+	margin-right: 20px;
+}
+
+.left-home-block .news-link-button,
+.right-home-block .news-link-button{
+	float: right;
 	margin-right: 20px;
 }
 
@@ -485,6 +489,29 @@ header .version{
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-bottom: 60px;
+}
+
+.card{
+	display: inline-table;
+    border: 1px solid rgb(182, 182, 182);
+    margin: 15px 5px;
+    padding: 5px;
+    height: 9em;
+    width: 210px;
+}
+
+.card img{
+	float: left;
+	width: 90px;
+	height: 120px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+.card .card-content{
+	color: #383F47;
+	font-size: 16px;
+	line-height:24px;
 }
 
 /* COLUMNS LAYOUT----------------------------------------------------------*/

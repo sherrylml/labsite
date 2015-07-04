@@ -94,12 +94,14 @@
 
 /* Link buttons ------------------------------------------------*/
 
-.theme-link-button{
+.theme-link-button,
+.news-link-button{
 	display: inline-block;
 	padding: 10px;
 	/*background: #3b424b;*/
 	color: #FD7343;
 } 
+
 
 .link-button {
 	display: inline-block;
