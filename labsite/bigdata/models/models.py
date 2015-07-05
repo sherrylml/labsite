@@ -27,18 +27,3 @@ class News(Base):
     '''
     pass
 
-
-class Notation(Base):
-    '''
-    通知模板
-    '''
-    pass
-
-
-class LearningMaterials(Base):
-    '''
-    科学研究、学术会议、学习资料
-    '''
-    introduction = models.TextField()
-    download_link = models.URLField()
-

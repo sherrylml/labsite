@@ -13,43 +13,13 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='LearningMaterials',
-            fields=[
-                ('id', models.AutoField(serialize=False, auto_created=True, verbose_name='ID', primary_key=True)),
-                ('title', models.CharField(null=True, max_length=150)),
-                ('content', models.TextField(null=True)),
-                ('time_stamp', models.DateTimeField(auto_now_add=True, default=datetime.datetime(2015, 7, 4, 15, 20, 9, 798316, tzinfo=utc))),
-                ('link', models.URLField(blank=True, verbose_name='url_link')),
-                ('introduction', models.TextField()),
-                ('download_link', models.URLField()),
-            ],
-            options={
-                'abstract': False,
-            },
-            bases=(models.Model,),
-        ),
-        migrations.CreateModel(
             name='News',
             fields=[
-                ('id', models.AutoField(serialize=False, auto_created=True, verbose_name='ID', primary_key=True)),
-                ('title', models.CharField(null=True, max_length=150)),
+                ('id', models.AutoField(auto_created=True, serialize=False, primary_key=True, verbose_name='ID')),
+                ('title', models.CharField(max_length=150, null=True)),
                 ('content', models.TextField(null=True)),
-                ('time_stamp', models.DateTimeField(auto_now_add=True, default=datetime.datetime(2015, 7, 4, 15, 20, 9, 798316, tzinfo=utc))),
-                ('link', models.URLField(blank=True, verbose_name='url_link')),
-            ],
-            options={
-                'abstract': False,
-            },
-            bases=(models.Model,),
-        ),
-        migrations.CreateModel(
-            name='Notation',
-            fields=[
-                ('id', models.AutoField(serialize=False, auto_created=True, verbose_name='ID', primary_key=True)),
-                ('title', models.CharField(null=True, max_length=150)),
-                ('content', models.TextField(null=True)),
-                ('time_stamp', models.DateTimeField(auto_now_add=True, default=datetime.datetime(2015, 7, 4, 15, 20, 9, 798316, tzinfo=utc))),
-                ('link', models.URLField(blank=True, verbose_name='url_link')),
+                ('time_stamp', models.DateTimeField(default=datetime.datetime(2015, 7, 5, 10, 41, 36, 124854, tzinfo=utc), auto_now_add=True)),
+                ('link', models.URLField(verbose_name='url_link', blank=True)),
             ],
             options={
                 'abstract': False,
@@ -59,11 +29,12 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Postgraduate',
             fields=[
-                ('name', models.CharField(serialize=False, primary_key=True, verbose_name='姓名', max_length=150)),
+                ('id', models.AutoField(auto_created=True, serialize=False, primary_key=True, verbose_name='ID')),
+                ('name', models.CharField(max_length=150, verbose_name='姓名')),
                 ('Email', models.EmailField(max_length=75)),
-                ('mainpage', models.URLField(blank=True, verbose_name='个人主页')),
-                ('grade', models.CharField(verbose_name='年级', max_length=1)),
-                ('educational_level', models.CharField(verbose_name='学位（博士/硕士）', max_length=18)),
+                ('mainpage', models.URLField(verbose_name='个人主页', blank=True)),
+                ('grade', models.CharField(max_length=1, verbose_name='年级')),
+                ('educational_level', models.CharField(max_length=18, verbose_name='学位（博士/硕士）')),
             ],
             options={
                 'abstract': False,
@@ -73,10 +44,11 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Professor',
             fields=[
-                ('name', models.CharField(serialize=False, primary_key=True, verbose_name='姓名', max_length=150)),
+                ('id', models.AutoField(auto_created=True, serialize=False, primary_key=True, verbose_name='ID')),
+                ('name', models.CharField(max_length=150, verbose_name='姓名')),
                 ('Email', models.EmailField(max_length=75)),
-                ('mainpage', models.URLField(blank=True, verbose_name='个人主页')),
-                ('job_title', models.CharField(null=True, verbose_name='职称', max_length=150)),
+                ('mainpage', models.URLField(verbose_name='个人主页', blank=True)),
+                ('job_title', models.CharField(max_length=150, verbose_name='职称', null=True)),
             ],
             options={
                 'abstract': False,

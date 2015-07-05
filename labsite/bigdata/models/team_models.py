@@ -23,18 +23,19 @@ from django.db import models
 
 
 class People(models.Model):
-    name = models.CharField(max_length=150, verbose_name='姓名', primary_key = True)
+    name = models.CharField(max_length=150, verbose_name='姓名')
+    # ('id', models.AutoField(serialize=False, primary_key=True, auto_created=True))
     Email = models.EmailField()
     mainpage = models.URLField(blank=True, verbose_name='个人主页')
-
-    def __str__(self):
-        return self.name
 
     class Meta:
         '''
         不创建表
         '''
         abstract = True
+
+    def __str__(self):
+        return self.name
 
 
 class Professor(People):
