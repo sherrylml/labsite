@@ -514,6 +514,43 @@ header .version{
 	line-height:24px;
 }
 
+.page-block{
+	margin: 50px 20px 0 20px;
+}
+
+.page-block .imformation{
+	float: left;
+	width: 640px;
+	height: 200px;
+}
+
+.imformation .name{
+	color: #FD734A;
+	font-size: 24px;
+}
+
+.imformation .title{
+	font-weight: bold;
+}
+
+.page-block img{
+	float: right;
+	width: 150px;
+	height: 190px;
+	margin: 5px 30px;
+}
+
+.page-block span,
+.page-block p{
+	color: #333941;
+	line-height: 24px;
+}
+
+.block-div{
+	height: 10px;
+	border-top: 1px solid #CCC;
+	margin-top: 5px;
+}
 /* COLUMNS LAYOUT----------------------------------------------------------*/
 
 .one-half,
