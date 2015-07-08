@@ -162,7 +162,7 @@ jQuery(document).ready(function($) {
 	//##########################################
 
     $(".tabs").tabs("div.panes > div", {effect: 'fade'});
-	
+	$("#tab-groups").tabs(".tab-content",{effect:'fade'});
 	
 	//##########################################
 	// Combo Navigation
