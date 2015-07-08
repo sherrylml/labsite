@@ -13,7 +13,7 @@ class NewsAdmin(admin.ModelAdmin):
     list_display = ['title', 'time_stamp']
 
 
-for class_i in [Notation, LearningMaterials]:
+for class_i in []:
     admin.site.register(class_i)
 admin.site.register(News, NewsAdmin)
 # admin.site.register(News)

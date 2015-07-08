@@ -19,5 +19,5 @@ def team(request):
     professors = Professor.objects.all()
     masters = Postgraduate.objects.filter()
     doctors = Postgraduate.objects.filter()
-    return render_to_response('bigdata/team-pi.html', professors, masters, doctors)
+    return render_to_response('bigdata/team-pi.html', locals())
 
