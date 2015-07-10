@@ -14,8 +14,10 @@ class NewsAdmin(admin.ModelAdmin):
 admin.site.register(News, NewsAdmin)
 # admin.site.register(News)
 
-class ResDirInline(admin.StackedInline):
+# class ResDirInline(admin.StackedInline):
+class ResDirInline(admin.TabularInline):#要重启
     model = ResDir
+    extra = 1
 class ProfessorAdmin(admin.ModelAdmin):
     inlines = [ResDirInline]
 admin.site.register(Professor, ProfessorAdmin)
