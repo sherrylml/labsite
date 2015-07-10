@@ -11,12 +11,19 @@ from .models.team_models import *
 
 class NewsAdmin(admin.ModelAdmin):
     list_display = ['title', 'time_stamp']
-
-
-for class_i in []:
-    admin.site.register(class_i)
 admin.site.register(News, NewsAdmin)
 # admin.site.register(News)
 
-for class_i in [Professor, Postgraduate]:
+class ResDirInline(admin.StackedInline):
+    model = ResDir
+class ProfessorAdmin(admin.ModelAdmin):
+    inlines = [ResDirInline]
+admin.site.register(Professor, ProfessorAdmin)
+
+
+# for class_i in [WorkExp, ResDir, PatPri, PubInf, ResAct]:
+#     admin.site.register(class_i)
+
+for class_i in [Postgraduate]:
     admin.site.register(class_i)
+
