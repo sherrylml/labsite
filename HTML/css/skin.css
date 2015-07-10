@@ -99,7 +99,7 @@ body {-webkit-tap-highlight-color: background: #fbe471}
 
 
 .home-block{ border-bottom: 1px solid #ccc; }
-
+.home-block.no-border{border-bottom-width: 0px;}
 .home-block figure .thumb{ background: #fff url(../img/plus.png) no-repeat center center; }
 
 .home-block figure figcaption strong{ color: #444; }
