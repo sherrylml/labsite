@@ -14,6 +14,9 @@ class NewsAdmin(admin.ModelAdmin):
 admin.site.register(News, NewsAdmin)
 # admin.site.register(News)
 
+class NoticesAdmin(admin.ModelAdmin):
+    list_display = ['title', 'time_stamp']
+admin.site.register(Notices, NewsAdmin)
 
 '''
 Team
@@ -25,14 +28,6 @@ class ResDirInline(admin.TabularInline):#要重启
 class ProfessorAdmin(admin.ModelAdmin):
     inlines = [ResDirInline]
 admin.site.register(Professor, ProfessorAdmin)
-
-# class ResDirInline(admin.TabularInline):#要重启
-#     model = ResDir
-#     extra = 1
-# class ProfessorAdmin(admin.ModelAdmin):
-#     inlines = [ResDirInline]
-# admin.site.register(Professor, ProfessorAdmin)
-
 
 
 # for class_i in [WorkExp, ResDir, PatPri, PubInf, ResAct]:
