@@ -107,6 +107,7 @@ class Postgraduate(People):
 class ResDir(models.Model):
     research_direction = models.TextField(blank=True, verbose_name='研究方向')
     professor = models.ForeignKey(Professor)
+    postgraduate = models.ForeignKey(Postgraduate)
 
     def __str__(self):
         return str(self.id)
