@@ -8,7 +8,7 @@ class Base(models.Model):
     '''
     基类
     '''
-    # title = models.CharField(max_length=150, default='')
+    # item_id = models.AutoField(primary_key=True,default=1)
     title = models.CharField(max_length=150, null=True)
     content = models.TextField(null=True)
     time_stamp = models.DateTimeField(auto_now_add=True, default=timezone.now())

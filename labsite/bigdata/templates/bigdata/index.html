@@ -190,7 +190,7 @@
                                     {% endfor %}
                                     <div class="year">{{ notice.time_stamp.year }}</div><em></em></div>
                                 <div  class="post-heading">
-                                    <h4><a href="#">{{ notice.title }} </a></h4>
+                                    <h4><a href="notice/{{ notice.id }}"">{{ notice.title }} </a></h4>
                                 </div>
                                 <div class="excerpt">{{ notice.content|truncatechars:50}}
                                 </div>
@@ -216,7 +216,7 @@
                                     {% endfor %}
                                     <div class="year">{{ news.time_stamp.year }}</div><em></em></div>
                                 <div  class="post-heading">
-                                    <h4><a href="#">{{ news.title }} </a></h4>
+                                    <h4><a href="news/{{ news.id }}">{{ news.title }} </a></h4>
                                 </div>
                                 <div class="excerpt">{{ news.content|truncatechars:50}}
                                 </div>

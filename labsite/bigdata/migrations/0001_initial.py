@@ -15,11 +15,11 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='News',
             fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('id', models.AutoField(primary_key=True, verbose_name='ID', auto_created=True, serialize=False)),
                 ('title', models.CharField(max_length=150, null=True)),
                 ('content', models.TextField(null=True)),
-                ('time_stamp', models.DateTimeField(default=datetime.datetime(2015, 7, 11, 8, 3, 9, 580686, tzinfo=utc), auto_now_add=True)),
-                ('link', models.URLField(verbose_name='url_link', blank=True)),
+                ('time_stamp', models.DateTimeField(auto_now_add=True, default=datetime.datetime(2015, 7, 11, 13, 58, 24, 742517, tzinfo=utc))),
+                ('picture', models.ImageField(null=True, verbose_name='照片', blank=True, upload_to='')),
             ],
             options={
                 'abstract': False,
@@ -29,11 +29,11 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Notices',
             fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('id', models.AutoField(primary_key=True, verbose_name='ID', auto_created=True, serialize=False)),
                 ('title', models.CharField(max_length=150, null=True)),
                 ('content', models.TextField(null=True)),
-                ('time_stamp', models.DateTimeField(default=datetime.datetime(2015, 7, 11, 8, 3, 9, 580686, tzinfo=utc), auto_now_add=True)),
-                ('link', models.URLField(verbose_name='url_link', blank=True)),
+                ('time_stamp', models.DateTimeField(auto_now_add=True, default=datetime.datetime(2015, 7, 11, 13, 58, 24, 742517, tzinfo=utc))),
+                ('picture', models.ImageField(null=True, verbose_name='照片', blank=True, upload_to='')),
             ],
             options={
                 'abstract': False,
@@ -43,7 +43,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='PatPri',
             fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('id', models.AutoField(primary_key=True, verbose_name='ID', auto_created=True, serialize=False)),
                 ('patent_prize', models.TextField(verbose_name='专利与奖励')),
             ],
             options={
@@ -54,7 +54,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Postgraduate',
             fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('id', models.AutoField(primary_key=True, verbose_name='ID', auto_created=True, serialize=False)),
                 ('name', models.CharField(max_length=150, verbose_name='姓名')),
                 ('Email', models.EmailField(max_length=75, blank=True)),
                 ('mainpage', models.URLField(verbose_name='个人主页', blank=True)),
@@ -64,7 +64,7 @@ class Migration(migrations.Migration):
                 ('image', models.ImageField(null=True, verbose_name='个人照片', blank=True, upload_to='')),
                 ('grade', models.CharField(max_length=1, verbose_name='年级', choices=[(1, 1), (2, 2), (3, 3), (4, 4), (5, 5)])),
                 ('educational_level', models.CharField(max_length=18, verbose_name='学位（博士/硕士）', choices=[('master', '硕士'), ('doctor', '博士')])),
-                ('patent_prizes', models.ManyToManyField(to='bigdata.PatPri', null=True, verbose_name='专利与奖励', blank=True)),
+                ('patent_prizes', models.ManyToManyField(null=True, verbose_name='专利与奖励', to='bigdata.PatPri', blank=True)),
             ],
             options={
                 'db_table': 'Postgraduate',
@@ -74,7 +74,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Professor',
             fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('id', models.AutoField(primary_key=True, verbose_name='ID', auto_created=True, serialize=False)),
                 ('name', models.CharField(max_length=150, verbose_name='姓名')),
                 ('Email', models.EmailField(max_length=75, blank=True)),
                 ('mainpage', models.URLField(verbose_name='个人主页', blank=True)),
@@ -83,7 +83,7 @@ class Migration(migrations.Migration):
                 ('edu_bg', models.TextField(verbose_name='教育背景', blank=True)),
                 ('image', models.ImageField(null=True, verbose_name='个人照片', blank=True, upload_to='')),
                 ('job_title', models.CharField(max_length=150, verbose_name='职称', blank=True)),
-                ('patent_prizes', models.ManyToManyField(to='bigdata.PatPri', null=True, verbose_name='专利与奖励', blank=True)),
+                ('patent_prizes', models.ManyToManyField(null=True, verbose_name='专利与奖励', to='bigdata.PatPri', blank=True)),
             ],
             options={
                 'db_table': 'Professor',
@@ -93,7 +93,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='PubInf',
             fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('id', models.AutoField(primary_key=True, verbose_name='ID', auto_created=True, serialize=False)),
                 ('publish_infor', models.TextField(verbose_name='出版信息')),
             ],
             options={
@@ -104,7 +104,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='ResAct',
             fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('id', models.AutoField(primary_key=True, verbose_name='ID', auto_created=True, serialize=False)),
                 ('research_activitiy', models.TextField(verbose_name='科研活动')),
             ],
             options={
@@ -115,7 +115,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='ResDir',
             fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('id', models.AutoField(primary_key=True, verbose_name='ID', auto_created=True, serialize=False)),
                 ('research_direction', models.TextField(verbose_name='研究方向', blank=True)),
                 ('professor', models.ForeignKey(to='bigdata.Professor')),
             ],
@@ -127,7 +127,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='WorkExp',
             fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('id', models.AutoField(primary_key=True, verbose_name='ID', auto_created=True, serialize=False)),
                 ('work_experience', models.TextField(verbose_name='工作经历', blank=True)),
             ],
             options={
@@ -138,37 +138,37 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='professor',
             name='publish_infors',
-            field=models.ManyToManyField(to='bigdata.PubInf', null=True, verbose_name='出版信息', blank=True),
+            field=models.ManyToManyField(null=True, verbose_name='出版信息', to='bigdata.PubInf', blank=True),
             preserve_default=True,
         ),
         migrations.AddField(
             model_name='professor',
             name='research_activities',
-            field=models.ManyToManyField(to='bigdata.ResAct', null=True, verbose_name='科研活动', blank=True),
+            field=models.ManyToManyField(null=True, verbose_name='科研活动', to='bigdata.ResAct', blank=True),
             preserve_default=True,
         ),
         migrations.AddField(
             model_name='professor',
             name='work_experiences',
-            field=models.ManyToManyField(to='bigdata.WorkExp', null=True, verbose_name='工作经历', blank=True),
+            field=models.ManyToManyField(null=True, verbose_name='工作经历', to='bigdata.WorkExp', blank=True),
             preserve_default=True,
         ),
         migrations.AddField(
             model_name='postgraduate',
             name='publish_infors',
-            field=models.ManyToManyField(to='bigdata.PubInf', null=True, verbose_name='出版信息', blank=True),
+            field=models.ManyToManyField(null=True, verbose_name='出版信息', to='bigdata.PubInf', blank=True),
             preserve_default=True,
         ),
         migrations.AddField(
             model_name='postgraduate',
             name='research_activities',
-            field=models.ManyToManyField(to='bigdata.ResAct', null=True, verbose_name='科研活动', blank=True),
+            field=models.ManyToManyField(null=True, verbose_name='科研活动', to='bigdata.ResAct', blank=True),
             preserve_default=True,
         ),
         migrations.AddField(
             model_name='postgraduate',
             name='work_experiences',
-            field=models.ManyToManyField(to='bigdata.WorkExp', null=True, verbose_name='工作经历', blank=True),
+            field=models.ManyToManyField(null=True, verbose_name='工作经历', to='bigdata.WorkExp', blank=True),
             preserve_default=True,
         ),
     ]
