@@ -19,8 +19,8 @@ __mtime__ = '7/4/2015-004'
                   ┃┫┫  ┃┫┫
                   ┗┻┛  ┗┻┛
 """
+# 皮姐姐你四不四洒
 from django.db import models
-
 
 class WorkExp(models.Model):
     work_experience = models.TextField(blank=True, verbose_name='工作经历')

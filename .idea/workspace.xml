@@ -2,434 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88298e5d-0670-45c7-be47-850e98e3e351" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\HTML\news-detail.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\HTML\notice-detail.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\HTML\notices.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\admin.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\migrations\0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\migrations\0002_auto_20150710_1339.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\migrations\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\models.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\models\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\models\models.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\models\team_models.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\css\comments.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\css\elements.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\css\flexslider.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\css\jquery.tweet.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\css\lessframework.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\css\reset.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\css\skin.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\css\social.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\css\style.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\css\superfish.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\css\widgets.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\balloon.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\border-bg-bottom.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\border-bg-top.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\bullets\arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\bullets\check.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\bullets\heart.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\bullets\plus.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\bullets\star.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\dummies\54x54.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\dummies\featured-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\dummies\featured-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\dummies\featured-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\dummies\gallery-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\dummies\gallery-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\dummies\gallery-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\dummies\logo1.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\dummies\logo2.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\dummies\logo3.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\dummies\logo4.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\dummies\logo5.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\dummies\logo6.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\dummies\work-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\fold-date.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\fold-date2.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\fold.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\icon-address.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\icon-comments.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\icon-email.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\icon-mobile.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\icon-phone.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\icon-tags.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\icon-user.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\css3-mediaqueries.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\custom.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\form-validation.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\imagesloaded.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\jquery-1.6.4.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\jquery.flexslider-min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\less-grid-4.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\masonry.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\modernizr.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\moveform.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\GPL-LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\MIT-LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\README.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\demo\demo.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\demo\includes\bullet.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\demo\includes\demos.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\demo\includes\demos.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\demo\includes\jquery-1.4.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\demo\includes\sh_main.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\demo\includes\sheet_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\src\jquery.poshytip.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\src\jquery.poshytip.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\src\tip-darkgray\tip-darkgray.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\src\tip-darkgray\tip-darkgray.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\src\tip-darkgray\tip-darkgray_arrows.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\src\tip-green\tip-green.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\src\tip-green\tip-green_arrows.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\src\tip-skyblue\tip-skyblue.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\src\tip-skyblue\tip-skyblue.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\src\tip-skyblue\tip-skyblue_arrows.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\src\tip-twitter\tip-twitter.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\src\tip-twitter\tip-twitter_arrows.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\src\tip-violet\tip-violet.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\src\tip-violet\tip-violet.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\src\tip-violet\tip-violet_arrows.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\src\tip-yellow\tip-yellow.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\src\tip-yellow\tip-yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\src\tip-yellow\tip-yellow_arrows.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\src\tip-yellowsimple\tip-yellowsimple.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\poshytip-1.1\src\tip-yellowsimple\tip-yellowsimple_arrows.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\README" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\css\prettyPhoto.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\dark_rounded\btnNext.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\dark_rounded\btnPrevious.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\dark_rounded\contentPattern.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\dark_rounded\default_thumbnail.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\dark_rounded\loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\dark_rounded\sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\dark_square\btnNext.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\dark_square\btnPrevious.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\dark_square\contentPattern.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\dark_square\default_thumbnail.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\dark_square\loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\dark_square\sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\default\default_thumb.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\default\loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\default\sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\default\sprite_next.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\default\sprite_prev.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\default\sprite_x.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\default\sprite_y.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\facebook\btnNext.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\facebook\btnPrevious.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\facebook\contentPatternBottom.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\facebook\contentPatternLeft.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\facebook\contentPatternRight.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\facebook\contentPatternTop.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\facebook\default_thumbnail.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\facebook\loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\facebook\sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\light_rounded\btnNext.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\light_rounded\btnPrevious.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\light_rounded\default_thumbnail.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\light_rounded\loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\light_rounded\sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\light_square\btnNext.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\light_square\btnPrevious.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\light_square\default_thumbnail.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\light_square\loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\images\prettyPhoto\light_square\sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\js\jquery-1.3.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\js\jquery-1.4.4.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\js\jquery.prettyPhoto.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\prettyPhoto\xhr_response.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\superfish-1.4.8\changelog.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\superfish-1.4.8\css\superfish-navbar.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\superfish-1.4.8\css\superfish-vertical.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\superfish-1.4.8\css\superfish.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\superfish-1.4.8\example.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\superfish-1.4.8\images\arrows-ffffff.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\superfish-1.4.8\images\shadow.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\superfish-1.4.8\js\hoverIntent.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\superfish-1.4.8\js\jquery-1.2.6.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\superfish-1.4.8\js\jquery.bgiframe.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\superfish-1.4.8\js\superfish.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\superfish-1.4.8\js\supersubs.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\tabs.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\tweet\index.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\tweet\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\js\tweet\jquery.tweet.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\logo.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\logo1.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\logo2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\logo3.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\member\figure.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\arrow32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\arrowright32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\article32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\bag32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\bargraph32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\block32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\box32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\boxdownload32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\boxupload32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\camera32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\cameraminus32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\cameraplus32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\camerastar32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\cardgame32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\check32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\circleleft32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\circleright32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\clock32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\comment32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\commentblack32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\contactbook32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\contactcard32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\cup32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\download32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\exchange32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\flag.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\folder32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\folderblock32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\folderminus32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\folderplus32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\gear32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\glitter32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\heart32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\home32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\leftarrow32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\leftturnarrow32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\license.rtf" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\lightbulb32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\linedpaper32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\linedpapercheck32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\linedpaperlock32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\linedpaperminus32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\linedpaperpencil28.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\linedpaperpencil32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\linedpaperplus32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\lock32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\mail32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\mailblock32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\mailminus32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\mailopened32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\mailplus32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\mailstar32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\mapleleaf32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\melody32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\minus32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\moneyreceipt32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\monitor32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\mouse32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\note32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\notecheck32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\notepencil32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\paper32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\papercheck32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\paperheart32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\paperlock32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\paperminus32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\papermusic32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\paperpencil32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\paperphoto32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\paperplus32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\paperstar32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\pencil32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\pencilplus32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\phone32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\phonebook32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\plug32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\plus32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\printer32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\questionbook32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\radio32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\recycle32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\risegraph32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\rss32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\scissors32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\search32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\shield32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\shieldcross32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\shoppingcart32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\sleep32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\slide32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\smile32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\spanner32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\speaker32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\speakermute32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\star32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\stop32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\turnright32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\unlock32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\upload32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\user32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\userblock32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\userminus32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\userplus32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\users32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\usersblock32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\usersminus32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\usersplus32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\wand32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\warning32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\weibo.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\weixin.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\wordpress32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\mono-icons\wrench32.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\noise-all.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\noise.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\plus.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\slides\01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\slides\02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\slides\03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\slides\1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\slides\2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\slides\3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\social\behance.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\social\digg.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\social\dribbble.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\social\ember.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\social\evernot.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\social\facebook.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\social\flickr.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\social\forrst.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\social\github.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\social\google.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\social\lastfm.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\social\linkedin.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\social\plus.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\social\rss.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\social\sharethis.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\social\skype.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\social\tumblr.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\social\twitter.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\social\vimeo.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\social\youtube.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\strip.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\img\toggle.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\css3-mediaqueries.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\custom.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\form-validation.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\imagesloaded.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\jquery-1.6.4.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\jquery.flexslider-min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\less-grid-4.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\masonry.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\modernizr.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\moveform.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\GPL-LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\MIT-LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\README.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\demo\demo.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\demo\includes\bullet.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\demo\includes\demos.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\demo\includes\demos.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\demo\includes\jquery-1.4.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\demo\includes\sh_main.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\demo\includes\sheet_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\src\jquery.poshytip.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\src\jquery.poshytip.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\src\tip-darkgray\tip-darkgray.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\src\tip-darkgray\tip-darkgray.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\src\tip-darkgray\tip-darkgray_arrows.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\src\tip-green\tip-green.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\src\tip-green\tip-green_arrows.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\src\tip-skyblue\tip-skyblue.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\src\tip-skyblue\tip-skyblue.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\src\tip-skyblue\tip-skyblue_arrows.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\src\tip-twitter\tip-twitter.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\src\tip-twitter\tip-twitter_arrows.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\src\tip-violet\tip-violet.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\src\tip-violet\tip-violet.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\src\tip-violet\tip-violet_arrows.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\src\tip-yellow\tip-yellow.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\src\tip-yellow\tip-yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\src\tip-yellow\tip-yellow_arrows.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\src\tip-yellowsimple\tip-yellowsimple.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\poshytip-1.1\src\tip-yellowsimple\tip-yellowsimple_arrows.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\README" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\css\prettyPhoto.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\dark_rounded\btnNext.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\dark_rounded\btnPrevious.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\dark_rounded\contentPattern.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\dark_rounded\default_thumbnail.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\dark_rounded\loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\dark_rounded\sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\dark_square\btnNext.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\dark_square\btnPrevious.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\dark_square\contentPattern.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\dark_square\default_thumbnail.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\dark_square\loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\dark_square\sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\default\default_thumb.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\default\loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\default\sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\default\sprite_next.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\default\sprite_prev.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\default\sprite_x.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\default\sprite_y.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\facebook\btnNext.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\facebook\btnPrevious.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\facebook\contentPatternBottom.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\facebook\contentPatternLeft.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\facebook\contentPatternRight.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\facebook\contentPatternTop.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\facebook\default_thumbnail.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\facebook\loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\facebook\sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\light_rounded\btnNext.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\light_rounded\btnPrevious.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\light_rounded\default_thumbnail.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\light_rounded\loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\light_rounded\sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\light_square\btnNext.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\light_square\btnPrevious.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\light_square\default_thumbnail.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\light_square\loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\images\prettyPhoto\light_square\sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\js\jquery-1.3.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\js\jquery-1.4.4.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\js\jquery.prettyPhoto.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\prettyPhoto\xhr_response.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\superfish-1.4.8\changelog.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\superfish-1.4.8\css\superfish-navbar.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\superfish-1.4.8\css\superfish-vertical.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\superfish-1.4.8\css\superfish.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\superfish-1.4.8\example.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\superfish-1.4.8\images\arrows-ffffff.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\superfish-1.4.8\images\shadow.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\superfish-1.4.8\js\hoverIntent.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\superfish-1.4.8\js\jquery-1.2.6.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\superfish-1.4.8\js\jquery.bgiframe.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\superfish-1.4.8\js\superfish.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\superfish-1.4.8\js\supersubs.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\tabs.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\tweet\index.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\tweet\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\static\js\tweet\jquery.tweet.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\templates\bigdata\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\templates\bigdata\index0.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\templates\bigdata\news-pi.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\templates\bigdata\team-pi.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\tests.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\urls.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\bigdata\views.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\labsite\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\labsite\settings.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\labsite\urls.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\labsite\wsgi.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite0\manage.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\migrations\0002_auto_20150711_1624.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\templates\bigdata\news-detail.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\templates\bigdata\notice-detail.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/labsite/bigdata/migrations/0001_initial.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/index.html" afterPath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/models/models.py" afterPath="$PROJECT_DIR$/labsite/bigdata/models/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/team.html" afterPath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/team.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/urls.py" afterPath="$PROJECT_DIR$/labsite/bigdata/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/views.py" afterPath="$PROJECT_DIR$/labsite/bigdata/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/models/team_models.py" afterPath="$PROJECT_DIR$/labsite/bigdata/models/team_models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="labsite.iws" />
@@ -502,11 +75,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/labsite/bigdata/templates/bigdata/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.07537688" vertical-offset="4950" max-vertical-offset="11640">
-              <caret line="159" column="85" selection-start-line="159" selection-start-column="85" selection-end-line="159" selection-end-column="85" />
+            <state vertical-scroll-proportion="15.384615" vertical-offset="5640" max-vertical-offset="13290">
+              <caret line="168" column="26" selection-start-line="168" selection-start-column="26" selection-end-line="168" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="team_models.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/labsite/bigdata/models/team_models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.45990565" vertical-offset="240" max-vertical-offset="3840">
+              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -553,6 +136,8 @@
         <option value="$PROJECT_DIR$/labsite/labsite/settings.py" />
         <option value="$PROJECT_DIR$/labsite/bigdata/urls.py" />
         <option value="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/index.html" />
+        <option value="$PROJECT_DIR$/labsite/bigdata/migrations/__init__.py" />
+        <option value="$PROJECT_DIR$/labsite/bigdata/models/team_models.py" />
       </list>
     </option>
   </component>
@@ -674,11 +259,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bigdata" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -700,7 +281,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
+              <option name="myItemId" value="migrations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1012,7 +593,19 @@
       <option name="project" value="LOCAL" />
       <updated>1429167401094</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add models and change html files">
+      <created>1436628752197</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1436628752197</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add models and change html files">
+      <created>1436628770300</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1436628770300</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1020,8 +613,9 @@
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23692636" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10885806" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20811099" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1031,7 +625,6 @@
       <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33778015" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1084,33 +677,14 @@
     <MESSAGE value="create app" />
     <MESSAGE value="connect with mysql" />
     <MESSAGE value="templates and static files" />
-    <option name="LAST_COMMIT_MESSAGE" value="templates and static files" />
+    <MESSAGE value="add models and change html files" />
+    <option name="LAST_COMMIT_MESSAGE" value="add models and change html files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/labsite/labsite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="480">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labsite/bigdata/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="720">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/labsite/bigdata/templates/bigdata/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11100">
@@ -1511,10 +1085,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/labsite/bigdata/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/labsite/bigdata/templates/bigdata/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07537688" vertical-offset="4950" max-vertical-offset="11640">
-          <caret line="159" column="85" selection-start-line="159" selection-start-column="85" selection-end-line="159" selection-end-column="85" />
+        <state vertical-scroll-proportion="15.384615" vertical-offset="5640" max-vertical-offset="13290">
+          <caret line="168" column="26" selection-start-line="168" selection-start-column="26" selection-end-line="168" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labsite/bigdata/models/team_models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45990565" vertical-offset="240" max-vertical-offset="4020">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
           <folding />
         </state>
       </provider>
