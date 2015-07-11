@@ -85,33 +85,33 @@
 				<nav>
 					<ul id="nav" class="sf-menu">
 						<li class="current-menu-item"><a href="index.html">首页</a></li>
-						<li><a href="#">新闻动态</a>
-							<ul>
-								<li><a href="#">最新动态</a></li>
-								<li><a href="#">通知公告</a></li>
-							</ul>
+						<li><a href="news.html">新闻动态</a>
+							<!-- <ul>
+								<li><a href="news.html">最新动态</a></li>
+								<li><a href="notices.html">通知公告</a></li>
+							</ul> -->
 						</li>
-						<li><a href="#">科研队伍</a></li>
-						<li><a href="#">科学研究</a>
-							<ul>
+						<li><a href="team.html">科研队伍</a></li>
+						<li><a href="research.html">科学研究</a>
+							<!-- <ul>
 								<li><a href="#">研究方向</a></li>
 								<li><a href="#">研究成果</a></li>
-							</ul>
+							</ul> -->
 						</li>
-						<li><a href="#">合作交流</a>
-							<ul>
+						<li><a href="academic.html">学术交流</a>
+							<!-- <ul>
 								<li><a href="#">国际会议</a></li>
 								<li><a href="#">学术交流</a></li>
-							</ul>
+							</ul> -->
 						</li>
-						<li><a href="#">活动休闲</a></li>
-						<li><a href="#">加入我们</a>
-							<ul>
+						<li><a href="relax.html">活动休闲</a></li>
+						<li><a href="join.html">加入我们</a>
+							<!-- <ul>
 								<li><a href="#">招生信息</a></li>
 								<li><a href="#">人才招聘</a></li>
-							</ul>
+							</ul> -->
 						</li>
-						<li><a href="#">关于</a></li>
+						<li><a href="about.html">关于</a></li>
 					</ul>
 					<div id="combo-holder"></div>
 				</nav>			
@@ -178,94 +178,104 @@
 	        		
 	        		<!-- left -->
 	        		<div class="left-home-block home-posts">
-	        			<h4 class="heading">通  知</h4>
-	        			<article class="format-standard">
-							<div class="entry-date"><div class="number">23</div><div class="month">JAN</div> <div class="year">2011</div><em></em></div>
-							<div  class="post-heading">
-								<h4><a href="single.html">Lorem ipsum dolor </a></h4>
-							</div>
-							<div class="excerpt">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.
-							</div>
-						</article>
-						
-						<article class="format-standard">
-							<div class="entry-date"><div class="number">23</div><div class="month">JAN</div> <div class="year">2011</div><em></em></div>
-							<div  class="post-heading">
-								<h4><a href="single.html">Lorem ipsum dolor </a></h4>
-							</div>
-							<div class="excerpt">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.
-							</div>
-						</article>
-						
-						<article class="format-standard">
-							<div class="entry-date"><div class="number">23</div><div class="month">JAN</div> <div class="year">2011</div><em></em></div>
-							<div  class="post-heading">
-								<h4><a href="single.html">Lorem ipsum dolor </a></h4>
-							</div>
-							<div class="excerpt">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.
-							</div>
-						</article>
-						
-						<article class="format-standard">
-							<div class="entry-date"><div class="number">23</div><div class="month">JAN</div> <div class="year">2011</div><em></em></div>
-							<div  class="post-heading">
-								<h4><a href="single.html">Lorem ipsum dolor </a></h4>
-							</div>
-							<div class="excerpt">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.
-							</div>
-						</article>
-						
+	        			<h3 class="heading">通  知</h3>
+	        			{% if notices_list %}
+                        {% for notice in notices_list %}
+                            <article class="format-standard">
+                                <div class="entry-date"><div class="number">{{ notice.time_stamp.day }}</div>
+                                    {% for key,value in Month.items%}
+                                        {% if key == notice.time_stamp.month %}
+                                            <div class="month">{{ value }}</div>
+                                        {% endif %}
+                                    {% endfor %}
+                                    <div class="year">{{ notice.time_stamp.year }}</div><em></em></div>
+                                <div  class="post-heading">
+                                    <h4><a href="#">{{ notice.title }} </a></h4>
+                                </div>
+                                <div class="excerpt">{{ notice.content|truncatechars:50}}
+                                </div>
+                            </article>
+						{% endfor %}
+                        {% endif %}
+
+						<a href="notices.html" class="news-link-button">更多>></a>
 						
 	        		</div>
 	        		<!-- ENDS left -->
-	        		
 	        		<!-- right -->
-	        		<div class="right-home-block">
-	        			
-	        			
-	        			<h4 class="heading">CLIENTS</h4>
-	        			
-	        			<!-- logos -->
-	        			<ul class="clients-logos clearfix">
-	        				<li><a href="#"><img src="img/dummies/logo1.png" alt="logo" /></a></li>
-	        				<li><a href="#"><img src="img/dummies/logo2.png" alt="logo" /></a></li>
-	        				<li><a href="#"><img src="img/dummies/logo3.png" alt="logo" /></a></li>
-	        				<li><a href="#"><img src="img/dummies/logo4.png" alt="logo" /></a></li>
-	        				<li><a href="#"><img src="img/dummies/logo5.png" alt="logo" /></a></li>
-	        				<li><a href="#"><img src="img/dummies/logo6.png" alt="logo" /></a></li>
-	        			</ul>
-	        			<!-- ENDS logos -->
-	        			
-	        			
-	        			<h4 class="heading">TESTIMONIALS</h4>
-	        			
-	        			<!-- testimonial slider -->
-				        <div class="flexslider testimonial-slider">
-						  <ul class="slides">
-						    <li>
-						      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.
-						      <div class="client-name">- Luis Zuno, Webdesigner</div>
-						    </li>
-							<li>
-						      at vitae, ultricies eget, tempor sit amet, ante. Donec 
-						      <div class="client-name">- Luis Zuno, Webdesigner</div>
-						    </li>
-						    
-						   <li>
-						     Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
-						     <div class="client-name">- Luis Zuno, Webdesigner</div>
-						    </li>
-						  </ul>
-						  
-						</div>
-			        	<!-- ENDS testimonial slider -->
-		        	
-		        		
+	        		<div class="right-home-block home-news">
+	        			<h3 class="heading">新  闻</h3>
+	        			{% if news_list %}
+                        {% for news in news_list %}
+                            <article class="format-standard">
+                                <div class="entry-date"><div class="number">{{ news.time_stamp.day }}</div>
+                                    {% for key,value in Month.items%}
+                                        {% if key == news.time_stamp.month %}
+                                            <div class="month">{{ value }}</div>
+                                        {% endif %}
+                                    {% endfor %}
+                                    <div class="year">{{ news.time_stamp.year }}</div><em></em></div>
+                                <div  class="post-heading">
+                                    <h4><a href="#">{{ news.title }} </a></h4>
+                                </div>
+                                <div class="excerpt">{{ news.content|truncatechars:50}}
+                                </div>
+                            </article>
+						{% endfor %}
+                        {% endif %}
+
+						<a href="news.html" class="news-link-button">更多>></a>
+						
 	        		</div>
 	        		<!-- ENDS right -->
 	        		
 	        	</div>
         		<!-- ENDS additional blocks -->
+
+        		<!-- third blocks -->
+        		<div class="home-add clearfix">
+        			<!-- left -->
+	        		<div class="left-home-block home-posts">
+	        			<h3 class="heading2">学术会议</h3>
+	        				
+	        				<div  class="post-heading">
+	        					{% load staticfiles %}
+                                <img src = "{% static "img/mono-icons/linedpaperpencil28.png" %}" alt="flag"/>
+								<a href="#" class="text">AAAI2016(标题，主页链接）</a>
+							</div>
+							<div class="excerpt">Abstract due: 2015-9-10   Papers due:2015-9-15
+							</div>
+
+	        				<div  class="post-heading">
+	        					<img src = "{% static "img/mono-icons/linedpaperpencil28.png" %}" alt="flag"/>
+								<a href="#" class="text">AAAI2016 </a>
+							</div>
+							<div class="excerpt">Abstract due: 2015-9-10   Papers due:2015-9-15
+							</div>
+
+							<div  class="post-heading">
+	        					<img src = "{% static "img/mono-icons/linedpaperpencil28.png" %}" alt="flag"/>
+								<a href="#" class="text">AAAI2016 </a>
+							</div>
+							<div class="excerpt">Abstract due: 2015-9-10   Papers due:2015-9-15
+							</div>
+	        				
+						
+	        		</div>
+	        		<!-- ENDS left -->
+	        		<!-- right -->
+	        		<div class="right-home-block">
+	        			<h3 class="heading2">招贤纳士</h3>
+	        				<div class="text"><img src = "{% static "img/mono-icons/flag.png" %}" alt="flag"/><a href="#" >这里是近期的招聘信息</a></div>
+
+	        				<div class="text"><img src = "{% static "img/mono-icons/flag.png" %}" alt="flag"/><a href="#" >这里是近期的招聘信息</a></div>
+
+	        				<div class="text"><img src = "{% static "img/mono-icons/flag.png" %}" alt="flag"/><a href="#" >这里是近期的招聘信息</a></div>
+						
+	        		</div>
+	        		<!-- ENDS right -->
+        		</div>
+        		<!-- end third blocks -->
 
 			<!-- Fold image -->
 			<div id="fold"></div>
@@ -284,23 +294,25 @@
 					<li class="first-col">
 						
 						<div class="widget-block">
-							<h4>RECENT POSTS</h4>
+							<h4>友情链接</h4>
 							<div class="recent-post clearfix">
-								<a href="#" class="thumb"><img src="img/dummies/54x54.gif" alt="Post" /></a>
+								<a href="http://www.cas.cn/" class="thumb"><img src = "{% static "img/logo2.jpg" %}" alt="link"/></a>
 								<div class="post-head">
-									<a href="#">Pellentesque habitant morbi senectus</a><span> March 12, 2011</span>
+									<a href="http://www.cas.cn/">中国科学院</a>
+										<!-- <span> March 12, 2011</span> -->
 								</div>
 							</div>
 							<div class="recent-post clearfix">
-								<a href="#" class="thumb"><img src="img/dummies/54x54.gif" alt="Post" /></a>
+								<a href="http://www.iscas.ac.cn/" class="thumb"><img src = "{% static "img/logo3.gif" %}" alt="link"/></a>
 								<div class="post-head">
-									<a href="#">Pellentesque habitant morbi senectus</a><span> March 12, 2011</span>
+									<a href="http://www.iscas.ac.cn/">中国科学院软件研究所</a>
+									<!-- <span> March 12, 2011</span> -->
 								</div>
 							</div>
 							<div class="recent-post clearfix">
-								<a href="#" class="thumb"><img src="img/dummies/54x54.gif" alt="Post" /></a>
+								<a href="http://pminer.iscas.ac.cn/bbs/forum.php" class="thumb"><img src = "{% static "img/dummies/54x54.gif" %}" alt="link"/></a>
 								<div class="post-head">
-									<a href="#">Pellentesque habitant morbi senectus</a><span> March 12, 2011</span>
+									<a href="http://pminer.iscas.ac.cn/bbs/forum.php">pminer论坛</a>
 								</div>
 							</div>
 						</div>
@@ -309,8 +321,14 @@
 					<li class="second-col">
 						
 						<div class="widget-block">
-							<h4>FREE TEMPLATES &amp; THEMES</h4>
-							<p>Visit <a href="#/" >Template Creme</a> and browse the selection of well-made FREE Templates and WordPress Themes.</p>
+							<h4>联系方式</h4>
+							<ul class="address-block">
+			        			<li class="address">北京市海淀区中关村南路4号</li>
+			        			<li>    邮编10010</li>
+			        			<li class="phone">+123 456 789</li>
+			        			<li class="mobile">+123 456 789</li>
+			        			<li class="email"><a href="mailto:email@server.com">email@server.com</a></li>
+		        			</ul>
 						</div>
 						
 					</li>
@@ -319,33 +337,21 @@
 						
 						<div class="widget-block">
 							<div class="footer-col">
-		         				<h4>TWITTER WIDGET</h4>
+		         				<a href="#"><img src = "{% static "img/mono-icons/weibo.png" %}" alt="link"/></a>
+		         				<a href="#"><img src = "{% static "img/mono-icons/weixin.png" %}" alt="link"/></a>
 		         			</div>
 		         		</div>
 		         		
 					</li>
 					
-					<li class="fourth-col">
-						
-						<div class="widget-block">
-							<h4>FREE TEMPLATES &amp; THEMES</h4>
-							<p>Visit <a href="#/" >Template Creme</a> and browse the selection of well-made FREE Templates and WordPress Themes.</p>
-						</div>
-		         		
-					</li>	
 				</ul>
 				<!-- ENDS widgets -->	
 				
 				
 				<!-- bottom -->
 				<div class="footer-bottom">
-					<div class="left">Simpler Template. More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a></div>
-					<div class="right">
-						<ul id="social-bar">
-							<li><a href="#"  title="Become a fan" class="poshytip"><img src="img/social/facebook.png"  alt="Facebook" /></a></li>
-							<li><a href="#" title="Follow my tweets" class="poshytip"><img src="img/social/twitter.png"  alt="twitter" /></a></li>
-							<li><a href="#"  title="Add to the circle" class="poshytip"><img src="img/social/plus.png" alt="Google plus" /></a></li>
-						</ul>
+					<div class="left">中国科学院软件研究所大数据信息处理研究组 <a href="index.html" target="_blank" title="实验室主页">实验室主页</a><br>
+						访问量：9999&nbsp&nbsp <a href="#" target="_blank" title="后台管理">后台管理</a>
 					</div>
 				</div>	
 				<!-- ENDS bottom -->		

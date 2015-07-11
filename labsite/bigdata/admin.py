@@ -14,6 +14,10 @@ class NewsAdmin(admin.ModelAdmin):
 admin.site.register(News, NewsAdmin)
 # admin.site.register(News)
 
+class NoticesAdmin(admin.ModelAdmin):
+    list_display = ['title', 'time_stamp']
+admin.site.register(Notices, NewsAdmin)
+
 # class ResDirInline(admin.StackedInline):
 class ResDirInline(admin.TabularInline):#要重启
     model = ResDir

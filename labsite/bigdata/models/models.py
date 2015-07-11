@@ -12,7 +12,8 @@ class Base(models.Model):
     title = models.CharField(max_length=150, null=True)
     content = models.TextField(null=True)
     time_stamp = models.DateTimeField(auto_now_add=True, default=timezone.now())
-    link = models.URLField(blank=True, verbose_name='url_link')
+    # link = models.URLField(blank=True, verbose_name='url_link')
+    picture = models.ImageField(blank=True, null=True, verbose_name='照片')
 
     class Meta:
         abstract = True
@@ -27,3 +28,8 @@ class News(Base):
     '''
     pass
 
+class Notices(Base):
+    '''
+    通知模板
+    '''
+    pass
