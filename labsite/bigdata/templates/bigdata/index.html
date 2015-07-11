@@ -73,7 +73,7 @@
 		<header>
 			<div class="wrapper clearfix">
 				<div>
-					<a href="index.html" class="logo">
+					<a href="{% url 'index' %}" class="logo">
                         {% load staticfiles %}
                         <img src = "{% static "img/logo1.gif" %}" alt="logo"/>
 					</a>
@@ -84,34 +84,34 @@
 				</div>
 				<nav>
 					<ul id="nav" class="sf-menu">
-						<li class="current-menu-item"><a href="index.html">首页</a></li>
-						<li><a href="news.html">新闻动态</a>
+						<li class="current-menu-item"><a href="{% url 'index' %}">首页</a></li>
+						<li><a href="{% url 'news' %}">新闻动态</a>
 							<!-- <ul>
 								<li><a href="news.html">最新动态</a></li>
 								<li><a href="notices.html">通知公告</a></li>
 							</ul> -->
 						</li>
-						<li><a href="team.html">科研队伍</a></li>
-						<li><a href="research.html">科学研究</a>
+						<li><a href="{% url 'team' %}">科研队伍</a></li>
+						<li><a href="{% url 'research' %}">科学研究</a>
 							<!-- <ul>
 								<li><a href="#">研究方向</a></li>
 								<li><a href="#">研究成果</a></li>
 							</ul> -->
 						</li>
-						<li><a href="academic.html">学术交流</a>
+						<li><a href="{% url 'academic' %}">学术交流</a>
 							<!-- <ul>
 								<li><a href="#">国际会议</a></li>
 								<li><a href="#">学术交流</a></li>
 							</ul> -->
 						</li>
-						<li><a href="relax.html">活动休闲</a></li>
-						<li><a href="join.html">加入我们</a>
+						<li><a href="{% url 'relax' %}">活动休闲</a></li>
+						<li><a href="{% url 'join' %}">加入我们</a>
 							<!-- <ul>
 								<li><a href="#">招生信息</a></li>
 								<li><a href="#">人才招聘</a></li>
 							</ul> -->
 						</li>
-						<li><a href="about.html">关于</a></li>
+						<li><a href="{% url 'about' %}">关于</a></li>
 					</ul>
 					<div id="combo-holder"></div>
 				</nav>			
@@ -140,7 +140,7 @@
 		        			<p class="headline-text">在这里说明实验室的研究方向等简要介绍。在这里说明实验室的研究方向等简要介绍。在这里说明实验室的研究方向等简要介绍。在这里说明实验室的研究方向等简要介绍。在这里说明实验室的研究方向等简要介绍。</p> 
 		        			<p class="headline-text">在这里说明实验室的研究方向等简要介绍。在这里说明实验室的研究方向等简要介绍。在这里说明实验室的研究方向等简要介绍。在这里说明实验室的研究方向等简要介绍。在这里说明实验室的研究方向等简要介绍。</p>
 		        			<!-- <p class="headline-text"> <a href="http://www.cssmoban.com/" class="read-more" >参看更多</a></p> -->
-		        			<a href="about.html" class="theme-link-button">参看更多</a>	
+		        			<a href="{% url 'about' %}" class="theme-link-button">参看更多</a>	
 		        	    </div>
 		        		<!-- ENDS headline	 -->
 
@@ -198,7 +198,7 @@
 						{% endfor %}
                         {% endif %}
 
-						<a href="notices.html" class="news-link-button">更多>></a>
+						<a href="{% url 'news' %}" class="news-link-button">更多>></a>
 						
 	        		</div>
 	        		<!-- ENDS left -->
@@ -224,7 +224,7 @@
 						{% endfor %}
                         {% endif %}
 
-						<a href="news.html" class="news-link-button">更多>></a>
+						<a href="{% url 'news' %}" class="news-link-button">更多>></a>
 						
 	        		</div>
 	        		<!-- ENDS right -->
@@ -350,7 +350,7 @@
 				
 				<!-- bottom -->
 				<div class="footer-bottom">
-					<div class="left">中国科学院软件研究所大数据信息处理研究组 <a href="index.html" target="_blank" title="实验室主页">实验室主页</a><br>
+					<div class="left">中国科学院软件研究所大数据信息处理研究组 <a href="{%url 'index'%}" target="_blank" title="实验室主页">实验室主页</a><br>
 						访问量：9999&nbsp&nbsp <a href="#" target="_blank" title="后台管理">后台管理</a>
 					</div>
 				</div>	
