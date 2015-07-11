@@ -26,21 +26,44 @@ admin.site.register(Notices, NewsAdmin)
 Team
 '''
 # class ResDirInline(admin.StackedInline):
-class ResDirInline(admin.TabularInline):  # 要重启
+class ResDirInline(admin.TabularInline):  # 要重启runserver
     model = ResDir
     extra = 1
 
 
+class WorkExpInline(admin.TabularInline):
+    model = WorkExp
+    extra = 1
+
+
+class PatPriInline(admin.TabularInline):
+    model = PatPri
+    extra = 1
+
+
+class PubInfInline(admin.TabularInline):
+    model = PubInf
+    extra = 1
+
+
+class ResActInline(admin.TabularInline):
+    model = ResAct
+    extra = 1
+
+
 class ProfessorAdmin(admin.ModelAdmin):
-    inlines = [ResDirInline]
+    inlines = [ResDirInline, WorkExpInline, PatPriInline, PubInfInline, ResActInline]
 
 
 admin.site.register(Professor, ProfessorAdmin)
 
 
+class PostgraduateAdmin(admin.ModelAdmin):
+    inlines = [ResDirInline, WorkExpInline, PatPriInline, PubInfInline, ResActInline]
+
+
+admin.site.register(Postgraduate, PostgraduateAdmin)
+
 # for class_i in [WorkExp, ResDir, PatPri, PubInf, ResAct]:
 # admin.site.register(class_i)
-
-for class_i in [Postgraduate]:
-    admin.site.register(class_i)
 
