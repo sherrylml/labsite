@@ -12,15 +12,14 @@ from .models.team_models import *
 class NewsAdmin(admin.ModelAdmin):
     list_display = ['title', 'time_stamp']
 
-
 admin.site.register(News, NewsAdmin)
 # admin.site.register(News)
 
-class NoticesAdmin(admin.ModelAdmin):
-    list_display = ['title', 'time_stamp']
-
-
 admin.site.register(Notices, NewsAdmin)
+admin.site.register(Academic, NewsAdmin)
+admin.site.register(Meetings, NewsAdmin)
+admin.site.register(Relax, NewsAdmin)
+
 
 '''
 Team

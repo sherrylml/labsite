@@ -12,8 +12,6 @@ class Base(models.Model):
     title = models.CharField(max_length=150, null=True)
     content = models.TextField(null=True)
     time_stamp = models.DateTimeField(auto_now_add=True, default=timezone.now())
-    # link = models.URLField(blank=True, verbose_name='url_link')
-    picture = models.ImageField(blank=True, null=True, verbose_name='照片')
 
     class Meta:
         abstract = True
@@ -26,10 +24,40 @@ class News(Base):
     '''
     新闻模板
     '''
-    pass
+    picture = models.ImageField(upload_to='news',blank=True, null=True, verbose_name='照片')
 
 class Notices(Base):
     '''
     通知模板
+    '''
+    picture = models.ImageField(upload_to='notices',blank=True, null=True, verbose_name='照片')
+
+class Academic(Base):
+    '''
+    学术交流
+    '''
+    picture = models.ImageField(upload_to='academic',blank=True, null=True, verbose_name='照片')
+
+class Meetings(Base):
+    '''
+    学术会议
+    '''
+    link = models.URLField(blank=True, verbose_name='url_link')
+
+class Relax(Base):
+    '''
+    活动休闲
+    '''
+    picture = models.ImageField(upload_to='relax',blank=True, null=True, verbose_name='照片')
+
+class Join1(Base):
+    '''
+    招生信息
+    '''
+    pass
+
+class Join2(Base):
+    '''
+    招聘信息
     '''
     pass
