@@ -5,7 +5,7 @@ class People(models.Model):
     name = models.CharField(max_length=150, verbose_name='姓名')
     # ('id', models.AutoField(serialize=False, primary_key=True, auto_created=True))
     Email = models.EmailField(blank=True)
-    mainpage = models.URLField(blank=True, verbose_name='个人主页')
+    # mainpage = models.URLField(blank=True, verbose_name='个人主页')
     address = models.CharField(blank=True, max_length=150, verbose_name='通信地址')
     postcode = models.CharField(default='000000', max_length=6, verbose_name='邮政编码')
     edu_bg = models.TextField(blank=True, verbose_name='教育背景')
