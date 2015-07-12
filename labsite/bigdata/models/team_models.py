@@ -66,13 +66,14 @@ class Postgraduate(People):
 class ResDir(models.Model):
     research_direction = models.TextField(blank=True, verbose_name='研究方向')
     professor = models.ForeignKey(Professor)
-    # postgraduate = models.ForeignKey(Postgraduate)
+    postgraduate = models.ForeignKey(Postgraduate)
 
     def __str__(self):
         return str(self.id)
 
     class Meta:
         db_table = 'ResDir'
+        # db_table = self.name
 
 
 class WorkExp(models.Model):
@@ -115,7 +116,7 @@ class ResDir1(models.Model):
         return str(self.id)
 
     class Meta:
-        db_table = 'ResDir'
+        db_table = 'ResDir1'
 
 
 class WorkExp1(models.Model):
@@ -123,7 +124,7 @@ class WorkExp1(models.Model):
     postgraduate = models.ForeignKey(Postgraduate)
 
     class Meta:
-        db_table = 'WorkExp'
+        db_table = 'WorkExp1'
 
 
 class PatPri1(models.Model):
@@ -131,7 +132,7 @@ class PatPri1(models.Model):
     postgraduate = models.ForeignKey(Postgraduate)
 
     class Meta:
-        db_table = 'PatPri'
+        db_table = 'PatPri1'
 
 
 class PubInf1(models.Model):
@@ -139,7 +140,7 @@ class PubInf1(models.Model):
     postgraduate = models.ForeignKey(Postgraduate)
 
     class Meta:
-        db_table = 'PubInf'
+        db_table = 'PubInf1'
 
 
 class ResAct1(models.Model):
@@ -147,5 +148,5 @@ class ResAct1(models.Model):
     postgraduate = models.ForeignKey(Postgraduate)
 
     class Meta:
-        db_table = 'ResAct'
+        db_table = 'ResAct1'
 
