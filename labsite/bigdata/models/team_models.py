@@ -19,65 +19,24 @@ __mtime__ = '7/4/2015-004'
                   ┃┫┫  ┃┫┫
                   ┗┻┛  ┗┻┛
 """
-
 from django.db import models
-
-class WorkExp(models.Model):
-    work_experience = models.TextField(blank=True, verbose_name='工作经历')
-
-    def __str__(self):
-        return str(self.id)
-
-    class Meta:
-        db_table = 'WorkExp'
-
-
-class PatPri(models.Model):
-    patent_prize = models.TextField(verbose_name='专利与奖励')
-
-
-    def __str__(self):
-        return str(self.id)
-
-    class Meta:
-        db_table = 'PatPri'
-
-
-class PubInf(models.Model):
-    publish_infor = models.TextField(verbose_name='出版信息')
-
-    def __str__(self):
-        return str(self.id)
-
-    class Meta:
-        db_table = 'PubInf'
-
-
-class ResAct(models.Model):
-    research_activitiy = models.TextField(verbose_name='科研活动')
-
-    def __str__(self):
-        return str(self.id)
-
-    class Meta:
-        db_table = 'ResAct'
 
 
 class People(models.Model):
     name = models.CharField(max_length=150, verbose_name='姓名')
     # ('id', models.AutoField(serialize=False, primary_key=True, auto_created=True))
     Email = models.EmailField(blank=True)
-    # mainpage = models.URLField(blank=True, verbose_name='个人主页')
+    mainpage = models.URLField(blank=True, verbose_name='个人主页')
     address = models.CharField(blank=True, max_length=150, verbose_name='通信地址')
     postcode = models.CharField(default='000000', max_length=6, verbose_name='邮政编码')
     edu_bg = models.TextField(blank=True, verbose_name='教育背景')
     image = models.ImageField(blank=True, null=True, verbose_name='个人照片')
 
     # research_directions = models.ManyToManyField(ResDir, blank=True, null=True, verbose_name='研究方向')
-    work_experiences = models.ManyToManyField(WorkExp, blank=True, null=True, verbose_name='工作经历')
-    patent_prizes = models.ManyToManyField(PatPri, blank=True, null=True, verbose_name='专利与奖励')
-    publish_infors = models.ManyToManyField(PubInf, blank=True, null=True, verbose_name='出版信息')
-    research_activities = models.ManyToManyField(ResAct, blank=True, null=True, verbose_name='科研活动')
+    # work_experiences = models.ManyToManyField(WorkExp, blank=True, null=True, verbose_name='工作经历')
+    # patent_prizes = models.ManyToManyField(PatPri, blank=True, null=True, verbose_name='专利与奖励')
+    # publish_infors = models.ManyToManyField(PubInf, blank=True, null=True, verbose_name='出版信息')
+    # research_activities = models.ManyToManyField(ResAct, blank=True, null=True, verbose_name='科研活动')
 
     class Meta:
         abstract = True
@@ -114,3 +73,40 @@ class ResDir(models.Model):
 
     class Meta:
         db_table = 'ResDir'
+
+
+class WorkExp(models.Model):
+    work_experience = models.TextField(blank=True, verbose_name='工作经历')
+    professor = models.ForeignKey(Professor)
+    postgraduate = models.ForeignKey(Postgraduate)
+
+    class Meta:
+        db_table = 'WorkExp'
+
+
+class PatPri(models.Model):
+    patent_prize = models.TextField(verbose_name='专利与奖励')
+    professor = models.ForeignKey(Professor)
+    postgraduate = models.ForeignKey(Postgraduate)
+
+    class Meta:
+        db_table = 'PatPri'
+
+
+class PubInf(models.Model):
+    publish_infor = models.TextField(verbose_name='出版信息')
+    professor = models.ForeignKey(Professor)
+    postgraduate = models.ForeignKey(Postgraduate)
+
+    class Meta:
+        db_table = 'PubInf'
+
+
+class ResAct(models.Model):
+    research_activitiy = models.TextField(verbose_name='科研活动')
+    professor = models.ForeignKey(Professor)
+    postgraduate = models.ForeignKey(Postgraduate)
+
+    class Meta:
+        db_table = 'ResAct'
+
