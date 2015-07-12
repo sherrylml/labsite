@@ -58,8 +58,33 @@ class ProfessorAdmin(admin.ModelAdmin):
 admin.site.register(Professor, ProfessorAdmin)
 
 
+class ResDirInline1(admin.TabularInline):  # 要重启runserver
+    model = ResDir1
+    extra = 1
+
+
+class WorkExpInline1(admin.TabularInline):
+    model = WorkExp1
+    extra = 1
+
+
+class PatPriInline1(admin.TabularInline):
+    model = PatPri1
+    extra = 1
+
+
+class PubInfInline1(admin.TabularInline):
+    model = PubInf1
+    extra = 1
+
+
+class ResActInline1(admin.TabularInline):
+    model = ResAct1
+    extra = 1
+
+
 class PostgraduateAdmin(admin.ModelAdmin):
-    inlines = [ResDirInline, WorkExpInline, PatPriInline, PubInfInline, ResActInline]
+    inlines = [ResDirInline1, WorkExpInline1, PatPriInline1, PubInfInline1, ResActInline1]
 
 
 admin.site.register(Postgraduate, PostgraduateAdmin)

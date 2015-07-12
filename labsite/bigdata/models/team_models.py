@@ -55,7 +55,7 @@ class Professor(People):
 
 
 class Postgraduate(People):
-    grade = models.CharField(max_length=1, choices=(tuple(zip(range(1, 6), range(1, 6)))), verbose_name='年级')
+    grade = models.CharField(max_length=2, choices=(tuple(zip(range(1, 6), range(1, 6)))), verbose_name='年级')
     educational_level = models.CharField(max_length=18, choices=(('master', '硕士'), ('doctor', '博士')),
                                          verbose_name='学位（博士/硕士）')
     # grade = forms.ChoiceField(choices=list(range(8)))
@@ -66,7 +66,7 @@ class Postgraduate(People):
 class ResDir(models.Model):
     research_direction = models.TextField(blank=True, verbose_name='研究方向')
     professor = models.ForeignKey(Professor)
-    postgraduate = models.ForeignKey(Postgraduate)
+    # postgraduate = models.ForeignKey(Postgraduate)
 
     def __str__(self):
         return str(self.id)
@@ -78,33 +78,72 @@ class ResDir(models.Model):
 class WorkExp(models.Model):
     work_experience = models.TextField(blank=True, verbose_name='工作经历')
     professor = models.ForeignKey(Professor)
-    postgraduate = models.ForeignKey(Postgraduate)
 
     class Meta:
         db_table = 'WorkExp'
 
 
 class PatPri(models.Model):
-    patent_prize = models.TextField(verbose_name='专利与奖励')
+    patent_prize = models.TextField(blank=True, verbose_name='专利与奖励')
     professor = models.ForeignKey(Professor)
-    postgraduate = models.ForeignKey(Postgraduate)
 
     class Meta:
         db_table = 'PatPri'
 
 
 class PubInf(models.Model):
-    publish_infor = models.TextField(verbose_name='出版信息')
+    publish_infor = models.TextField(blank=True, verbose_name='出版信息')
     professor = models.ForeignKey(Professor)
-    postgraduate = models.ForeignKey(Postgraduate)
 
     class Meta:
         db_table = 'PubInf'
 
 
 class ResAct(models.Model):
-    research_activitiy = models.TextField(verbose_name='科研活动')
+    research_activitiy = models.TextField(blank=True, verbose_name='科研活动')
     professor = models.ForeignKey(Professor)
+
+    class Meta:
+        db_table = 'ResAct'
+
+
+class ResDir1(models.Model):
+    research_direction = models.TextField(blank=True, verbose_name='研究方向')
+    postgraduate = models.ForeignKey(Postgraduate)
+
+    def __str__(self):
+        return str(self.id)
+
+    class Meta:
+        db_table = 'ResDir'
+
+
+class WorkExp1(models.Model):
+    work_experience = models.TextField(blank=True, verbose_name='工作经历')
+    postgraduate = models.ForeignKey(Postgraduate)
+
+    class Meta:
+        db_table = 'WorkExp'
+
+
+class PatPri1(models.Model):
+    patent_prize = models.TextField(blank=True, verbose_name='专利与奖励')
+    postgraduate = models.ForeignKey(Postgraduate)
+
+    class Meta:
+        db_table = 'PatPri'
+
+
+class PubInf1(models.Model):
+    publish_infor = models.TextField(blank=True, verbose_name='出版信息')
+    postgraduate = models.ForeignKey(Postgraduate)
+
+    class Meta:
+        db_table = 'PubInf'
+
+
+class ResAct1(models.Model):
+    research_activitiy = models.TextField(blank=True, verbose_name='科研活动')
     postgraduate = models.ForeignKey(Postgraduate)
 
     class Meta:
