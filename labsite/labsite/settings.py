@@ -90,7 +90,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 MEDIA_URL = '/upload/'
-# MEDIA_ROOT = (
-#     os.path.join(BASE_DIR,'upload'),
-# )
+
 MEDIA_ROOT = os.path.join(BASE_DIR, 'bigdata/upload')
