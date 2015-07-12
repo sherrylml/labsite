@@ -134,7 +134,7 @@
 						<div  class="post-heading">
 							<h4>{{ news.title }}</h4>
 							<div class="meta">
-								<span class="user">{{ news.timestamp }}</span>
+								<span class="user">{{ news.time_stamp|date:'d M Y' }}</span>
 							</div>
 						</div>
                     {% if news.picture %}
@@ -142,10 +142,9 @@
 							<img src="{{ news.picture.url }}" alt="relation picture" />
 						</div>
                     {% endif %}
-						<div class="excerpt">{{ news.content }}</div>
-                {% endif %}
-						
+						<div class="excerpt">{{ news.content }}</div>					
 					</article>
+					{% endif %}
 								
 					<!-- page-navigation -->
 					<div class="page-navigation clearfix">

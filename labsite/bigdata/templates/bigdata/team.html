@@ -68,10 +68,8 @@
 
 	</head>
 	
-	<body lang="en">
+<body>
 	
-		
-		
 		
 <header>
 			<div class="wrapper clearfix">
@@ -124,54 +122,17 @@
 	        		<div class="clearfix" >
 	        			<!-- card部分该成django语法时可使用for循环读取数据库内容 -->
 	        			<div class="card">
+	        				{% for professor in professors_list %}
+	        				{% if professor %}
 	        				<img src = "{% static "img/member/figure.jpg" %}" alt="头像"/>
 	        				<div class="card-content">
-	        					<span>姓名</span><br>
-	        					<span>职称</span><br>
-	        					<span>Email</span><br>
-	        					<a href="member.html">主页(链接)</a>
+	        					<span>{{ professor.name }}</span><br>
+	        					<span>{{ professor.job_title }}</span><br>
+	        					<span>{{ professor.Email }}</span><br>
+	        					<a href="professor/{{ professor.id }}">主页</a>
 	        				</div>
-		        		</div>
-		        		
-		        		<div class="card">
-	        				<img src="img/member/figure.jpg" alt="头像"/>
-	        				<div class="card-content">
-	        					<span>姓名</span><br>
-	        					<span>职称</span><br>
-	        					<span>Email</span><br>
-	        					<a href="#">主页</a>
-	        				</div>
-		        		</div>
-
-		        		<div class="card">
-	        				<img src="img/member/figure.jpg" alt="头像"/>
-	        				<div class="card-content">
-	        					<span>姓名</span><br>
-	        					<span>职称</span><br>
-	        					<span>Email</span><br>
-	        					<a href="#">主页</a>
-	        				</div>
-		        		</div>
-
-		        		<div class="card">
-	        				<img src="img/member/figure.jpg" alt="头像"/>
-	        				<div class="card-content">
-	        					<span>姓名</span><br>
-	        					<span>职称</span><br>
-	        					<span>职称</span><br>
-	        					<span>Email</span><br>
-	        					<a href="#">主页</a>
-	        				</div>
-		        		</div>
-
-		        		<div class="card">
-	        				<img src="img/member/figure.jpg" alt="头像"/>
-	        				<div class="card-content">
-	        					<span>姓名</span><br>
-	        					<span>职称</span><br>
-	        					<span>Email</span><br>
-	        					<a href="#">主页</a>
-	        				</div>
+	        				{% endif %}
+	        				{% endfor %}
 		        		</div>		        		
 	        		</div>
 	        		<!-- ENDS cards -->

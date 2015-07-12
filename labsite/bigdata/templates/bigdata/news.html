@@ -125,15 +125,13 @@
 		        		<div id="headline2">
 		        			<h3>通知公告</h3><br>
 		        			<ul style="list-style-type: square; color: #FD8152;">
+                                {% for notice in notices_list %}
+                                {% if notice %}
 		        				<li>
-		        					<a href="notice-detail.html">时间：通知标题1</a>
+		        					<a href="notice/{{ notice.id }}">{{ notice.time_stamp|date:'d M Y' }} : {{ notice.title }} </a>
 		        				</li>
-		        				<li>
-		        					<a href="notice-detail.html">2015-7-8：欢迎报考大数据信息处理研究组研究生</a>
-		        				</li>
-		        				<li>
-		        					<a href="notice-detail.html">根据数据库中的时间和标题分条显示，点击后进入详细页面notice-detail.html</a>
-		        				</li>
+                                {% endif %}
+                                {% endfor %}
 		        			</ul>
 		        			
 		        	    </div>
@@ -148,15 +146,13 @@
 		        		<div id="headline2">
 		        			<h3>最新动态</h3><br>
 		        			<ul style="list-style-type: square; color: #FD8152;">
+		        				{% for news in news_list %}
+                                {% if news %}
 		        				<li>
-		        					<a href="news-detail.html">时间：新闻标题1</a>
+		        					<a href="news/{{ news.id }}">{{ news.time_stamp|date:'d M Y' }} : {{ news.title }} </a>
 		        				</li>
-		        				<li>
-		        					<a href="news-detail.html">2015-7-8：恭喜软件所XX同学获得XX奖</a>
-		        				</li>
-		        				<li>
-		        					<a href="notice-detail.html">根据数据库中的时间和标题分条显示，点击后进入详细页面news-detail.html</a>
-		        				</li>
+                                {% endif %}
+                                {% endfor %}
 		        			</ul>
 		        	    </div>
 		        		<!-- ENDS headline	 -->

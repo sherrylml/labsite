@@ -108,73 +108,56 @@
 			</div>
 		</header>
 		
+		
 		<!-- MAIN -->
 		<div id="main">	
 			<div class="wrapper clearfix">
+
+				<!-- masthead -->
+				<div class="masthead clearfix">
+					<h2>学术交流</h2>
+				</div>
+				<div class='mh-div'></div>
+				<!-- ENDS masthead -->
+        	
+        	<!-- posts list -->
+	        	<div id="posts-list" class="clearfix">        	
+	        		{% if academic %}
+					<article class="format-standard">
+						<div class="entry-date"><div class="number">{{ academic.time_stamp.day }}</div>
+                            {% for key,value in Month.items%}
+                                        {% if key == academic.time_stamp.month %}
+                                            <div class="month">{{ value }}</div>
+                                        {% endif %}
+                                    {% endfor %}
+                            <div class="year">{{ academic.time_stamp.year }}</div><em></em></div>
+						<div  class="post-heading">
+							<h4>{{ academic.title }}</h4>
+							<div class="meta">
+								<span class="user">{{ academic.time_stamp|date:'d M Y' }}</span>
+							</div>
+						</div>
+						{% if academic.img %}
+						<div class="feature-image">
+							<img src="{{ academic.picture.url }}" alt="relation picture" />
+						</div>
+						{% endif %}
+						<div class="excerpt">{{ academic.content }}
+						</div>						
+					</article>
+					{% endif %}	
+							
+					<!-- page-navigation -->
+					<div class="page-navigation clearfix">
+						<div class="nav-next"><a href="#">&#8592; 上一篇 </a></div>
+						<div class="nav-previous"><a href="#">下一篇 &#8594;</a></div>
+					</div>
+					<!--ENDS page-navigation -->
+					
 				
-        		<!-- home-block -->
-	        	<div class="home-block no-border clearfix" >
-	        		<!-- <h1 class="home-headline">FEATURED WORK </h1> -->
-
-	        		<!-- slider holder -->
-					<div id="slider-holder" class="clearfix tab-content">
-						<!-- Headline -->
-						
-		        		<div id="headline2">
-		        			<h3>学术交流</h3><br>
-		        			<ul style="list-style-type: square; color: #FD8152;">
-		        				{% for academic in academic_list %}
-                                {% if academic %}
-		        				<li>
-		        					<a href="academic/{{ academic.id }}">{{ academic.time_stamp|date:'d M Y' }} : {{ academic.title }} </a>
-		        				</li>
-                                {% endif %}
-                                {% endfor %}
-		        			</ul>
-		        			
-		        	    </div>
-		        		<!-- ENDS headline	 -->
-
-			       	
-			        	<div class="home-slider-clearfix "></div>
-			        
-					</div>
-					<div id="slider-holder" class="clearfix tab-content">
-						<!-- Headline -->
-		        		<div id="headline2">
-		        			<h3>国际会议</h3><br>
-		        			<ul style="list-style-type: square; color: #FD8152;">
-		        				{% for meeting in meetings_list %}
-                                {% if meeting %}
-		        				<li>
-		        					<a href="{{ meeting.link }}">{{ meeting.title }} </a>
-		        					<p style="color: #888">{{meeting.content}}</p>
-		        				</li>
-                                {% endif %}
-                                {% endfor %}
-		        			</ul>
-		        	    </div>
-		        		<!-- ENDS headline	 -->
-
-			       	
-			        	<div class="home-slider-clearfix "></div>
-			        
-					</div>
-					<!-- ENDS slider holder -->
-	        		
-	        	</div>
-	        	<ul class="nav-pills" id="tab-groups">
-	        		<li role="presentation" class=""><a href="#"  class="current">学术交流</a></li>
-	        		<li role="presentation" class=""><a href="#">国际会议</a></li>
-
-	        	</ul>
-	        	<!-- ENDS home-block
-	        
-	        	
-	        	<!-- additional blocks -->
-	        	
-        		<!-- ENDS additional blocks -->
-
+        		</div>
+        		<!-- ENDS posts list -->
+        	
 			<!-- Fold image -->
 			<div id="fold"></div>
 			</div>
@@ -182,8 +165,7 @@
 		</div>
 		<!-- ENDS MAIN -->
 		
-		
-	<footer>	
+<footer>	
 			
 			<div class="wrapper clearfix">
 				

@@ -137,10 +137,10 @@
 						<!-- Headline -->
 		        		<div id="headline">
 		        			<h3>实验室简介</h3>
-		        			<p class="headline-text">在这里说明实验室的研究方向等简要介绍。在这里说明实验室的研究方向等简要介绍。在这里说明实验室的研究方向等简要介绍。在这里说明实验室的研究方向等简要介绍。在这里说明实验室的研究方向等简要介绍。</p> 
-		        			<p class="headline-text">在这里说明实验室的研究方向等简要介绍。在这里说明实验室的研究方向等简要介绍。在这里说明实验室的研究方向等简要介绍。在这里说明实验室的研究方向等简要介绍。在这里说明实验室的研究方向等简要介绍。</p>
-		        			<!-- <p class="headline-text"> <a href="http://www.cssmoban.com/" class="read-more" >参看更多</a></p> -->
-		        			<a href="{% url 'about' %}" class="theme-link-button">参看更多</a>	
+                            {% if lab_intro %}
+		        			<pre class="headline-text">{{ lab_intro |truncatechars:300 }}</pre>
+		        			<a href="{% url 'about' %}" class="theme-link-button">参看更多</a>
+                            {% endif %}
 		        	    </div>
 		        		<!-- ENDS headline	 -->
 
@@ -190,7 +190,7 @@
                                     {% endfor %}
                                     <div class="year">{{ notice.time_stamp.year }}</div><em></em></div>
                                 <div  class="post-heading">
-                                    <h4><a href="notice/{{ notice.id }}"">{{ notice.title }} </a></h4>
+                                    <h4><a href="notice/{{ notice.id }}">{{ notice.title }} </a></h4>
                                 </div>
                                 <div class="excerpt">{{ notice.content|truncatechars:50}}
                                 </div>
@@ -237,41 +237,32 @@
         			<!-- left -->
 	        		<div class="left-home-block home-posts">
 	        			<h3 class="heading2">学术会议</h3>
-	        				
+	        				{% for meeting in meetings_list %}
+	        				{% if meeting %}
 	        				<div  class="post-heading">
 	        					{% load staticfiles %}
                                 <img src = "{% static "img/mono-icons/linedpaperpencil28.png" %}" alt="flag"/>
-								<a href="#" class="text">AAAI2016(标题，主页链接）</a>
+								<a href="{{ meeting.link }}">{{ meeting.title }} </a>
 							</div>
-							<div class="excerpt">Abstract due: 2015-9-10   Papers due:2015-9-15
-							</div>
-
-	        				<div  class="post-heading">
-	        					<img src = "{% static "img/mono-icons/linedpaperpencil28.png" %}" alt="flag"/>
-								<a href="#" class="text">AAAI2016 </a>
-							</div>
-							<div class="excerpt">Abstract due: 2015-9-10   Papers due:2015-9-15
-							</div>
-
-							<div  class="post-heading">
-	        					<img src = "{% static "img/mono-icons/linedpaperpencil28.png" %}" alt="flag"/>
-								<a href="#" class="text">AAAI2016 </a>
-							</div>
-							<div class="excerpt">Abstract due: 2015-9-10   Papers due:2015-9-15
-							</div>
-	        				
-						
+							<div class="excerpt">{{ meeting.content |truncatechars:50 }}</div>
+							{% endif %}
+							{% endfor %}
 	        		</div>
 	        		<!-- ENDS left -->
 	        		<!-- right -->
 	        		<div class="right-home-block">
 	        			<h3 class="heading2">招贤纳士</h3>
-	        				<div class="text"><img src = "{% static "img/mono-icons/flag.png" %}" alt="flag"/><a href="#" >这里是近期的招聘信息</a></div>
+                        {% for join1 in join1_list %}
+                        {% if join1 %}
+	        				<div class="text"><img src = "{% static "img/mono-icons/flag.png" %}" alt="flag"/><a href="#" >{{ join1.title }}</a></div>
+                        {% endif %}
+                        {% endfor %}
 
-	        				<div class="text"><img src = "{% static "img/mono-icons/flag.png" %}" alt="flag"/><a href="#" >这里是近期的招聘信息</a></div>
-
-	        				<div class="text"><img src = "{% static "img/mono-icons/flag.png" %}" alt="flag"/><a href="#" >这里是近期的招聘信息</a></div>
-						
+                        {% for join2 in join2_list %}
+                        {% if join2 %}
+	        				<div class="text"><img src = "{% static "img/mono-icons/flag.png" %}" alt="flag"/><a href="#" >{{ join2.title }}</a></div>
+                        {% endif %}
+                        {% endfor %}
 	        		</div>
 	        		<!-- ENDS right -->
         		</div>
