@@ -61,3 +61,15 @@ class Join2(Base):
     招聘信息
     '''
     pass
+
+# 实验室相关信息
+class Lab(models.Model):
+    '''
+    实验室简介+研究方向+研究成果
+    '''
+    introduction = models.TextField(null=True)
+    direction = models.TextField(null=True)
+    achievement = models.TextField(null=True)
+
+    def __str__(self):
+        return "实验室相关信息" + str(self.id)

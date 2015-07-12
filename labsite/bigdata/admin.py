@@ -8,7 +8,6 @@ from django.contrib import admin
 from .models.models import *
 from .models.team_models import *
 
-
 class NewsAdmin(admin.ModelAdmin):
     list_display = ['title', 'time_stamp']
 
@@ -19,12 +18,14 @@ admin.site.register(Notices, NewsAdmin)
 admin.site.register(Academic, NewsAdmin)
 admin.site.register(Meetings, NewsAdmin)
 admin.site.register(Relax, NewsAdmin)
-
+admin.site.register(Join1, NewsAdmin)
+admin.site.register(Join2, NewsAdmin)
+admin.site.register(Lab)
 
 '''
 Team
 '''
-# class ResDirInline(admin.StackedInline):
+
 class ResDirInline(admin.TabularInline):  # 要重启runserver
     model = ResDir
     extra = 1

@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render, render_to_response
-from .models.models import News,Notices,Academic,Meetings,Relax
+from .models.models import *
 from .models.team_models import Professor, Postgraduate
 
 
@@ -15,8 +15,11 @@ def index(request):
     notices_list = Notices.objects.all().order_by('-time_stamp')
     if len(notices_list) > 3:
         notices_list = notices_list[0:4]
-    Context = {'news_list':news_list,'notices_list':notices_list,'Month':Month}
-    return render(request, 'bigdata/index.html', Context)
+    meetings_list = Meetings.objects.all()
+    join1_list = Join1.objects.order_by('-time_stamp')
+    join2_list = Join2.objects.order_by('-time_stamp')
+    lab_intro = Lab.objects.order_by('-id')[0].introduction
+    return render(request, 'bigdata/index.html', locals())
 
 
 def news(request):
@@ -60,7 +63,10 @@ def research(request):
     '''
     科学研究
     '''
-    Context = {}
+    lab = Lab.objects.order_by('-id')[0]
+    research_direction = lab.direction
+    research_achievement = lab.achievement
+    Context = {'research_direction':research_direction, 'research_achievement':research_achievement}
     return render_to_response('bigdata/research.html', Context)
 
 def academic(request):
@@ -94,14 +100,17 @@ def join(request):
     '''
     加入我们
     '''
-    Context = {}
-    return render_to_response('bigdata/join.html', Context)
+    join1_list = Join1.objects.order_by('-time_stamp')
+    join2_list = Join2.objects.order_by('-time_stamp')
+    return render_to_response('bigdata/join.html', locals())
 
 def about(request):
     '''
     关于
     '''
-    Context = {}
+    lab = Lab.objects.order_by('-id')[0]
+    lab_intro = lab.introduction
+    Context = {'lab_intro':lab_intro}
     return render_to_response('bigdata/about.html', Context)
 
 

@@ -123,10 +123,18 @@
 						
 		        		<div id="headline2">
 		        			<h3>招生信息</h3><br>
-		        			<p class="headline-text">在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。</p> 
-		        			<p class="headline-text">在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。</p>
-		        			<p class="headline-text">联系方式：someone@iscas.ac.cn</p>
-		        			
+                            <ul style="list-style-type: square; color: #FD8152;">
+                                {% for join1 in join1_list %}
+                                {% if join1 %}
+                                <li>
+                                    <span style="color: #000000">{{ join1.title }}</span><br>
+                                    <span style="color: #888">发布时间：{{ join1.time_stamp|date:'d M Y' }}</span><br>
+                                    <!-- <p style="color: #888">{{ join1.content }}</p> -->
+                                    <pre style="color: #888">{{ join1.content }}</pre><br>
+                                </li>
+                                {% endif %}
+                                {% endfor %}
+                            </ul>
 		        	    </div>
 		        		<!-- ENDS headline	 -->
 
@@ -137,11 +145,19 @@
 					<div id="slider-holder" class="clearfix tab-content">
 						<!-- Headline -->
 		        		<div id="headline2">
-		        			<h3>人才招聘</h3><br>
-		        			<p class="headline-text">在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。</p> 
-		        			<p class="headline-text">在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。在这里分条显示招生信息。</p>
-		        			<p class="headline-text">联系方式：someone@iscas.ac.cn</p>
-
+		        			<h3>招生信息</h3><br>
+                            <ul style="list-style-type: square; color: #FD8152;">
+                                {% for join2 in join2_list %}
+                                {% if join2 %}
+                                <li>
+                                    <span style="color: #000000">{{ join2.title }}</span><br>
+                                    <span style="color: #888">发布时间：{{ join2.time_stamp|date:'d M Y' }}</span><br>
+                                    <!-- <p style="color: #888">{{ join2.content }}</p> -->
+                                    <pre style="color: #888">{{ join2.content }}</pre><br>
+                                </li>
+                                {% endif %}
+                                {% endfor %}
+                            </ul>
 		        	    </div>
 		        		<!-- ENDS headline	 -->
 
