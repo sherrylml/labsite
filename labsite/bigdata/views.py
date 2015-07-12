@@ -59,6 +59,24 @@ def team(request):
     doctors_list = Postgraduate.objects.filter()
     return render_to_response('bigdata/team.html', locals())
 
+def member_professor(request, id):
+    '''
+    个人主页
+    '''
+    item_id = int(id)
+    member = Professor.objects.get(id = item_id)
+    Context = {'member': member}
+    return render_to_response('bigdata/member.html', Context)
+
+def member_postgraduate(request, id):
+    '''
+    个人主页
+    '''
+    item_id = int(id)
+    member = Postgraduate.objects.get(id = item_id)
+    Context = {'member': member}
+    return render_to_response('bigdata/member.html', Context)
+
 def research(request):
     '''
     科学研究

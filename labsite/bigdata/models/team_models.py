@@ -1,24 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-"""
-__title__ = ''
-__author__ = 'pi'
-__mtime__ = '7/4/2015-004'
-# code is far away from bugs with the god animal protecting
-    I love animals. They taste delicious.
-              ┏┓      ┏┓
-            ┏┛┻━━━┛┻┓
-            ┃      ☃      ┃
-            ┃  ┳┛  ┗┳  ┃
-            ┃      ┻      ┃
-            ┗━┓      ┏━┛
-                ┃      ┗━━━┓
-                ┃  神兽保佑    ┣┓
-                ┃　永无BUG！   ┏┛
-                ┗┓┓┏━┳┓┏┛
-                  ┃┫┫  ┃┫┫
-                  ┗┻┛  ┗┻┛
-"""
 from django.db import models
 
 
@@ -30,7 +9,7 @@ class People(models.Model):
     address = models.CharField(blank=True, max_length=150, verbose_name='通信地址')
     postcode = models.CharField(default='000000', max_length=6, verbose_name='邮政编码')
     edu_bg = models.TextField(blank=True, verbose_name='教育背景')
-    image = models.ImageField(blank=True, null=True, verbose_name='个人照片')
+    image = models.ImageField(upload_to='memberImg',blank=True, null=True, verbose_name='个人照片')
 
     # research_directions = models.ManyToManyField(ResDir, blank=True, null=True, verbose_name='研究方向')
     # work_experiences = models.ManyToManyField(WorkExp, blank=True, null=True, verbose_name='工作经历')

@@ -124,7 +124,7 @@
 	        			<div class="card">
 	        				{% for professor in professors_list %}
 	        				{% if professor %}
-	        				<img src = "{% static "img/member/figure.jpg" %}" alt="头像"/>
+	        				<img src = "{% static "{{ professor.img.url }}" %}" alt="头像"/>
 	        				<div class="card-content">
 	        					<span>{{ professor.name }}</span><br>
 	        					<span>{{ professor.job_title }}</span><br>
@@ -141,23 +141,17 @@
 	        		<h4>博士研究生</h4>
 	        		<div class="clearfix" >
 	        			<div class="card">
-	        				<img src="img/member/figure.jpg" alt="头像"/>
+	        				{% for doctor in doctors_list %}
+	        				{% if doctor %}
+	        				<img src = "{% static "{{ doctor.img.url }}" %}" alt="头像"/>
 	        				<div class="card-content">
-	        					<span>姓名</span><br>
-	        					<span>年级</span><br>
-	        					<span>Email</span><br>
-	        					<a href="#">主页（如果有）</a>
+	        					<span>{{ doctor.name }}</span><br>
+	        					<span>{{ doctor.job_title }}</span><br>
+	        					<span>{{ doctor.Email }}</span><br>
+	        					<a href="postgraduate/{{ doctor.id }}">主页</a>
 	        				</div>
-		        		</div>
-
-		        		<div class="card">
-	        				<img src="img/member/figure.jpg" alt="头像"/>
-	        				<div class="card-content">
-	        					<span>姓名</span><br>
-	        					<span>年级</span><br>
-	        					<span>Email</span><br>
-	        					<a href="#">主页（如果有）</a>
-	        				</div>
+	        				{% endif %}
+	        				{% endfor %}
 		        		</div>
 		        	</div>
 	        		<div class='section-div'></div>
@@ -165,23 +159,17 @@
 	        		<h4>硕士研究生</h4>
 	        		<div class="clearfix" >
 	        			<div class="card">
-	        				<img src="img/member/figure.jpg" alt="头像"/>
+	        				{% for master in masters_list %}
+	        				{% if master %}
+	        				<img src = "{% static "{{ master.img.url }}" %}" alt="头像"/>
 	        				<div class="card-content">
-	        					<span>姓名</span><br>
-	        					<span>年级</span><br>
-	        					<span>Email</span><br>
-	        					<a href="#">主页（如果有）</a>
+	        					<span>{{ master.name }}</span><br>
+	        					<span>{{ master.job_title }}</span><br>
+	        					<span>{{ master.Email }}</span><br>
+	        					<a href="postgraduate/{{ master.id }}">主页</a>
 	        				</div>
-		        		</div>
-
-		        		<div class="card">
-	        				<img src="img/member/figure.jpg" alt="头像"/>
-	        				<div class="card-content">
-	        					<span>姓名</span><br>
-	        					<span>年级</span><br>
-	        					<span>Email</span><br>
-	        					<a href="#">主页（如果有）</a>
-	        				</div>
+	        				{% endif %}
+	        				{% endfor %}
 		        		</div>
 		        	</div>
 	        		<div class='section-div'></div>
