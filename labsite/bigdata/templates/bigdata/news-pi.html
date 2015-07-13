@@ -1,6 +1,0 @@
-{% for news in newss %}
-    <h1>{{ news.title }}</h1>
-    <p>发表于：{{ news.time_stamp }}</p>
-    <p>{{ news.content|linebreaks }}</p>
-    <a href="{{ news.link }}">link</a>
-{% endfor %}

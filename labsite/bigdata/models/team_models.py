@@ -31,15 +31,19 @@ class Professor(People):
 
     class Meta:
         db_table = 'Professor'
+        verbose_name = "老师信息"
 
 
 class Postgraduate(People):
-    grade = models.CharField(max_length=2, choices=(tuple(zip(range(1, 6), range(1, 6)))), verbose_name='年级')
+    level = (('1','1'),('2','2'),('3','3'),('4','4'),('5','5'),('6','6'))
+    # grade = models.CharField(max_length=2, choices=(tuple(zip((range(1, 6)), range(1, 6)))), verbose_name='年级')
+    grade = models.CharField(max_length=2, choices=level, verbose_name='年级')
     educational_level = models.CharField(max_length=18, choices=(('master', '硕士'), ('doctor', '博士')),
                                          verbose_name='学位（博士/硕士）')
     # grade = forms.ChoiceField(choices=list(range(8)))
     class Meta:
         db_table = 'Postgraduate'
+        verbose_name = "学生信息"
 
 
 class ResDir(models.Model):
@@ -72,7 +76,7 @@ class PatPri(models.Model):
 
 
 class PubInf(models.Model):
-    publish_infor = models.TextField(blank=True, verbose_name='出版信息')
+    publish_info = models.TextField(blank=True, verbose_name='出版信息')
     professor = models.ForeignKey(Professor)
 
     class Meta:
@@ -80,7 +84,7 @@ class PubInf(models.Model):
 
 
 class ResAct(models.Model):
-    research_activitiy = models.TextField(blank=True, verbose_name='科研活动')
+    research_activity = models.TextField(blank=True, verbose_name='科研活动')
     professor = models.ForeignKey(Professor)
 
     class Meta:
@@ -115,7 +119,7 @@ class PatPri1(models.Model):
 
 
 class PubInf1(models.Model):
-    publish_infor = models.TextField(blank=True, verbose_name='出版信息')
+    publish_info = models.TextField(blank=True, verbose_name='出版信息')
     postgraduate = models.ForeignKey(Postgraduate)
 
     class Meta:
@@ -123,7 +127,7 @@ class PubInf1(models.Model):
 
 
 class ResAct1(models.Model):
-    research_activitiy = models.TextField(blank=True, verbose_name='科研活动')
+    research_activity = models.TextField(blank=True, verbose_name='科研活动')
     postgraduate = models.ForeignKey(Postgraduate)
 
     class Meta:

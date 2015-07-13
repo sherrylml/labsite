@@ -13,7 +13,7 @@ urlpatterns = patterns('',
         url(r'^research$', views.research, name='research'),
         url(r'^academic$', views.academic, name='academic'),
         url(r'^academic/(?P<id>\d+)/$',views.academic_detail, name='academic_detail'),
-        url(r'^relax$', views.relax, name='relax'),
+        url(r'^relax/(?P<id>\d+)/$', views.relax, name='relax'),
         url(r'^join$', views.join, name='join'),
         url(r'^about$', views.about, name='about'),
     )
