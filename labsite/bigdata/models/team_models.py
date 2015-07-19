@@ -9,7 +9,7 @@ class People(models.Model):
     address = models.CharField(blank=True, max_length=150, verbose_name='通信地址')
     postcode = models.CharField(default='000000', max_length=6, verbose_name='邮政编码')
     edu_bg = models.TextField(blank=True, verbose_name='教育背景')
-    image = models.ImageField(upload_to='memberImg',blank=True, null=True, verbose_name='个人照片')
+    image = models.ImageField(upload_to='memberImg', blank=True, null=True, verbose_name='个人照片')
 
     # research_directions = models.ManyToManyField(ResDir, blank=True, null=True, verbose_name='研究方向')
     # work_experiences = models.ManyToManyField(WorkExp, blank=True, null=True, verbose_name='工作经历')
@@ -34,7 +34,7 @@ class Professor(People):
 
 
 class Postgraduate(People):
-    grade = models.CharField(max_length=2, choices=(tuple(zip(range(1, 6), range(1, 6)))), verbose_name='年级')
+    grade = models.CharField(max_length=2, choices=(zip([str(c) for c in range(1, 6)], range(1, 6))), verbose_name='年级')
     educational_level = models.CharField(max_length=18, choices=(('master', '硕士'), ('doctor', '博士')),
                                          verbose_name='学位（博士/硕士）')
     # grade = forms.ChoiceField(choices=list(range(8)))

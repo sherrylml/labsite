@@ -1,54 +1,46 @@
 from django.contrib import admin
-# from labsite.bigdata.models import Members
-
-# class MembersAdmin(admin.ModelAdmin):
-# fields = ['name', 'identity']
-
-# admin.site.register(Members, MembersAdmin)
 from .models.models import *
 from .models.team_models import *
+
 
 class NewsAdmin(admin.ModelAdmin):
     list_display = ['title', 'time_stamp']
 
+
 admin.site.register(News, NewsAdmin)
 # admin.site.register(News)
 
-admin.site.register(Notices, NewsAdmin)
-admin.site.register(Academic, NewsAdmin)
-admin.site.register(Meetings, NewsAdmin)
-admin.site.register(Relax, NewsAdmin)
-admin.site.register(Join1, NewsAdmin)
-admin.site.register(Join2, NewsAdmin)
+for i in [Notices, Academic, Meetings, Relax, Join1, Join2, ]:
+    admin.site.register(i, NewsAdmin)
 admin.site.register(Lab)
 
 '''
 Team
 '''
 
-class ResDirInline(admin.TabularInline):  # 要重启runserver
+
+class inlineBase(admin.TabularInline):
+    extra = 1
+
+
+class ResDirInline(inlineBase):  # 要重启runserver
     model = ResDir
-    extra = 1
 
 
-class WorkExpInline(admin.TabularInline):
+class WorkExpInline(inlineBase):
     model = WorkExp
-    extra = 1
 
 
-class PatPriInline(admin.TabularInline):
+class PatPriInline(inlineBase):
     model = PatPri
-    extra = 1
 
 
-class PubInfInline(admin.TabularInline):
+class PubInfInline(inlineBase):
     model = PubInf
-    extra = 1
 
 
-class ResActInline(admin.TabularInline):
+class ResActInline(inlineBase):
     model = ResAct
-    extra = 1
 
 
 class ProfessorAdmin(admin.ModelAdmin):
@@ -58,29 +50,24 @@ class ProfessorAdmin(admin.ModelAdmin):
 admin.site.register(Professor, ProfessorAdmin)
 
 
-class ResDirInline1(admin.TabularInline):  # 要重启runserver
+class ResDirInline1(inlineBase):  # 要重启runserver
     model = ResDir1
-    extra = 1
 
 
-class WorkExpInline1(admin.TabularInline):
+class WorkExpInline1(inlineBase):
     model = WorkExp1
-    extra = 1
 
 
-class PatPriInline1(admin.TabularInline):
+class PatPriInline1(inlineBase):
     model = PatPri1
-    extra = 1
 
 
-class PubInfInline1(admin.TabularInline):
+class PubInfInline1(inlineBase):
     model = PubInf1
-    extra = 1
 
 
-class ResActInline1(admin.TabularInline):
+class ResActInline1(inlineBase):
     model = ResAct1
-    extra = 1
 
 
 class PostgraduateAdmin(admin.ModelAdmin):
