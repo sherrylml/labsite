@@ -93,7 +93,7 @@
 						</li>
 						<li><a href="{% url 'academic' %}">学术交流</a>
 						</li>
-						<li><a href="{% url 'relax' %}">活动休闲</a></li>
+						<li><a href="{% url 'relax' 1 %}">活动休闲</a></li>
 						<li><a href="{% url 'join' %}">加入我们</a>
 						</li>
 						<li><a href="{% url 'about' %}">关于</a></li>
@@ -149,7 +149,7 @@
 		        				{% for news in news_list %}
                                 {% if news %}
 		        				<li>
-		        					<a href="news/{{ news.id }}">{{ news.time_stamp|date:'d M Y' }} : {{ news.title }} </a>
+		        					<a href="{% url 'news_detail' news.id  %}">{{ news.time_stamp|date:'d M Y' }} : {{ news.title }} </a>
 		        				</li>
                                 {% endif %}
                                 {% endfor %}

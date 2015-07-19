@@ -5,11 +5,11 @@ class People(models.Model):
     name = models.CharField(max_length=150, verbose_name='姓名')
     # ('id', models.AutoField(serialize=False, primary_key=True, auto_created=True))
     Email = models.EmailField(blank=True)
-    mainpage = models.URLField(blank=True, verbose_name='个人主页')
+    # mainpage = models.URLField(blank=True, verbose_name='个人主页')
     address = models.CharField(blank=True, max_length=150, verbose_name='通信地址')
     postcode = models.CharField(default='000000', max_length=6, verbose_name='邮政编码')
     edu_bg = models.TextField(blank=True, verbose_name='教育背景')
-    image = models.ImageField(upload_to='memberImg', blank=True, null=True, verbose_name='个人照片')
+    image = models.ImageField(upload_to='memberImg',blank=True, null=True, verbose_name='个人照片')
 
     # research_directions = models.ManyToManyField(ResDir, blank=True, null=True, verbose_name='研究方向')
     # work_experiences = models.ManyToManyField(WorkExp, blank=True, null=True, verbose_name='工作经历')
@@ -31,6 +31,7 @@ class Professor(People):
 
     class Meta:
         db_table = 'Professor'
+        verbose_name = "老师信息"
 
 
 class Postgraduate(People):
@@ -40,6 +41,7 @@ class Postgraduate(People):
     # grade = forms.ChoiceField(choices=list(range(8)))
     class Meta:
         db_table = 'Postgraduate'
+        verbose_name = "学生信息"
 
 
 class ResDir(models.Model):
@@ -72,7 +74,7 @@ class PatPri(models.Model):
 
 
 class PubInf(models.Model):
-    publish_infor = models.TextField(blank=True, verbose_name='出版信息')
+    publish_info = models.TextField(blank=True, verbose_name='出版信息')
     professor = models.ForeignKey(Professor)
 
     class Meta:
@@ -80,7 +82,7 @@ class PubInf(models.Model):
 
 
 class ResAct(models.Model):
-    research_activitiy = models.TextField(blank=True, verbose_name='科研活动')
+    research_activity = models.TextField(blank=True, verbose_name='科研活动')
     professor = models.ForeignKey(Professor)
 
     class Meta:

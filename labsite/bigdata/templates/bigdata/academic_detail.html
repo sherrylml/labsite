@@ -93,7 +93,7 @@
 						</li>
 						<li class="current-menu-item"><a href="{% url 'academic' %}">学术交流</a>
 						</li>
-						<li><a href="{% url 'relax' %}">活动休闲</a></li>
+						<li><a href="{% url 'relax' 1 %}">活动休闲</a></li>
 						<li><a href="{% url 'join' %}">加入我们</a>
 						</li>
 						<li><a href="{% url 'about' %}">关于</a></li>
@@ -148,8 +148,12 @@
 							
 					<!-- page-navigation -->
 					<div class="page-navigation clearfix">
-						<div class="nav-next"><a href="#">&#8592; 上一篇 </a></div>
-						<div class="nav-previous"><a href="#">下一篇 &#8594;</a></div>
+                        {% if has_previous %}
+						<div class="nav-next"><a href="{% url 'academic_detail' previous_id  %}">&#8592; 上一篇 </a></div>
+                        {% endif %}
+                        {% if has_next %}
+						<div class="nav-previous"><a href="{% url 'academic_detail' next_id  %}">下一篇{{ size }} &#8594;</a></div>
+                        {% endif %}
 					</div>
 					<!--ENDS page-navigation -->
 					

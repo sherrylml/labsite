@@ -90,7 +90,7 @@
 						<li class="current-menu-item"><a href="{% url 'team' %}">科研队伍</a></li>
 						<li><a href="{% url 'research' %}">科学研究</a></li>
 						<li><a href="{% url 'academic' %}">学术交流</a></li>
-						<li><a href="{% url 'relax' %}">活动休闲</a></li>
+						<li><a href="{% url 'relax' 1 %}">活动休闲</a></li>
 						<li><a href="{% url 'join' %}">加入我们</a></li>
 						<li><a href="{% url 'about' %}">关于</a></li>
 					</ul>
@@ -124,12 +124,14 @@
 	        			<div class="card">
 	        				{% for professor in professors_list %}
 	        				{% if professor %}
-	        				<img src = "{% static "{{ professor.img.url }}" %}" alt="头像"/>
+	        				    {% if professor.image %}
+	        				    <img src = "{{ professor.image.url }}" alt="头像"/>
+                                {% endif %}
 	        				<div class="card-content">
 	        					<span>{{ professor.name }}</span><br>
 	        					<span>{{ professor.job_title }}</span><br>
-	        					<span>{{ professor.Email }}</span><br>
-	        					<a href="professor/{{ professor.id }}">主页</a>
+{#	        					<span>{{ professor.Email }}</span><br>#}<br>
+	        					<a style="text-decoration: underline" href="professor/{{ professor.id }}">主页</a>
 	        				</div>
 	        				{% endif %}
 	        				{% endfor %}
@@ -143,12 +145,14 @@
 	        			<div class="card">
 	        				{% for doctor in doctors_list %}
 	        				{% if doctor %}
-	        				<img src = "{% static "{{ doctor.img.url }}" %}" alt="头像"/>
+                                {% if doctor.image %}
+	        				    <img src = "{{ doctor.image.url }}" alt="头像"/>
+                                {% endif %}
 	        				<div class="card-content">
 	        					<span>{{ doctor.name }}</span><br>
 	        					<span>{{ doctor.job_title }}</span><br>
-	        					<span>{{ doctor.Email }}</span><br>
-	        					<a href="postgraduate/{{ doctor.id }}">主页</a>
+{#	        					<span>{{ doctor.Email }}</span><br>#}<br>
+	        					<a style="text-decoration: underline" href="postgraduate/{{ doctor.id }}">主页</a>
 	        				</div>
 	        				{% endif %}
 	        				{% endfor %}
@@ -161,12 +165,14 @@
 	        			<div class="card">
 	        				{% for master in masters_list %}
 	        				{% if master %}
-	        				<img src = "{% static "{{ master.img.url }}" %}" alt="头像"/>
+	        				    {% if master.image %}
+	        				    <img src = "{{ master.image.url }}" alt="头像"/>
+                                {% endif %}
 	        				<div class="card-content">
 	        					<span>{{ master.name }}</span><br>
 	        					<span>{{ master.job_title }}</span><br>
-	        					<span>{{ master.Email }}</span><br>
-	        					<a href="postgraduate/{{ master.id }}">主页</a>
+{#	        					<span>{{ master.Email }}</span><br>#}<br>
+	        					<a style="text-decoration: underline" href="postgraduate/{{ master.id }}">主页</a>
 	        				</div>
 	        				{% endif %}
 	        				{% endfor %}
