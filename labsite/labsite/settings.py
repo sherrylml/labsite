@@ -40,6 +40,10 @@ INSTALLED_APPS = (
     'bigdata',
 )
 
+# TEMPLATE_CONTEXT_PROCESSORS = (
+#     'django.core.context_processors.i18n',
+# )
+
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -48,6 +52,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'django.middleware.locale.LocaleMiddleware',
 )
 
 ROOT_URLCONF = 'labsite.urls'
@@ -62,12 +67,12 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'lab_data',
-        'USER': 'root',
-        'PASSWORD': '1994419',
-        # 'USER': 'pipi',
-        # 'PASSWORD': '249784435',
+        # 'USER': 'root',
+        # 'PASSWORD': '1994419',
+        'USER': 'pipi',
+        'PASSWORD': '249784435',
         'HOST': '127.0.0.1',
-        'PORT': '3306'
+        'PORT': '3305'
     }
 }
 
