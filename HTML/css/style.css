@@ -37,6 +37,7 @@ footer, header, nav, section, audio, video {
 .wrapper{
 	margin: 0 auto; 
 	width: 980px;
+	#width: 1080px;
 	position: relative;
 }
 

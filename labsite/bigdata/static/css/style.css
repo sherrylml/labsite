@@ -40,12 +40,13 @@ word-wrap: break-word;
 
 .wrapper{
 	margin: 0 auto; 
-	width: 980px;
+	/*width: 64.5%;*/
+	width : 980px;
 	position: relative;
 }
 
 body{
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Microsoft YaHei', Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	
 }
@@ -92,7 +93,7 @@ body a{
 #logo:hover{ opacity: 0.8;}
 
 h1,h2,h3,h4,h5,h6{
-	font-family: 'Arvo', Arial, sans-serif;
+	font-family: 'Microsoft YaHei', 'Arvo', Arial, sans-serif;
 	font-weight: 700;
 }
 
@@ -641,7 +642,7 @@ header .version{
 	top: 0px;
 	left: -17px;
 	padding: 17px;
-	font-family: 'Arvo', Arial, sans-serif;
+	font-family: 'Microsoft YaHei', 'Arvo', Arial, sans-serif;
 	line-height: 1em;
 }
 
@@ -650,7 +651,7 @@ header .version{
 	top: 0px;
 	right: -17px;
 	padding: 17px;
-	font-family: 'Arvo', Arial, sans-serif;
+	font-family: 'Microsoft YaHei', 'Arvo', Arial, sans-serif;
 	line-height: 1em;
 }
 
@@ -713,7 +714,7 @@ header .version{
 }
 
 #posts-list .post-heading .meta a{
-	font-family: 'Arvo', Arial, sans-serif;
+	font-family: 'Microsoft YaHei',  'Arvo', Arial, sans-serif;
 	font-size: 13px;
 	line-height: 1.5em;
 }
@@ -1008,7 +1009,7 @@ header .version{
 
 #sidebar h4,
 #contact-sidebar h4{
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Microsoft YaHei', Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	margin-bottom: 15px;
 }
@@ -1026,7 +1027,7 @@ header .version{
 
 .widget-cols h4{
 	margin-bottom: 28px;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Microsoft YaHei', Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	font-weight: normal;
 }
