@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8"/>
-		<title>大数据信息处理研究组</title>
+		<title>大数据智能组</title>
 		
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -78,9 +78,9 @@
                         <img src = "{% static "img/logo1.gif" %}" alt="logo"/>
 					</a>
 					<p class="logo" style="font-size: 26px; margin: 25px 0px 0px 20px;">
-						<strong>大数据信息处理研究组</strong>
+						<strong>大数据智能组</strong>
 					</p>
-					<a href="#" class="version">English  Version</a>	
+					<a href="{% url 'index_e' %}" class="version">English  Version</a>	
 				</div>
 				<nav>
 					<ul id="nav" class="sf-menu">
@@ -136,7 +136,7 @@
 					<div id="slider-holder" class="clearfix">
 						<!-- Headline -->
 		        		<div id="headline">
-		        			<h3>实验室简介</h3>
+		        			<h3>研究组简介</h3>
                             {% if lab_intro %}
 		        			<pre class="headline-text">{{ lab_intro |truncatechars:300 }}</pre>
 		        			<a href="{% url 'about' %}" class="theme-link-button">参看更多</a>
@@ -154,7 +154,7 @@
 						    </li>
 						    <li>
 						      <img src = "{% static "img/slides/2.jpg" %}" alt="slide2"/>
-						      <p class="flex-caption">每晚九点是实验室的小伙伴们打球健身的时间，很健康有没有！</p>
+						      <p class="flex-caption">小伙伴们打球健身的时间，很健康有没有！</p>
 						    </li>
 						    <li>
 						     <img src = "{% static "img/slides/3.jpg" %}" alt="slide3"/>
