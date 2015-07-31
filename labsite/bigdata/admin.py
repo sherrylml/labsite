@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models.models import *
 from .models.team_models import *
+# from nested_inlines.admin import NestedModelAdmin
 
 
 class NewsAdmin(admin.ModelAdmin):
@@ -12,15 +13,15 @@ admin.site.register(News, NewsAdmin)
 
 for i in [Notices, Academic, Meetings, Relax, Join1, Join2, ]:
     admin.site.register(i, NewsAdmin)
-admin.site.register(Lab)
-
-'''
-Team
-'''
 
 
 class inlineBase(admin.TabularInline):
     extra = 1
+
+
+'''
+教授相关信息
+'''
 
 
 class ResDirInline(inlineBase):  # 要重启runserver
@@ -49,6 +50,10 @@ class ProfessorAdmin(admin.ModelAdmin):
 
 admin.site.register(Professor, ProfessorAdmin)
 
+'''
+学生相关信息
+'''
+
 
 class ResDirInline1(inlineBase):  # 要重启runserver
     model = ResDir1
@@ -75,6 +80,26 @@ class PostgraduateAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Postgraduate, PostgraduateAdmin)
+
+'''
+实验室相关信息
+'''
+
+
+# class ImagesInline(inlineBase):
+#     model = Images
+
+
+class DirectionsInline(inlineBase):
+    model = Directions
+    # inlines = [ImagesInline, ]
+
+
+class LabAdmin(admin.ModelAdmin):
+    inlines = [DirectionsInline]
+
+
+admin.site.register(Lab, LabAdmin)
 
 # for class_i in [WorkExp, ResDir, PatPri, PubInf, ResAct]:
 # admin.site.register(class_i)

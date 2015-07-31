@@ -72,7 +72,7 @@ DATABASES = {
         'USER': 'pipi',
         'PASSWORD': '249784435',
         'HOST': '127.0.0.1',
-        'PORT': '3305'
+        'PORT': '3306'
     }
 }
 
