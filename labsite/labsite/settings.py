@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 
     'bigdata',
+    'nested_inline'
 )
 
 # TEMPLATE_CONTEXT_PROCESSORS = (

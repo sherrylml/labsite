@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models.models import *
 from .models.team_models import *
-# from nested_inlines.admin import NestedModelAdmin
+from nested_inline.admin import NestedModelAdmin, NestedTabularInline
 
 
 class NewsAdmin(admin.ModelAdmin):
@@ -15,7 +15,11 @@ for i in [Notices, Academic, Meetings, Relax, Join1, Join2, ]:
     admin.site.register(i, NewsAdmin)
 
 
-class inlineBase(admin.TabularInline):
+class InlineBase(admin.TabularInline):
+    extra = 1
+
+
+class NestedInlineBase(NestedTabularInline):
     extra = 1
 
 
@@ -24,23 +28,23 @@ class inlineBase(admin.TabularInline):
 '''
 
 
-class ResDirInline(inlineBase):  # 要重启runserver
+class ResDirInline(InlineBase):  # 要重启runserver
     model = ResDir
 
 
-class WorkExpInline(inlineBase):
+class WorkExpInline(InlineBase):
     model = WorkExp
 
 
-class PatPriInline(inlineBase):
+class PatPriInline(InlineBase):
     model = PatPri
 
 
-class PubInfInline(inlineBase):
+class PubInfInline(InlineBase):
     model = PubInf
 
 
-class ResActInline(inlineBase):
+class ResActInline(InlineBase):
     model = ResAct
 
 
@@ -55,23 +59,23 @@ admin.site.register(Professor, ProfessorAdmin)
 '''
 
 
-class ResDirInline1(inlineBase):  # 要重启runserver
+class ResDirInline1(InlineBase):  # 要重启runserver
     model = ResDir1
 
 
-class WorkExpInline1(inlineBase):
+class WorkExpInline1(InlineBase):
     model = WorkExp1
 
 
-class PatPriInline1(inlineBase):
+class PatPriInline1(InlineBase):
     model = PatPri1
 
 
-class PubInfInline1(inlineBase):
+class PubInfInline1(InlineBase):
     model = PubInf1
 
 
-class ResActInline1(inlineBase):
+class ResActInline1(InlineBase):
     model = ResAct1
 
 
@@ -86,16 +90,18 @@ admin.site.register(Postgraduate, PostgraduateAdmin)
 '''
 
 
-# class ImagesInline(inlineBase):
-#     model = Images
+class ImagesInline(NestedInlineBase):
+    model = Images
+    # fk_name = "directions"
 
 
-class DirectionsInline(inlineBase):
+class DirectionsInline(NestedInlineBase):
     model = Directions
-    # inlines = [ImagesInline, ]
+    inlines = [ImagesInline]
 
 
-class LabAdmin(admin.ModelAdmin):
+class LabAdmin(NestedModelAdmin):
+    # modle = Lab
     inlines = [DirectionsInline]
 
 
