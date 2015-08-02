@@ -22,5 +22,7 @@ urlpatterns = patterns('',
     url(r'^about$', 'bigdata.views.about', name='about'),
 
     url(r'^admin/', include(admin.site.urls), name='admin'),
+
+    url(r'^i18n/', include('django.conf.urls.i18n')),
 )
               # + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

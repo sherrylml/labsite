@@ -7,10 +7,11 @@ https://docs.djangoproject.com/en/1.7/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.7/ref/settings/
 """
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+#E:/mine/python_workspace/WebSite/labsite/labsite
 
 
 # Quick-start development settings - unsuitable for production
@@ -42,18 +43,18 @@ INSTALLED_APPS = (
 )
 
 # TEMPLATE_CONTEXT_PROCESSORS = (
-#     'django.core.context_processors.i18n',
+# 'django.core.context_processors.i18n',
 # )
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # 'django.middleware.locale.LocaleMiddleware',
 )
 
 ROOT_URLCONF = 'labsite.urls'
@@ -80,7 +81,14 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
-LANGUAGE_CODE = 'zh_CN'
+LANGUAGES = (
+    # ('de', ('Deutsch')),
+    ('en', ('English')),
+    ('zh_CN', ('简体中文')),
+)
+LOCALE_PATHS = './locale'
+# LANGUAGE_CODE = 'zh_CN'
+LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'utc'
 
