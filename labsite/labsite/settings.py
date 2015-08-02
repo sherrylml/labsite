@@ -87,8 +87,8 @@ LANGUAGES = (
     ('zh_CN', ('简体中文')),
 )
 LOCALE_PATHS = './locale'
-# LANGUAGE_CODE = 'zh_CN'
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = 'zh_CN'
+# LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'utc'
 

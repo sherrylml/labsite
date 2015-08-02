@@ -2,20 +2,20 @@
 <!doctype html>
 <html class="no-js" lang="zh-CN">
 
+<form action="i18n/setlang/" method="post"> {% csrf_token %}
+    {#        <input name="next" type="hidden" value="/next/page/"/>#}
+    {#        <input name="next" type="hidden" value=""/>#}
+    <select name="language">
+        {% for lang in LANGUAGES %}
+            <option value="{{ lang.0 }}">{{ lang.1 }}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="Go"/>
+</form>
+
 <head>
     <meta charset="utf-8"/>
     <title>{% trans '大数据智能组' %}</title>
-
-    <form action="/i18n/setlang/" method="post"> {% csrf_token %}
-        {#        <input name="next" type="hidden" value="/next/page/"/>#}
-        <input name="next" type="hidden" value="news"/>
-        <select name="language">
-            {% for lang in LANGUAGES %}
-                <option value="{{ lang.0 }}">{{ lang.1 }}</option>
-            {% endfor %}
-        </select>
-        <input type="submit" value="Go"/>
-    </form>
 
     <!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
