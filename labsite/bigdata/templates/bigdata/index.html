@@ -1,6 +1,6 @@
 {% load i18n %}
 <!doctype html>
-<html class="no-js" lang="zh-CN">
+<html class="no-js" lang="utf-8">
 
 <form action="i18n/setlang/" method="post"> {% csrf_token %}
     {#        <input name="next" type="hidden" value="/next/page/"/>#}
@@ -14,7 +14,8 @@
 </form>
 
 <head>
-    <meta charset="utf-8"/>
+    {#    <meta charset="utf-8"/>#}
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title>{% trans '大数据智能组' %}</title>
 
     <!--[if lt IE 9]>
@@ -91,7 +92,7 @@
             </a>
 
             <p class="logo" style="font-size: 26px; margin: 25px 0px 0px 20px;">
-                <strong>大数据智能组</strong>
+                <strong>{% trans '大数据智能组' %}</strong>
             </p>
             <a href="{% url 'index_e' %}" class="version">English Version</a>
         </div>
