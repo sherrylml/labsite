@@ -28,7 +28,6 @@ def index(request):
         # return HttpResponse("You prefer to read english.")
         # else:
         # return HttpResponse("You prefer to read another language.")
-    request.LANGUAGE_CODE = 'zh-CN'
     return render(request, 'bigdata/index.html', locals())
     # return render_to_response('bigdata/404.html', {'available_languages': ['en'], },
     # RequestContext(request))
@@ -53,6 +52,7 @@ def index_e(request):
         lab_intro = Lab.objects.order_by('-id')[0].introduction
     else:
         lab_intro = "Please write the information about lab at first"
+    # request.LANGUAGE_CODE = 'zh-cn'
     return render(request, 'bigdata/index_e.html', locals())
 
 
