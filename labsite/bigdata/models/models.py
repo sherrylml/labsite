@@ -88,19 +88,21 @@ class Join2(Base):
         verbose_name = "人才招聘"
 
 
-# 实验室相关信息
+# 相关信息
 class Lab(models.Model):
     '''
-    实验室简介+研究方向+研究成果
+    简介+研究方向+研究成果
     '''
     introduction = models.TextField(null=True)
     achievement = models.TextField(null=True)
 
     class Meta:
-        verbose_name = "实验室相关信息"
+        verbose_name = "研究组相关信息"
 
     def __str__(self):
-        return "实验室相关信息" + str(self.id)
+        # return "实验室相关信息" + str(self.id)
+        return "研究组相关信息"
+
 
 
 class Directions(models.Model):
@@ -117,7 +119,7 @@ class Directions(models.Model):
 
 
 class Images(models.Model):
-    images = models.ImageField(blank=True, verbose_name='图片')
+    images = models.ImageField(upload_to='research_direction', blank=True, null=True, verbose_name='图片')
     directions = models.ForeignKey(Directions)
     # lab = models.ForeignKey(Lab)
 

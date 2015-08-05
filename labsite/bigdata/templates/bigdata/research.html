@@ -118,8 +118,13 @@
 						<!-- Headline -->
 		        		<div id="headline2">
 		        			<h3>研究方向</h3><br>
-                            {% if research_direction %}
-		        			<pre class="headline-text">{{ research_direction }}</pre>
+                            {% if direction_list %}
+                                {% for ResearchDirection in direction_list %}
+                                    {% for image in ResearchDirection.images %}
+                                    <img src = "{{ image.images.url }}" alt="图片"/>
+                                    {% endfor %}
+		        			        <pre class="headline-text">{{ ResearchDirection.direction }}</pre><br>
+                                {% endfor %}
                             {% endif %}
 		        	    </div>
 		        		<!-- ENDS headline	 -->
