@@ -9,9 +9,10 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 """
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+from django.utils.translation import ugettext_lazy as _
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-#E:/mine/python_workspace/WebSite/labsite/labsite
+# E:/mine/python_workspace/WebSite/labsite/labsite
 
 
 # Quick-start development settings - unsuitable for production
@@ -42,9 +43,10 @@ INSTALLED_APPS = (
     'nested_inline'
 )
 
-# TEMPLATE_CONTEXT_PROCESSORS = (
-# 'django.core.context_processors.i18n',
-# )
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.core.context_processors.i18n',
+    'django.contrib.auth.context_processors.auth',
+)
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -84,10 +86,16 @@ DATABASES = {
 LANGUAGES = (
     # ('de', ('Deutsch')),
     ('en', ('English')),
-    ('zh_CN', ('简体中文')),
+    ('zh-CN', ('简体中文')),
+    # ('en', _('English')),
+    # ('zh-CN', _('chinese')),  # 用中文makemessages就出错?
 )
-LOCALE_PATHS = os.path.join(BASE_DIR, 'locale')
+LOCALE_PATHS = (
+    './locale',
+)
+
 LANGUAGE_CODE = 'zh_CN'
+
 # LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'utc'

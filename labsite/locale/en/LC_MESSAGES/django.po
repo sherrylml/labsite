@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-05 13:45+0800\n"
+"POT-Creation-Date: 2015-08-05 13:44+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,20 +18,20 @@ msgstr ""
 
 #: .\bigdata\models\team_models.py:6
 msgid "name"
-msgstr "名字"
+msgstr "名字测试通过"
 
 #: .\bigdata\models\team_models.py:10
 msgid "address"
-msgstr "通讯地址"
+msgstr "地址"
 
 #: .\bigdata\models\team_models.py:11
 msgid "postcode"
-msgstr "邮编"
+msgstr ""
 
 #: .\bigdata\models\team_models.py:12
 msgid "educational_background"
-msgstr "教育背景"
+msgstr ""
 
 #: .\bigdata\models\team_models.py:13
 msgid "photo"
-msgstr "照片"
+msgstr ""
