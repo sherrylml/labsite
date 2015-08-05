@@ -732,16 +732,10 @@ header .version{
 	box-shadow: 0px 0px 3px rgba(0,0,0,.2);
 }
 
-/*#posts-list .feature-image:hover img,
-#post-content .feature-image:hover img{
-	opacity: 0.1;
-}*/
-
 #posts-list .feature-image a,
 #post-content .feature-image a{
 	display: block;
 }
-
 
 #posts-list .feature-image img,
 #post-content .feature-image img{
@@ -756,7 +750,14 @@ header .version{
 	display: block;
 	margin-bottom: 20px;
 }
+.excerpt{
+    color: #505050;
+}
 
+.excerpt img{
+    height: 200px;
+    width: 290px;
+}
 /* HOME POSTS ---------------------------------------------------------*/
 
 .left-home-block,

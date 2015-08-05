@@ -147,17 +147,17 @@
                             {% load staticfiles %}
                             <img src="{% static "img/slides/1.jpg" %}" alt="slide1"/>
 
-                            <p class="flex-caption">ggfhfbf</p>
+                            <!-- <p class="flex-caption">ggfhfbf</p> -->
                         </li>
                         <li>
                             <img src="{% static "img/slides/2.jpg" %}" alt="slide2"/>
 
-                            <p class="flex-caption">gfgfbfv</p>
+                            <!-- <p class="flex-caption">gfgfbfv</p> -->
                         </li>
                         <li>
                             <img src="{% static "img/slides/3.jpg" %}" alt="slide3"/>
 
-                            <p class="flex-caption">fgfg</p>
+                            <!-- <p class="flex-caption">fgfg</p> -->
                         </li>
                     </ul>
                 </div>
@@ -174,102 +174,71 @@
 
         <!-- additional blocks -->
         <div class="home-add clearfix">
-
+        	<h3 style="margin:0px 0px 36px 20px; color:#FD7343">Big Data on Social Media Mining and Analytics</h3>
             <!-- left -->
             <div class="left-home-block home-posts">
-                <h3 class="heading">Notice</h3>
-                {% if notices_list %}
-                    {% for notice in notices_list %}
-                        <article class="format-standard">
-                            <div class="entry-date">
-                                <div class="number">{{ notice.time_stamp.day }}</div>
-                                {% for key,value in Month.items %}
-                                    {% if key == notice.time_stamp.month %}
-                                        <div class="month">{{ value }}</div>
-                                    {% endif %}
-                                {% endfor %}
-                                <div class="year">{{ notice.time_stamp.year }}</div>
-                                <em></em></div>
-                            <div class="post-heading">
-                                <h4><a href="notice/{{ notice.id }}">{{ notice.title }} </a></h4>
-                            </div>
-                            <div class="excerpt">{{ notice.content|truncatechars:50 }}
-                            </div>
-                        </article>
-                    {% endfor %}
-                {% endif %}
-
-                <a href="{% url 'news' %}" class="news-link-button">more>></a>
-
+                <h4 style="margin-bottom:10px">Social Tie Analysis</h4>
+                <!-- <img style="height:"src="{% static "img/directions/socialAnalysis.png" %}" alt="img"/> -->
+                <div class="excerpt"><img src="{% static "img/directions/socialAnalysis.png" %}" alt="img" align ="left"/>    Interpersonal ties are responsible for the structure of social networks and the transmission of information through these networks. Different types of social ties have essentially different influence on people. Awareness fo the types of social ties can benefit many applictions such as recommendation and community detection.</div>
+                <!-- <a href="{% url 'research' %}" class="news-link-button">more>></a> -->
             </div>
             <!-- ENDS left -->
             <!-- right -->
             <div class="right-home-block home-news">
-                <h3 class="heading">News</h3>
-                {% if news_list %}
-                    {% for news in news_list %}
-                        <article class="format-standard">
-                            <div class="entry-date">
-                                <div class="number">{{ news.time_stamp.day }}</div>
-                                {% for key,value in Month.items %}
-                                    {% if key == news.time_stamp.month %}
-                                        <div class="month">{{ value }}</div>
-                                    {% endif %}
-                                {% endfor %}
-                                <div class="year">{{ news.time_stamp.year }}</div>
-                                <em></em></div>
-                            <div class="post-heading">
-                                <h4><a href="news/{{ news.id }}">{{ news.title }} </a></h4>
-                            </div>
-                            <div class="excerpt">{{ news.content|truncatechars:50 }}
-                            </div>
-                        </article>
-                    {% endfor %}
-                {% endif %}
-
-                <a href="{% url 'news' %}" class="news-link-button">more>></a>
-
+            <h4 style="margin-bottom:10px">User-level Sentiment Analysis</h4>
+                <!-- <img src="{% static "img/directions/sentimentAnalysis.png" %}" alt="img"/> -->
+                <div class="excerpt"><img src="{% static "img/directions/sentimentAnalysis.png" %}" alt="img" align ="left"/>    Information about social relationships can be used to improve user-level sentiment analysis. The main motivation behind our approach is that users that are somehow "connected" may be more likely to hold similar opinions; therefor, relationship informations can complement what we can extract about a user's viewpoints from their utterances.</div>
             </div>
             <!-- ENDS right -->
+            <div class="left-home-block home-posts">
+                <h4 style="margin-bottom:10px">Recommendation</h4>
+                <!-- <img style="height:"src="{% static "img/directions/socialAnalysis.png" %}" alt="img"/> -->
+                <div class="excerpt"><img src="{% static "img/directions/recommendation.png" %}" alt="img" align ="left"/>    Interpersonal ties are responsible for the structure of social networks and the transmission of information through these networks. Different types of social ties have essentially different influence on people. Awareness fo the types of social ties can benefit many applictions such as recommendation and community detection.</div>
+                <!-- <a href="{% url 'research' %}" class="news-link-button">more>></a> -->
+            </div>
+            <!-- ENDS left -->
+            <!-- right -->
+            <div class="right-home-block home-news">
+            <h4 style="margin-bottom:10px">Information Flow Detection</h4>
+                <!-- <img src="{% static "img/directions/sentimentAnalysis.png" %}" alt="img"/> -->
+                <div class="excerpt"><img src="{% static "img/directions/informationFlow.png" %}" alt="img" align ="left"/>    The real-time information on news sites, blogs and social networking sites changes dynamically and spreads rapidly through the Web. Developing methods for handling such information at a massive scale requires that we think about how information content varies over time, how it is transmitted, and how it mutates as it spreads.</div>
+            </div>
 
         </div>
         <!-- ENDS additional blocks -->
 
         <!-- third blocks -->
-        <div class="home-add clearfix">
+       <div class="home-add clearfix">
+        	<h3 style="margin:0px 0px 36px 20px; color:#FD7343">Big Data on Scientific and Information Visualization</h3>
             <!-- left -->
             <div class="left-home-block home-posts">
-                <h3 class="heading2">Conference</h3>
-                {% for meeting in meetings_list %}
-                    {% if meeting %}
-                        <div class="post-heading">
-                            {% load staticfiles %}
-                            <img src="{% static "img/mono-icons/linedpaperpencil28.png" %}" alt="flag"/>
-                            <a href="{{ meeting.link }}">{{ meeting.title }} </a>
-                        </div>
-                        <div class="excerpt">{{ meeting.content |truncatechars:50 }}</div>
-                    {% endif %}
-                {% endfor %}
+                <h4 style="margin-bottom:10px">Social Tie Analysis</h4>
+                <!-- <img style="height:"src="{% static "img/directions/socialAnalysis.png" %}" alt="img"/> -->
+                <div class="excerpt"><img src="{% static "img/directions/socialAnalysis.png" %}" alt="img" align ="left"/>    Interpersonal ties are responsible for the structure of social networks and the transmission of information through these networks. Different types of social ties have essentially different influence on people. Awareness fo the types of social ties can benefit many applictions such as recommendation and community detection.</div>
+                <!-- <a href="{% url 'research' %}" class="news-link-button">more>></a> -->
             </div>
             <!-- ENDS left -->
             <!-- right -->
-            <div class="right-home-block">
-                <h3 class="heading2">Join Us</h3>
-                {% for join1 in join1_list %}
-                    {% if join1 %}
-                        <div class="text"><img src="{% static "img/mono-icons/flag.png" %}" alt="flag"/><a
-                                href="#">{{ join1.title }}</a></div>
-                    {% endif %}
-                {% endfor %}
-
-                {% for join2 in join2_list %}
-                    {% if join2 %}
-                        <div class="text"><img src="{% static "img/mono-icons/flag.png" %}" alt="flag"/><a
-                                href="#">{{ join2.title }}</a></div>
-                    {% endif %}
-                {% endfor %}
+            <div class="right-home-block home-news">
+            <h4 style="margin-bottom:10px">User-level Sentiment Analysis</h4>
+                <!-- <img src="{% static "img/directions/sentimentAnalysis.png" %}" alt="img"/> -->
+                <div class="excerpt"><img src="{% static "img/directions/sentimentAnalysis.png" %}" alt="img" align ="left"/>    Information about social relationships can be used to improve user-level sentiment analysis. The main motivation behind our approach is that users that are somehow "connected" may be more likely to hold similar opinions; therefor, relationship informations can complement what we can extract about a user's viewpoints from their utterances.</div>
             </div>
             <!-- ENDS right -->
+            <div class="left-home-block home-posts">
+                <h4 style="margin-bottom:10px">Recommendation</h4>
+                <!-- <img style="height:"src="{% static "img/directions/socialAnalysis.png" %}" alt="img"/> -->
+                <div class="excerpt"><img src="{% static "img/directions/recommendation.png" %}" alt="img" align ="left"/>    Interpersonal ties are responsible for the structure of social networks and the transmission of information through these networks. Different types of social ties have essentially different influence on people. Awareness fo the types of social ties can benefit many applictions such as recommendation and community detection.</div>
+                <!-- <a href="{% url 'research' %}" class="news-link-button">more>></a> -->
+            </div>
+            <!-- ENDS left -->
+            <!-- right -->
+            <div class="right-home-block home-news">
+            <h4 style="margin-bottom:10px">Information Flow Detection</h4>
+                <!-- <img src="{% static "img/directions/sentimentAnalysis.png" %}" alt="img"/> -->
+                <div class="excerpt"><img src="{% static "img/directions/informationFlow.png" %}" alt="img" align ="left"/>    The real-time information on news sites, blogs and social networking sites changes dynamically and spreads rapidly through the Web. Developing methods for handling such information at a massive scale requires that we think about how information content varies over time, how it is transmitted, and how it mutates as it spreads.</div>
+            </div>
+
         </div>
         <!-- end third blocks -->
 

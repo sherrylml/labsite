@@ -270,7 +270,7 @@ def relax(request, id):
              11: 'NOV', 12: 'DEC'}
     Context = {'relax_list': relax_list, 'Month': Month, 'has_next': has_next, 'has_previous': has_previous,
                'previous_page': previous_page, 'next_page': next_page}
-    return render_to_response('bigdata/relax.html', Context)
+    return render(request, 'bigdata/relax.html', Context)
 
 
 def join(request):
@@ -279,7 +279,7 @@ def join(request):
     '''
     join1_list = Join1.objects.order_by('-time_stamp')
     join2_list = Join2.objects.order_by('-time_stamp')
-    return render_to_response('bigdata/join.html', locals())
+    return render(request, 'bigdata/join.html', locals())
 
 
 def about(request):
@@ -289,6 +289,6 @@ def about(request):
     lab = Lab.objects.order_by('-id')[0]
     lab_intro = lab.introduction
     Context = {'lab_intro': lab_intro}
-    return render_to_response('bigdata/about.html', Context)
+    return render(request, 'bigdata/about.html', Context)
 
 
