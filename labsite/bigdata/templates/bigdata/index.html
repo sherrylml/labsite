@@ -96,14 +96,16 @@
                 <strong>{% trans '大数据智能组' %}</strong>
             </p>
 {#            <a href="{% url 'index_e' %}" class="version">English Version</a>#}
-            <form action="i18n/setlang/" method="post" class="form_style" >
+            <form action="{% url 'index_e' %}" method="post" class="form_style">
                 {% csrf_token %}
+                <input name="next" type="hidden" value="{{ redirect_to }}"/>
                 <select name="language">
-                    {% for lang in LANGUAGES %}
-                         <option value="{{ lang.0 }}">{{ lang.1 }}</option>
-                     {% endfor %}
-                 </select>
-                <input type="submit"  value="Go"/>
+                    {% for language in LANGUAGES %}
+                        <option value="{{ language.0 }}"{% if language.0 == LANGUAGE_CODE %} selected="selected"{% endif %}>
+                        {{ language.1 }} ({{ language.0 }})
+                    {% endfor %}
+                </select>
+                <input type="submit" value="Go"/>
             </form>
         </div>
         <nav>

@@ -1,19 +1,6 @@
 {% load i18n %}
 <!doctype html>
 <html class="no-js" lang="en">
-
-<form action="{% url 'set_language' %}" method="post">
-    {% csrf_token %}
-    <input name="next" type="hidden" value="{{ redirect_to }}"/>
-    <select name="language">
-        {% for language in LANGUAGES %}
-            <option value="{{ language.0 }}"{% if language.0 == LANGUAGE_CODE %} selected="selected"{% endif %}>
-            {{ language.1 }} ({{ language.0 }})
-        {% endfor %}
-    </select>
-    <input type="submit" value="Go"/>
-</form>
-
 <head>
     {#    <meta charset="utf-8"/>#}
     <meta http-equiv="Content-Type" content="text/xml; charset=utf-8"/>
@@ -95,7 +82,18 @@
             <p class="logo" style="font-size: 26px; margin: 25px 0px 0px 20px;">
                 <strong>{% trans 'Big Data Intelligence Group' %}</strong>
             </p>
-            <a href="{% url 'index' %}" class="version">{% trans 'chinese page' %}</a>
+{#            <a href="{% url 'index' %}" class="version">{% trans 'chinese page' %}</a>#}
+            <form action="{% url 'index' %}" method="post" class="form_style">
+                {% csrf_token %}
+                <input name="next" type="hidden" value="{{ redirect_to }}"/>
+                <select name="language">
+                    {% for language in LANGUAGES %}
+                        <option value="{{ language.0 }}"{% if language.0 == LANGUAGE_CODE %} selected="selected"{% endif %}>
+                        {{ language.1 }} ({{ language.0 }})
+                    {% endfor %}
+                </select>
+                <input type="submit" value="Go"/>
+            </form>
         </div>
         <nav>
             <ul id="nav" class="sf-menu">
