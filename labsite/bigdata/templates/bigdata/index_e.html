@@ -134,15 +134,15 @@
 						    <li>
                                 {% load staticfiles %}
                                 <img src = "{% static "img/slides/1.jpg" %}" alt="slide1"/>
-						        <p class="flex-caption">香山一日游~</p>
+						        <!-- <p class="flex-caption">香山一日游~</p> -->
 						    </li>
 						    <li>
 						      <img src = "{% static "img/slides/2.jpg" %}" alt="slide2"/>
-						      <p class="flex-caption">每晚九点是实验室的小伙伴们打球健身的时间，很健康有没有！</p>
+						      <!-- <p class="flex-caption">每晚九点是实验室的小伙伴们打球健身的时间，很健康有没有！</p> -->
 						    </li>
 						    <li>
 						     <img src = "{% static "img/slides/3.jpg" %}" alt="slide3"/>
-						      <p class="flex-caption">过节的时候还有聚餐，咩哈哈</p>
+						      <!-- <p class="flex-caption">过节的时候还有聚餐，咩哈哈</p> -->
 						    </li>
 						  </ul>
 						</div>
@@ -160,97 +160,12 @@
 	        	<!-- additional blocks -->
 	        	<div class="home-add clearfix">
 	        		
-	        		<!-- left -->
-	        		<div class="left-home-block home-posts">
-	        			<h3 class="heading">Notice</h3>
-	        			{% if notices_list %}
-                        {% for notice in notices_list %}
-                            <article class="format-standard">
-                                <div class="entry-date"><div class="number">{{ notice.time_stamp.day }}</div>
-                                    {% for key,value in Month.items%}
-                                        {% if key == notice.time_stamp.month %}
-                                            <div class="month">{{ value }}</div>
-                                        {% endif %}
-                                    {% endfor %}
-                                    <div class="year">{{ notice.time_stamp.year }}</div><em></em></div>
-                                <div  class="post-heading">
-                                    <h4><a href="notice/{{ notice.id }}">{{ notice.title }} </a></h4>
-                                </div>
-                                <div class="excerpt">{{ notice.content|truncatechars:50}}
-                                </div>
-                            </article>
-						{% endfor %}
-                        {% endif %}
-
-						<a href="{% url 'news' %}" class="news-link-button">more>></a>
-						
+	        		<div>
+	        			
 	        		</div>
-	        		<!-- ENDS left -->
-	        		<!-- right -->
-	        		<div class="right-home-block home-news">
-	        			<h3 class="heading">News</h3>
-	        			{% if news_list %}
-                        {% for news in news_list %}
-                            <article class="format-standard">
-                                <div class="entry-date"><div class="number">{{ news.time_stamp.day }}</div>
-                                    {% for key,value in Month.items%}
-                                        {% if key == news.time_stamp.month %}
-                                            <div class="month">{{ value }}</div>
-                                        {% endif %}
-                                    {% endfor %}
-                                    <div class="year">{{ news.time_stamp.year }}</div><em></em></div>
-                                <div  class="post-heading">
-                                    <h4><a href="news/{{ news.id }}">{{ news.title }} </a></h4>
-                                </div>
-                                <div class="excerpt">{{ news.content|truncatechars:50}}
-                                </div>
-                            </article>
-						{% endfor %}
-                        {% endif %}
-
-						<a href="{% url 'news' %}" class="news-link-button">more>></a>
-						
-	        		</div>
-	        		<!-- ENDS right -->
 	        		
 	        	</div>
         		<!-- ENDS additional blocks -->
-
-        		<!-- third blocks -->
-        		<div class="home-add clearfix">
-        			<!-- left -->
-	        		<div class="left-home-block home-posts">
-	        			<h3 class="heading2">Conference</h3>
-	        				{% for meeting in meetings_list %}
-	        				{% if meeting %}
-	        				<div  class="post-heading">
-	        					{% load staticfiles %}
-                                <img src = "{% static "img/mono-icons/linedpaperpencil28.png" %}" alt="flag"/>
-								<a href="{{ meeting.link }}">{{ meeting.title }} </a>
-							</div>
-							<div class="excerpt">{{ meeting.content |truncatechars:50 }}</div>
-							{% endif %}
-							{% endfor %}
-	        		</div>
-	        		<!-- ENDS left -->
-	        		<!-- right -->
-	        		<div class="right-home-block">
-	        			<h3 class="heading2">Join Us</h3>
-                        {% for join1 in join1_list %}
-                        {% if join1 %}
-	        				<div class="text"><img src = "{% static "img/mono-icons/flag.png" %}" alt="flag"/><a href="#" >{{ join1.title }}</a></div>
-                        {% endif %}
-                        {% endfor %}
-
-                        {% for join2 in join2_list %}
-                        {% if join2 %}
-	        				<div class="text"><img src = "{% static "img/mono-icons/flag.png" %}" alt="flag"/><a href="#" >{{ join2.title }}</a></div>
-                        {% endif %}
-                        {% endfor %}
-	        		</div>
-	        		<!-- ENDS right -->
-        		</div>
-        		<!-- end third blocks -->
 
 			<!-- Fold image -->
 			<div id="fold"></div>
