@@ -84,16 +84,16 @@ DATABASES = {
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
 LANGUAGES = (
-    ('de', 'Deutsch'),
+    # ('de', 'Deutsch'),
     ('en', 'English'),
-    ('zh-cn', '简体中文'),
+    ('zh', '简体中文'),
+    # ('zh-cn', '简体中文'),
 )
 LOCALE_PATHS = (
     './locale',
 )
-LANGUAGE_CODE = 'de'
+LANGUAGE_CODE = 'en'
 # LANGUAGE_CODE = 'zh-cn'
-# LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'utc'
 
