@@ -117,7 +117,7 @@ class PatPri1(models.Model):
 
 
 class PubInf1(models.Model):
-    publish_infor = models.TextField(blank=True, verbose_name='出版信息')
+    publish_info = models.TextField(blank=True, verbose_name='出版信息')
     postgraduate = models.ForeignKey(Postgraduate)
 
     class Meta:
@@ -125,7 +125,7 @@ class PubInf1(models.Model):
 
 
 class ResAct1(models.Model):
-    research_activitiy = models.TextField(blank=True, verbose_name='科研活动')
+    research_activity = models.TextField(blank=True, verbose_name='科研活动')
     postgraduate = models.ForeignKey(Postgraduate)
 
     class Meta:

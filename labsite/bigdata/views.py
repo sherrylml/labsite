@@ -151,17 +151,29 @@ def member_postgraduate(request, id):
     researchAct_list = member.resact1_set.all()
     return render_to_response('bigdata/member.html', locals())
 
+
+class ResearchDirection():
+    def __init__(self, direction, images):
+        self.direction = direction
+        self.images = images
+
 def research(request):
     '''
     科学研究
     '''
+    direction_list = []
     if len(Lab.objects.all()) > 0:
-        research_direction = Lab.objects.order_by('-id')[0].direction
+        research_directions = Lab.objects.order_by('-id')[0].directions_set.all()
+        for research_direction in research_directions:
+            direction_images = research_direction.images_set.all()
+            direction_list.append(ResearchDirection(research_direction.research_direction,direction_images))
         research_achievement = Lab.objects.order_by('-id')[0].achievement
     else :
-        research_direction = " "
+        # research_direction = " "
+        # direction_images = [ ]
+        # direction_list = []
         research_achievement = " "
-    Context = {'research_direction':research_direction, 'research_achievement':research_achievement}
+    Context = {'direction_list':direction_list, 'research_achievement':research_achievement}
     return render_to_response('bigdata/research.html', Context)
 
 def academic(request):

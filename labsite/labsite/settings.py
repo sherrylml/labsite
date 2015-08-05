@@ -69,10 +69,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'lab_data',
-        # 'USER': 'root',
-        # 'PASSWORD': '1994419',
-        'USER': 'pipi',
-        'PASSWORD': '249784435',
+        'USER': 'root',
+        'PASSWORD': '1994419',
+        # 'USER': 'pipi',
+        # 'PASSWORD': '249784435',
         'HOST': '127.0.0.1',
         'PORT': '3306'
     }
@@ -86,7 +86,7 @@ LANGUAGES = (
     ('en', ('English')),
     ('zh_CN', ('简体中文')),
 )
-LOCALE_PATHS = './locale'
+LOCALE_PATHS = os.path.join(BASE_DIR, 'locale')
 LANGUAGE_CODE = 'zh_CN'
 # LANGUAGE_CODE = 'en'
 

@@ -19,10 +19,124 @@ px      68    160    252    344    436    528    620    712    804    896    */
 
 #comboNav{ display: none; }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
+	/* GENERAL */
+	
 	.wrapper{
-		width: 1100px;
+		width: 1140px;
+	}	
+	
+	#logo{ margin-left: 28px;}
+	
+	/* NAV */
+	
+	#comboNav{ display: none; }
+	
+	#nav{ margin-right: 28px;}
+	
+	#nav>li{ margin-left: 15px; }
+
+	#nav>li>a{ font-size: 18px; }
+	
+	/* home slider */
+	
+	#slider-holder{ padding-bottom: 22px;}
+	
+	.home-slider { 
+		width: 500px; 
+		margin-bottom: 50px;
+	} 
+	
+	#slider-holder #headline{
+		margin-left: 0px;
+		width: 500px;
+		margin: 0px 50px 0px 20px;
 	}
+
+	
+	/* HOME */
+	
+	.home-block{
+		padding-left: 28px;
+	}
+	
+	.left-home-block,
+	.right-home-block{ width: 520px; }
+		
+	.left-home-block{ 
+		float: left;
+		margin-left: 28px;
+		margin-right: 0px;
+	}
+	
+	.right-home-block{ 
+		float: right;
+		margin-left: 0px;
+		margin-right: 25px;
+	}
+	
+	
+	/*.home-posts .entry-date em{ display: none; }*/
+	
+	.home-posts article{ padding-left: 45px;}
+	
+	/*.testimonial-slider{ width: 304px; /* 344 - ( 20 x 2) */ }*/
+	
+	.masthead{ padding: 54px 28px }
+	
+	.clients-logos li{ width: 112px; }
+
+	/* BLOG */
+	
+	#posts-list,
+	#post-content{
+		width: 980px;
+		margin-left: 28px;
+	}
+	
+	#posts-list article{
+		padding-left: 40px;
+		width: 980px;
+	}
+	
+	#posts-list .entry-date,
+	#posts-content .entry-date,
+	.home-posts .entry-date{ left: -44px; }
+	
+	#posts-list .entry-date em,
+	#posts-content .entry-date em,
+	/*.home-posts .entry-date em{ display: none;} */
+	
+	#posts-list .post-heading,
+	#posts-content .post-heading{ 
+		/*min-height: 78px;
+		margin-left: 80px;*/
+	}
+	
+	
+	/* SIDEBAR */
+	
+	/*#sidebar{
+		width: 252px; 
+		margin-left: 24px;
+	}*/
+
+	/* FOOTER */
+	
+	/*.widget-cols{ padding-left: 28px;}*/
+	
+	/*.widget-cols>li{
+		width: 160px;
+		margin-left: 0px;
+		margin-right: 24px;
+	}*/
+	
+	/*.recent-post .post-head { width: 80px;}*/
+	
+	/*.footer-bottom{
+		padding-left: 28px;
+		padding-right: 28px;
+	}*/
 }
 
 /*		Tablet Layout: 768px.
