@@ -71,10 +71,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'lab_data',
-        'USER': 'root',
-        'PASSWORD': '1994419',
-        # 'USER': 'pipi',
-        # 'PASSWORD': '249784435',
+        # 'USER': 'root',
+        # 'PASSWORD': '1994419',
+        'USER': 'pipi',
+        'PASSWORD': '249784435',
         'HOST': '127.0.0.1',
         'PORT': '3306'
     }
@@ -84,19 +84,16 @@ DATABASES = {
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
 LANGUAGES = (
-    # ('de', ('Deutsch')),
-    ('en', ('English')),
-    ('zh-CN', ('简体中文')),
-    # ('en', _('English')),
-    # ('zh-CN', _('chinese')),  # 用中文makemessages就出错?
+    # ('de', 'Deutsch'),
+    ('en', 'English'),
+    ('zh', '简体中文'),
+    # ('zh-cn', '简体中文'),
 )
 LOCALE_PATHS = (
     './locale',
 )
-
-LANGUAGE_CODE = 'zh_CN'
-
-# LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = 'en'
+# LANGUAGE_CODE = 'zh-cn'
 
 TIME_ZONE = 'utc'
 
