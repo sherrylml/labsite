@@ -80,7 +80,7 @@
 					<p class="logo" style="font-size: 26px; margin: 25px 0px 0px 20px;">
 						<strong>{% trans 'Big Data Intelligence Group' %}</strong>
 					</p>
-					<form action="{% url 'index_e' %}" method="post" class="form_style">
+					<form action="{% url 'set_language' %}" method="post" class="form_style">
                     {% csrf_token %}
                     <input name="next" type="hidden" value="{{ redirect_to }}"/>
                     <select name="language">
