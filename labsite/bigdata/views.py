@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render, render_to_response
 from django.template import RequestContext
+from django.utils.translation import LANGUAGE_SESSION_KEY
 from .models.models import *
 from .models.team_models import Professor, Postgraduate
 
@@ -53,6 +54,7 @@ def index_e(request):
     else:
         lab_intro = "Please write the information about lab at first"
     # request.LANGUAGE_CODE = 'zh-cn'
+    print(request.session[LANGUAGE_SESSION_KEY])
     return render(request, 'bigdata/index_e.html', locals())
 
 
