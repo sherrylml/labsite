@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-05 14:48+0800\n"
+"POT-Creation-Date: 2015-08-05 17:43+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,30 +16,30 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: .\bigdata\models\team_models.py:6
+#: .\models\team_models.py:6
 msgid "name"
-msgstr "名字测试通过"
+msgstr ""
 
-#: .\bigdata\models\team_models.py:10
+#: .\models\team_models.py:10
 msgid "address"
-msgstr "地址"
+msgstr ""
 
-#: .\bigdata\models\team_models.py:11
+#: .\models\team_models.py:11
 msgid "postcode"
 msgstr ""
 
-#: .\bigdata\models\team_models.py:12
+#: .\models\team_models.py:12
 msgid "educational_background"
 msgstr ""
 
-#: .\bigdata\models\team_models.py:13
+#: .\models\team_models.py:13
 msgid "photo"
 msgstr ""
 
-#: .\bigdata\templates\bigdata\index_e.html:109
+#: .\templates\bigdata\index_e.html:110
 msgid "Big Data Intelligence Group"
-msgstr "英文版测试成功"
+msgstr "中文测试成功"
 
-#: .\bigdata\templates\bigdata\index_e.html:111
+#: .\templates\bigdata\index_e.html:112
 msgid "chinese page"
-msgstr "英文版测试成功"
+msgstr "中文测试成功"
