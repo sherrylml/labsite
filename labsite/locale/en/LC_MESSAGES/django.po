@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-04 22:21+0800\n"
+"POT-Creation-Date: 2015-08-05 13:44+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,10 +16,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: .\bigdata\templates\bigdata\404.html:20
-msgid "page not found"
-msgstr "译成英文测试通过"
+#: .\bigdata\models\team_models.py:6
+msgid "name"
+msgstr "名字测试通过"
 
-#: .\bigdata\templates\bigdata\404.html:25
-msgid "We're sorry, but the requested page could not be found."
-msgstr "trans to english test pass"
+#: .\bigdata\models\team_models.py:10
+msgid "address"
+msgstr "地址"
+
+#: .\bigdata\models\team_models.py:11
+msgid "postcode"
+msgstr ""
+
+#: .\bigdata\models\team_models.py:12
+msgid "educational_background"
+msgstr ""
+
+#: .\bigdata\models\team_models.py:13
+msgid "photo"
+msgstr ""

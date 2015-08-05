@@ -27,10 +27,11 @@ def index(request):
         # if request.LANGUAGE_CODE == 'en':
         # return HttpResponse("You prefer to read english.")
         # else:
-        #     return HttpResponse("You prefer to read another language.")
+        # return HttpResponse("You prefer to read another language.")
+    request.LANGUAGE_CODE = 'zh-CN'
     return render(request, 'bigdata/index.html', locals())
-        # return render_to_response('bigdata/404.html', {'available_languages': ['en'], },
-        # RequestContext(request))
+    # return render_to_response('bigdata/404.html', {'available_languages': ['en'], },
+    # RequestContext(request))
 
 
 def index_e(request):
