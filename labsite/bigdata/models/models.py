@@ -10,7 +10,9 @@ class Base(models.Model):
     '''
     # item_id = models.AutoField(primary_key=True,default=1)
     title = models.CharField(max_length=150, null=True)
+    title_en = models.CharField(max_length=150, null=True)
     content = models.TextField(null=True)
+    content_en = models.TextField(null=True)
     time_stamp = models.DateTimeField(auto_now_add=True, default=timezone.now())
 
     class Meta:
@@ -94,6 +96,7 @@ class Lab(models.Model):
     简介+研究方向+研究成果
     '''
     introduction = models.TextField(null=True)
+    introduction_en = models.TextField(null=True)
     achievement = models.TextField(null=True)
 
     class Meta:

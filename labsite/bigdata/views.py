@@ -50,7 +50,14 @@ def index_e(request):
     join1_list = Join1.objects.order_by('-time_stamp')
     join2_list = Join2.objects.order_by('-time_stamp')
     if len(Lab.objects.all()) > 0:
-        lab_intro = Lab.objects.order_by('-id')[0].introduction
+        if request.method == 'POST':
+            language = request.POST['language']
+            if language == 'zh':
+                lab_intro = Lab.objects.order_by('-id')[0].introduction
+            else:
+                lab_intro = Lab.objects.order_by('-id')[0].introduction_en
+        else:
+            lab_intro = Lab.objects.order_by('-id')[0].introduction_en
     else:
         lab_intro = "Please write the information about lab at first"
     # print(request.session[LANGUAGE_SESSION_KEY])

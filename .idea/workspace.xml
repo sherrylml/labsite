@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88298e5d-0670-45c7-be47-850e98e3e351" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/about.html" afterPath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/academic.html" afterPath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/academic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/academic_detail.html" afterPath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/academic_detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/index_e.html" afterPath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/index_e.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/join.html" afterPath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/join.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/member.html" afterPath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/member.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/news.html" afterPath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/news.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/news_detail.html" afterPath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/news_detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/notice_detail.html" afterPath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/notice_detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/relax.html" afterPath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/relax.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/research.html" afterPath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/research.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/labsite/settings.py" afterPath="$PROJECT_DIR$/labsite/labsite/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/static/css/style.css" afterPath="$PROJECT_DIR$/labsite/bigdata/static/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/team.html" afterPath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/team.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/labsite/urls.py" afterPath="$PROJECT_DIR$/labsite/labsite/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/models/models.py" afterPath="$PROJECT_DIR$/labsite/bigdata/models/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/views.py" afterPath="$PROJECT_DIR$/labsite/bigdata/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -26,6 +12,7 @@
     <ignored path="labsite/bigdata/migrations/" />
     <ignored path="labsite/bigdata/upload/relax/1.jpg" />
     <ignored path="labsite/bigdata/upload/news/1.jpg" />
+    <ignored path="labsite/bigdata/upload/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +22,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/labsite$admin.coverage" NAME="admin Coverage Results" MODIFIED="1429101679621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labsite/bigdata" />
+    <SUITE FILE_PATH="coverage/labsite$admin.coverage" NAME="admin Coverage Results" MODIFIED="1438863026718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/labsite/bigdata" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -61,7 +48,7 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/labsite/labsite/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2722" max-vertical-offset="3660">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2700" max-vertical-offset="3570">
               <caret line="91" column="24" selection-start-line="91" selection-start-column="24" selection-end-line="91" selection-end-column="24" />
               <folding />
             </state>
@@ -71,7 +58,7 @@
       <file leaf-file-name="relax.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/labsite/bigdata/templates/bigdata/relax.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-35.897434" vertical-offset="6100" max-vertical-offset="8010">
+            <state vertical-scroll-proportion="0.0" vertical-offset="6100" max-vertical-offset="8010">
               <caret line="250" column="24" selection-start-line="250" selection-start-column="24" selection-end-line="250" selection-end-column="24" />
               <folding />
             </state>
@@ -81,7 +68,7 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/labsite/labsite/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="892" max-vertical-offset="1830">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1230" max-vertical-offset="1590">
               <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
@@ -93,7 +80,7 @@
       <file leaf-file-name="research.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/labsite/bigdata/templates/bigdata/research.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.0" vertical-offset="3879" max-vertical-offset="8130">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3879" max-vertical-offset="8130">
               <caret line="141" column="42" selection-start-line="141" selection-start-column="42" selection-end-line="141" selection-end-column="42" />
               <folding />
             </state>
@@ -103,8 +90,28 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/labsite/bigdata/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.093413" vertical-offset="112" max-vertical-offset="9630">
-              <caret line="65" column="84" selection-start-line="65" selection-start-column="84" selection-end-line="65" selection-end-column="84" />
+            <state vertical-scroll-proportion="-0.6790419" vertical-offset="1167" max-vertical-offset="9870">
+              <caret line="24" column="63" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_e.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labsite/bigdata/templates/bigdata/index_e.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="32.307693" vertical-offset="4050" max-vertical-offset="13500">
+              <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labsite/bigdata/models/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2567" max-vertical-offset="4410">
+              <caret line="98" column="18" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -137,7 +144,6 @@
         <option value="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/join.html" />
         <option value="$PROJECT_DIR$/labsite/bigdata/models/lab_models.py" />
         <option value="$PROJECT_DIR$/labsite/bigdata/admin.py" />
-        <option value="$PROJECT_DIR$/labsite/bigdata/models/models.py" />
         <option value="$PROJECT_DIR$/labsite/labsite/wsgi.py" />
         <option value="$PROJECT_DIR$/labsite/bigdata/models/team_models.py" />
         <option value="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/team.html" />
@@ -159,6 +165,7 @@
         <option value="$PROJECT_DIR$/labsite/labsite/urls.py" />
         <option value="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/research.html" />
         <option value="$PROJECT_DIR$/labsite/bigdata/static/css/style.css" />
+        <option value="$PROJECT_DIR$/labsite/bigdata/models/models.py" />
         <option value="$PROJECT_DIR$/labsite/bigdata/views.py" />
       </list>
     </option>
@@ -263,7 +270,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="locale" />
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigdata" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="labsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="labsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="labsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bigdata" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -273,7 +306,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/labsite/bigdata/upload" />
     <property name="options.lastSelected" value="project.propVCSSupport.Ignored.Files" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -308,7 +341,9 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/labsite/bigdata/admin.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -717,7 +752,13 @@
       <option name="project" value="LOCAL" />
       <updated>1438784734378</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Merge branch 'dev' of github.com:sherrylml/labsite into dev&#10;&#10;Conflicts:&#10;&#9;labsite/bigdata/templates/bigdata/index.html&#10;&#9;labsite/bigdata/views.py&#10;&#9;labsite/labsite/settings.py&#10;">
+      <created>1438848765720</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1438848765720</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -725,26 +766,26 @@
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23620781" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23995715" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28280663" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29137653" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24263525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34922335" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997722" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Changes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23692636" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -798,17 +839,12 @@
     <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'dev' of github.com:sherrylml/labsite into dev&#10;&#10;Conflicts:&#10;&#9;labsite/bigdata/templates/bigdata/index.html&#10;&#9;labsite/bigdata/views.py&#10;&#9;labsite/labsite/settings.py&#10;" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="6" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/labsite/labsite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2670" max-vertical-offset="2850">
-          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/labsite/labsite/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="480">
@@ -1005,13 +1041,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labsite/bigdata/models/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2032" max-vertical-offset="2970">
-          <caret line="86" column="31" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/labsite/labsite/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3537736" vertical-offset="0" max-vertical-offset="848">
@@ -1092,7 +1121,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/labsite/bigdata/templates/bigdata/relax.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-35.897434" vertical-offset="6100" max-vertical-offset="8010">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6100" max-vertical-offset="8010">
           <caret line="250" column="24" selection-start-line="250" selection-start-column="24" selection-end-line="250" selection-end-column="24" />
           <folding />
         </state>
@@ -1102,7 +1131,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33374536" vertical-offset="0" max-vertical-offset="809">
           <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1110,14 +1138,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5754717" vertical-offset="82" max-vertical-offset="930">
           <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labsite/bigdata/templates/bigdata/index_e.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.538462" vertical-offset="2340" max-vertical-offset="10200">
-          <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1142,7 +1162,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/labsite/bigdata/templates/bigdata/research.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.0" vertical-offset="3879" max-vertical-offset="8130">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3879" max-vertical-offset="8130">
           <caret line="141" column="42" selection-start-line="141" selection-start-column="42" selection-end-line="141" selection-end-column="42" />
           <folding />
         </state>
@@ -1152,7 +1172,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="33131" max-vertical-offset="35340">
           <caret line="1083" column="13" selection-start-line="1083" selection-start-column="13" selection-end-line="1083" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1164,10 +1183,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/labsite/bigdata/models/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2567" max-vertical-offset="4410">
+          <caret line="98" column="18" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labsite/bigdata/templates/bigdata/index_e.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="32.307693" vertical-offset="4050" max-vertical-offset="13500">
+          <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python3/Lib/site-packages/django/conf/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19457547" vertical-offset="915" max-vertical-offset="5580">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/labsite/bigdata/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.093413" vertical-offset="112" max-vertical-offset="9630">
-          <caret line="65" column="84" selection-start-line="65" selection-start-column="84" selection-end-line="65" selection-end-column="84" />
+        <state vertical-scroll-proportion="-0.6790419" vertical-offset="1167" max-vertical-offset="9870">
+          <caret line="24" column="63" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
           <folding />
         </state>
       </provider>
