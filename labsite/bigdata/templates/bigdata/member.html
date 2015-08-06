@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8"/>
-		<title>大数据智能组</title>
+		<title>澶ф暟鎹櫤鑳界粍</title>
 		
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -79,20 +79,20 @@
                         <img src = "{% static "img/logo1.gif" %}" alt="logo"/>
 					</a>
 					<p class="logo" style="font-size: 26px; margin: 25px 0px 0px 20px;">
-						<strong>大数据智能组</strong>
+						<strong>澶ф暟鎹櫤鑳界粍</strong>
 					</p>
 					<a href="#" class="version">English  Version</a>	
 				</div>
 				<nav>
 					<ul id="nav" class="sf-menu">
-						<li><a href="{% url 'index' %}">首页</a></li>
-						<li><a href="{% url 'news' %}">新闻动态</a></li>
-						<li class="current-menu-item"><a href="{% url 'team' %}">科研队伍</a></li>
-						<li><a href="{% url 'research' %}">科学研究</a></li>
-						<li><a href="{% url 'academic' %}">学术交流</a></li>
-						<li><a href="{% url 'relax' 1 %}">活动休闲</a></li>
-						<li><a href="{% url 'join' %}">加入我们</a></li>
-						<li><a href="{% url 'about' %}">关于</a></li>
+						<li><a href="{% url 'index' %}">棣栭〉</a></li>
+						<li><a href="{% url 'news' %}">鏂伴椈锷ㄦ€?/a></li>
+						<li class="current-menu-item"><a href="{% url 'team' %}">绉戠爷阒熶紞</a></li>
+						<li><a href="{% url 'research' %}">绉戝镰旗┒</a></li>
+						<li><a href="{% url 'academic' %}">瀛︽湳浜ゆ祦</a></li>
+						<li><a href="{% url 'relax' 1 %}">娲诲姩浼戦棽</a></li>
+						<li><a href="{% url 'join' %}">锷犲叆鎴戜滑</a></li>
+						<li><a href="{% url 'about' %}">鍏充簬</a></li>
 					</ul>
 					<div id="combo-holder"></div>
 				</nav>			
@@ -115,7 +115,7 @@
 	        		<div class="clearfix">      		
 		        		<div class="page-block">
 		        			{% if member.image %}
-	        				    <img src = "{{ member.image.url }}" alt="头像"/>
+	        				    <img src = "{{ member.image.url }}" alt="澶村儚"/>
                             {% endif %}
 		        			<div class="imformation">
 		        				<span class="name">{{ member.name }}</span>
@@ -124,13 +124,13 @@
                                 {% endif %}
 		        				<div class="block-div"></div>
 
-		        				<span class="title">电子邮件:</span>
+		        				<span class="title">鐢靛瓙闾欢:</span>
 		        				<span>{{ member.Email }}</span><br>
-		        				<span class="title">通信地址:</span>
+		        				<span class="title">阃氢俊鍦板潃:</span>
 		        				<span>{{ member.address }}</span><br>
-		        				<span class="title">邮政编码:</span>
+		        				<span class="title">闾敛缂栫爜:</span>
 		        				<span>{{ member.postcode }}</span><br>
-		        				<span class="title">教育背景:</span>
+		        				<span class="title">鏁栾偛鑳屾櫙:</span>
 		        				<span>{{ member.edu_bg }}</span><br>
 		        				
 		        			</div>		        			
@@ -138,7 +138,7 @@
 	        		</div> 
 
 	        		<div class="page-block">
-	        			<h4>研究方向</h4>
+	        			<h4>镰旗┒鏂瑰悜</h4>
 	        			<div class="block-div"></div>
                         {% for rd in researchDir_list %}
                         {% if rd %}
@@ -148,7 +148,7 @@
 	        		</div>	
 
 	        		<div class="page-block">
-	        			<h4>工作经历</h4>
+	        			<h4>宸ヤ綔缁忓巻</h4>
 	        			<div class="block-div"></div>
 	        			{% for we in workExp_list %}
                         {% if we %}
@@ -158,7 +158,7 @@
 	        		</div>	
 
 	        		<div class="page-block">
-	        			<h4>专利与奖励</h4>
+	        			<h4>涓揿埄涓庡锷?/h4>
 	        			<div class="block-div"></div>
 	        			{% for pp in patentPri_list %}
                         {% if pp %}
@@ -168,7 +168,7 @@
 	        		</div>
 
 	        		<div class="page-block">
-	        			<h4>出版信息</h4>
+	        			<h4>鍑虹増淇℃伅</h4>
 	        			<div class="block-div"></div>
 	        			{% for pi in publishInfo_list %}
                         {% if pi %}
@@ -178,7 +178,7 @@
 	        		</div>	
 
 	        		<div class="page-block">
-	        			<h4>科研活动</h4>
+	        			<h4>绉戠爷娲诲姩</h4>
 	        			<div class="block-div"></div>
 	        			{% for ra in researchAct_list %}
                         {% if ra %}
@@ -206,25 +206,25 @@
 					<li class="first-col">
 						
 						<div class="widget-block">
-							<h4>友情链接</h4>
+							<h4>鍙嬫儏阈炬帴</h4>
 							<div class="recent-post clearfix">
 								<a href="http://www.cas.cn/" class="thumb"><img src = "{% static "img/logo2.jpg" %}" alt="link"/></a>
 								<div class="post-head">
-									<a href="http://www.cas.cn/">中国科学院</a>
+									<a href="http://www.cas.cn/">涓浗绉戝闄?/a>
 										<!-- <span> March 12, 2011</span> -->
 								</div>
 							</div>
 							<div class="recent-post clearfix">
 								<a href="http://www.iscas.ac.cn/" class="thumb"><img src = "{% static "img/logo3.gif" %}" alt="link"/></a>
 								<div class="post-head">
-									<a href="http://www.iscas.ac.cn/">中国科学院软件研究所</a>
+									<a href="http://www.iscas.ac.cn/">涓浗绉戝闄㈣蒋浠剁爷绌舵墍</a>
 									<!-- <span> March 12, 2011</span> -->
 								</div>
 							</div>
 							<div class="recent-post clearfix">
 								<a href="http://pminer.iscas.ac.cn/bbs/forum.php" class="thumb"><img src = "{% static "img/dummies/54x54.gif" %}" alt="link"/></a>
 								<div class="post-head">
-									<a href="http://pminer.iscas.ac.cn/bbs/forum.php">pminer论坛</a>
+									<a href="http://pminer.iscas.ac.cn/bbs/forum.php">pminer璁哄潧</a>
 								</div>
 							</div>
 						</div>
@@ -233,10 +233,10 @@
 					<li class="second-col">
 						
 						<div class="widget-block">
-							<h4>联系方式</h4>
+							<h4>鑱旗郴鏂瑰纺</h4>
 							<ul class="address-block">
-			        			<li class="address">北京市海淀区中关村南路4号</li>
-			        			<li>    邮编10010</li>
+			        			<li class="address">鍖椾含甯傛捣娣€鍖轰腑鍏虫潙鍗楄矾4鍙?/li>
+			        			<li>    闾紪10010</li>
 			        			<li class="phone">+123 456 789</li>
 			        			<li class="mobile">+123 456 789</li>
 			        			<li class="email"><a href="mailto:email@server.com">email@server.com</a></li>
@@ -262,8 +262,8 @@
 				
 				<!-- bottom -->
 				<div class="footer-bottom">
-					<div class="left">中国科学院软件研究所大数据信息处理研究组 <a href="{% url 'index' %}" target="_blank" title="实验室主页">主页</a><br>
-						访问量：9999&nbsp&nbsp <a href="#" target="_blank" title="后台管理">后台管理</a>
+					<div class="left">涓浗绉戝闄㈣蒋浠剁爷绌舵墍澶ф暟鎹俊鎭鐞嗙爷绌剁粍 <a href="{% url 'index' %}" target="_blank" title="瀹为獙瀹や富椤?>涓婚〉</a><br>
+						璁块棶閲忥细9999&nbsp&nbsp <a href="#" target="_blank" title="鍚庡彴绠＄悊">鍚庡彴绠＄悊</a>
 					</div>
 				</div>	
 				<!-- ENDS bottom -->		

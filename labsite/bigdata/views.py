@@ -30,8 +30,6 @@ def index(request):
         # else:
         # return HttpResponse("You prefer to read another language.")
     return render(request, 'bigdata/index.html', locals())
-    # return render_to_response('bigdata/404.html', {'available_languages': ['en'], },
-    # RequestContext(request))
 
 
 def index_e(request):
@@ -55,6 +53,7 @@ def index_e(request):
         lab_intro = "Please write the information about lab at first"
     # print(request.session[LANGUAGE_SESSION_KEY])
     return render(request, 'bigdata/index_e.html', locals())
+    # return render_to_response('bigdata/index_e.html', locals(), RequestContext(request))
 
 
 def news(request):

@@ -83,9 +83,9 @@
                 <strong>{% trans 'Big Data Intelligence Group' %}</strong>
             </p>
 {#            <a href="{% url 'index' %}" class="version">{% trans 'chinese page' %}</a>#}
-            <form action="{% url 'index' %}" method="post" class="form_style">
+            <form action="{% url 'set_language' %}" method="post" class="form_style">
                 {% csrf_token %}
-                <input name="next" type="hidden" value="{{ redirect_to }}"/>
+{#                <input name="next" type="hidden" value="{{ redirect_to }}"/>#}
                 <select name="language">
                     {% for language in LANGUAGES %}
                         <option value="{{ language.0 }}"{% if language.0 == LANGUAGE_CODE %} selected="selected"{% endif %}>

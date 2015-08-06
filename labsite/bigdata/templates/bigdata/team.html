@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8"/>
-		<title>大数据智能组</title>
+		<title>澶ф暟鎹櫤鑳界粍</title>
 		
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -79,20 +79,20 @@
                         <img src = "{% static "img/logo1.gif" %}" alt="logo"/>
 					</a>
 					<p class="logo" style="font-size: 26px; margin: 25px 0px 0px 20px;">
-						<strong>大数据智能组</strong>
+						<strong>澶ф暟鎹櫤鑳界粍</strong>
 					</p>
 					<a href="#" class="version">English  Version</a>	
 				</div>
 				<nav>
 					<ul id="nav" class="sf-menu">
-						<li><a href="{% url 'index' %}">首页</a></li>
-						<li><a href="{% url 'news' %}">新闻动态</a></li>
-						<li class="current-menu-item"><a href="{% url 'team' %}">科研队伍</a></li>
-						<li><a href="{% url 'research' %}">科学研究</a></li>
-						<li><a href="{% url 'academic' %}">学术交流</a></li>
-						<li><a href="{% url 'relax' 1 %}">活动休闲</a></li>
-						<li><a href="{% url 'join' %}">加入我们</a></li>
-						<li><a href="{% url 'about' %}">关于</a></li>
+						<li><a href="{% url 'index' %}">棣栭〉</a></li>
+						<li><a href="{% url 'news' %}">鏂伴椈锷ㄦ€?/a></li>
+						<li class="current-menu-item"><a href="{% url 'team' %}">绉戠爷阒熶紞</a></li>
+						<li><a href="{% url 'research' %}">绉戝镰旗┒</a></li>
+						<li><a href="{% url 'academic' %}">瀛︽湳浜ゆ祦</a></li>
+						<li><a href="{% url 'relax' 1 %}">娲诲姩浼戦棽</a></li>
+						<li><a href="{% url 'join' %}">锷犲叆鎴戜滑</a></li>
+						<li><a href="{% url 'about' %}">鍏充簬</a></li>
 					</ul>
 					<div id="combo-holder"></div>
 				</nav>			
@@ -111,27 +111,27 @@
 
 				<!-- masthead -->
 				<div class="masthead clearfix">
-					<h1>科研队伍</h1><span class="subheading">team</span>
+					<h1>绉戠爷阒熶紞</h1><span class="subheading">team</span>
 				</div>
 				<div class='mh-div'></div>
 				<!-- ENDS masthead -->
 				<!-- page content -->
 	        	<div id="page-content" class="clearfix"> 
-	        		<h4>教师</h4>
+	        		<h4>鏁椤笀</h4>
 	        		<!-- cards -->
 	        		<div class="clearfix" >
-	        			<!-- card部分该成django语法时可使用for循环读取数据库内容 -->
+	        			<!-- card閮ㄥ垎璇ユ垚django璇硶镞跺彲浣跨敤for寰幆璇诲彇鏁版嵁搴揿唴瀹?-->
 	        			<div class="card">
 	        				{% for professor in professors_list %}
 	        				{% if professor %}
 	        				    {% if professor.image %}
-	        				    <img src = "{{ professor.image.url }}" alt="头像"/>
+	        				    <img src = "{{ professor.image.url }}" alt="澶村儚"/>
                                 {% endif %}
 	        				<div class="card-content">
 	        					<span>{{ professor.name }}</span><br>
 	        					<span>{{ professor.job_title }}</span><br>
 {#	        					<span>{{ professor.Email }}</span><br>#}<br>
-	        					<a style="text-decoration: underline" href="professor/{{ professor.id }}">主页</a>
+	        					<a style="text-decoration: underline" href="professor/{{ professor.id }}">涓婚〉</a>
 	        				</div>
 	        				{% endif %}
 	        				{% endfor %}
@@ -140,19 +140,19 @@
 	        		<!-- ENDS cards -->
 	        		<div class='section-div'></div>
 
-	        		<h4>博士研究生</h4>
+	        		<h4>鍗氩＋镰旗┒鐢?/h4>
 	        		<div class="clearfix" >
 	        			<div class="card">
 	        				{% for doctor in doctors_list %}
 	        				{% if doctor %}
                                 {% if doctor.image %}
-	        				    <img src = "{{ doctor.image.url }}" alt="头像"/>
+	        				    <img src = "{{ doctor.image.url }}" alt="澶村儚"/>
                                 {% endif %}
 	        				<div class="card-content">
 	        					<span>{{ doctor.name }}</span><br>
 	        					<span>{{ doctor.job_title }}</span><br>
 {#	        					<span>{{ doctor.Email }}</span><br>#}<br>
-	        					<a style="text-decoration: underline" href="postgraduate/{{ doctor.id }}">主页</a>
+	        					<a style="text-decoration: underline" href="postgraduate/{{ doctor.id }}">涓婚〉</a>
 	        				</div>
 	        				{% endif %}
 	        				{% endfor %}
@@ -160,19 +160,19 @@
 		        	</div>
 	        		<div class='section-div'></div>
 
-	        		<h4>硕士研究生</h4>
+	        		<h4>纭曞＋镰旗┒鐢?/h4>
 	        		<div class="clearfix" >
 	        			<div class="card">
 	        				{% for master in masters_list %}
 	        				{% if master %}
 	        				    {% if master.image %}
-	        				    <img src = "{{ master.image.url }}" alt="头像"/>
+	        				    <img src = "{{ master.image.url }}" alt="澶村儚"/>
                                 {% endif %}
 	        				<div class="card-content">
 	        					<span>{{ master.name }}</span><br>
 	        					<span>{{ master.job_title }}</span><br>
 {#	        					<span>{{ master.Email }}</span><br>#}<br>
-	        					<a style="text-decoration: underline" href="postgraduate/{{ master.id }}">主页</a>
+	        					<a style="text-decoration: underline" href="postgraduate/{{ master.id }}">涓婚〉</a>
 	        				</div>
 	        				{% endif %}
 	        				{% endfor %}
@@ -199,25 +199,25 @@
 					<li class="first-col">
 						
 						<div class="widget-block">
-							<h4>友情链接</h4>
+							<h4>鍙嬫儏阈炬帴</h4>
 							<div class="recent-post clearfix">
 								<a href="http://www.cas.cn/" class="thumb"><img src = "{% static "img/logo2.jpg" %}" alt="link"/></a>
 								<div class="post-head">
-									<a href="http://www.cas.cn/">中国科学院</a>
+									<a href="http://www.cas.cn/">涓浗绉戝闄?/a>
 										<!-- <span> March 12, 2011</span> -->
 								</div>
 							</div>
 							<div class="recent-post clearfix">
 								<a href="http://www.iscas.ac.cn/" class="thumb"><img src = "{% static "img/logo3.gif" %}" alt="link"/></a>
 								<div class="post-head">
-									<a href="http://www.iscas.ac.cn/">中国科学院软件研究所</a>
+									<a href="http://www.iscas.ac.cn/">涓浗绉戝闄㈣蒋浠剁爷绌舵墍</a>
 									<!-- <span> March 12, 2011</span> -->
 								</div>
 							</div>
 							<div class="recent-post clearfix">
 								<a href="http://pminer.iscas.ac.cn/bbs/forum.php" class="thumb"><img src = "{% static "img/dummies/54x54.gif" %}" alt="link"/></a>
 								<div class="post-head">
-									<a href="http://pminer.iscas.ac.cn/bbs/forum.php">pminer论坛</a>
+									<a href="http://pminer.iscas.ac.cn/bbs/forum.php">pminer璁哄潧</a>
 								</div>
 							</div>
 						</div>
@@ -226,10 +226,10 @@
 					<li class="second-col">
 						
 						<div class="widget-block">
-							<h4>联系方式</h4>
+							<h4>鑱旗郴鏂瑰纺</h4>
 							<ul class="address-block">
-			        			<li class="address">北京市海淀区中关村南路4号</li>
-			        			<li>    邮编10010</li>
+			        			<li class="address">鍖椾含甯傛捣娣€鍖轰腑鍏虫潙鍗楄矾4鍙?/li>
+			        			<li>    闾紪10010</li>
 			        			<li class="phone">+123 456 789</li>
 			        			<li class="mobile">+123 456 789</li>
 			        			<li class="email"><a href="mailto:email@server.com">email@server.com</a></li>
@@ -255,8 +255,8 @@
 				
 				<!-- bottom -->
 				<div class="footer-bottom">
-					<div class="left">中国科学院软件研究所大数据信息处理研究组 <a href="{% url 'index' %}" target="_blank" title="实验室主页">主页</a><br>
-						访问量：9999&nbsp&nbsp <a href="#" target="_blank" title="后台管理">后台管理</a>
+					<div class="left">涓浗绉戝闄㈣蒋浠剁爷绌舵墍澶ф暟鎹俊鎭鐞嗙爷绌剁粍 <a href="{% url 'index' %}" target="_blank" title="瀹为獙瀹や富椤?>涓婚〉</a><br>
+						璁块棶閲忥细9999&nbsp&nbsp <a href="#" target="_blank" title="鍚庡彴绠＄悊">鍚庡彴绠＄悊</a>
 					</div>
 				</div>	
 				<!-- ENDS bottom -->		
