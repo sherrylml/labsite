@@ -297,9 +297,7 @@ def changeHomepage(request):
     '''
     if request.method == 'POST':
         language = request.POST['language']
-        if language == 'en':
-            return HttpResponseRedirect('/')
-        elif language == 'zh':
+        if language == 'zh':
             return HttpResponseRedirect('/chinesepage')
         else:
            return HttpResponseRedirect('/')
