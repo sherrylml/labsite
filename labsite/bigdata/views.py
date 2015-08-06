@@ -63,7 +63,7 @@ def news(request):
     '''
     news_list = News.objects.order_by('-time_stamp')
     notices_list = Notices.objects.order_by('-time_stamp')
-    return render_to_response('bigdata/news.html', locals())
+    return render_to_response('bigdata/news.html', locals(), RequestContext(request))
 
 
 def news_detail(request, id):
@@ -98,7 +98,7 @@ def news_detail(request, id):
              11: 'NOV', 12: 'DEC'}
     Context = {'news': news, 'Month': Month, 'has_previous': has_previous, 'has_next': has_next,
                'previous_id': previous_id, 'next_id': next_id}
-    return render_to_response('bigdata/news_detail.html', Context)
+    return render_to_response('bigdata/news_detail.html', Context, RequestContext(request))
 
 
 def notice_detail(request, id):
@@ -133,7 +133,7 @@ def notice_detail(request, id):
              11: 'NOV', 12: 'DEC'}
     Context = {'notice': notice, 'Month': Month, 'has_previous': has_previous, 'has_next': has_next,
                'previous_id': previous_id, 'next_id': next_id}
-    return render_to_response('bigdata/notice_detail.html', Context)
+    return render_to_response('bigdata/notice_detail.html', Context, RequestContext(request))
 
 
 def team(request):
@@ -143,7 +143,7 @@ def team(request):
     professors_list = Professor.objects.all()
     masters_list = Postgraduate.objects.filter(educational_level='master')
     doctors_list = Postgraduate.objects.filter(educational_level='master')
-    return render_to_response('bigdata/team.html', locals())
+    return render_to_response('bigdata/team.html', locals(), RequestContext(request))
 
 
 def member_professor(request, id):
@@ -157,7 +157,7 @@ def member_professor(request, id):
     patentPri_list = member.patpri_set.all()
     publishInf_list = member.pubinf_set.all()
     researchAct_list = member.resact_set.all()
-    return render_to_response('bigdata/member.html', locals())
+    return render_to_response('bigdata/member.html', locals(), RequestContext(request))
 
 
 def member_postgraduate(request, id):
@@ -171,7 +171,7 @@ def member_postgraduate(request, id):
     patentPri_list = member.patpri1_set.all()
     publishInf_list = member.pubinf1_set.all()
     researchAct_list = member.resact1_set.all()
-    return render_to_response('bigdata/member.html', locals())
+    return render_to_response('bigdata/member.html', locals(), RequestContext(request))
 
 
 class ResearchDirection():
@@ -194,7 +194,7 @@ def research(request):
     else:
         research_achievement = " "
     Context = {'direction_list': direction_list, 'research_achievement': research_achievement}
-    return render_to_response('bigdata/research.html', Context)
+    return render_to_response('bigdata/research.html', Context, RequestContext(request))
 
 
 def academic(request):
@@ -203,7 +203,7 @@ def academic(request):
     '''
     academic_list = Academic.objects.all()
     meetings_list = Meetings.objects.all()
-    return render_to_response('bigdata/academic.html', locals())
+    return render_to_response('bigdata/academic.html', locals(), RequestContext(request))
 
 
 def academic_detail(request, id):
@@ -238,8 +238,7 @@ def academic_detail(request, id):
              11: 'NOV', 12: 'DEC'}
     Context = {'academic': academic, 'Month': Month, 'has_previous': has_previous, 'has_next': has_next,
                'previous_id': previous_id, 'next_id': next_id}
-    return render_to_response('bigdata/academic_detail.html', Context)
-
+    return render_to_response('bigdata/academic_detail.html', Context, RequestContext(request))
 
 def relax(request, id):
     '''

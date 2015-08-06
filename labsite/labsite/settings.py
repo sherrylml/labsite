@@ -89,7 +89,7 @@ LANGUAGES = (
     ('zh', '简体中文'),
     # ('zh-cn', '简体中文'),
 )
-LOCALE_PATHS = './locale'
+LOCALE_PATHS = '/locale/'
 
 LANGUAGE_CODE = 'en'
 # LANGUAGE_CODE = 'zh-cn'
