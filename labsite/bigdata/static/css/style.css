@@ -287,7 +287,7 @@ header .version{
 
 #slider-holder #headline2{
 	float: left;
-	margin: 0px 40px;
+	margin: 0px 40px 0px 20px;
 	/*width: 750px; */
 }
 
@@ -1080,8 +1080,8 @@ footer .wrapper{
 .nav-pills{
 	position: absolute;
 	top: 50px;
-	left: -100px;
-	width: 100px;
+	left: -120px;
+	width: 120px;
 	text-align: center;
 }
 .nav-pills>li{

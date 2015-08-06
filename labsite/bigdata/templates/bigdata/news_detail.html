@@ -1,10 +1,10 @@
+{% load i18n %}
 <!doctype html>
 <html class="no-js">
 
 	<head>
 		<meta charset="utf-8"/>
-		<title>澶ф暟鎹櫤鑳界粍</title>
-		
+		<title>{% trans 'Big Data Intelligence Group' %}</title>
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -68,35 +68,45 @@
 
 	</head>
 	
-<body>
-		
-		
-<header>
+	<!-- <body lang="en"> -->
+	<body>
+		<header>
 			<div class="wrapper clearfix">
 				<div>
-					<a href="{% url 'index' %}" class="logo">
+					<a href="{% url 'index_e' %}" class="logo">
                         {% load staticfiles %}
                         <img src = "{% static "img/logo1.gif" %}" alt="logo"/>
 					</a>
 					<p class="logo" style="font-size: 26px; margin: 25px 0px 0px 20px;">
-						<strong>澶ф暟鎹櫤鑳界粍</strong>
+						<strong>{% trans 'Big Data Intelligence Group' %}</strong>
 					</p>
-					<a href="#" class="version">English  Version</a>	
+					<form action="{% url 'set_language' %}" method="post" class="form_style">
+                    {% csrf_token %}
+                    <input name="next" type="hidden" value="{{ redirect_to }}"/>
+                    <select name="language">
+                        {% for language in LANGUAGES %}
+                            <option value="{{ language.0 }}"{% if language.0 == LANGUAGE_CODE %} selected="selected"{% endif %}>
+                            {{ language.1 }} ({{ language.0 }})
+                        {% endfor %}
+                    </select>
+                    <input type="submit" value="Go"/>
+                </form>
+
 				</div>
 				<nav>
 					<ul id="nav" class="sf-menu">
-						<li><a href="{% url 'index' %}">棣栭〉</a></li>
-						<li class="current-menu-item"><a href="{% url 'news' %}">鏂伴椈锷ㄦ€?/a>
+						<li><a href="{% url 'index_e' %}">{% trans 'Home Page' %}</a></li>
+						<li class="current-menu-item"><a href="{% url 'news' %}">{% trans 'News' %}</a>
 						</li>
-						<li><a href="{% url 'team' %}">绉戠爷阒熶紞</a></li>
-						<li><a href="{% url 'research' %}">绉戝镰旗┒</a>
+						<li><a href="{% url 'team' %}">{% trans 'People' %}</a></li>
+						<li><a href="{% url 'research' %}">{% trans 'Research' %}</a>
 						</li>
-						<li><a href="{% url 'academic' %}">瀛︽湳浜ゆ祦</a>
+						<li><a href="{% url 'academic' %}">{% trans 'Academic Exchange' %}</a>
 						</li>
-						<li><a href="{% url 'relax' 1 %}">娲诲姩浼戦棽</a></li>
-						<li><a href="{% url 'join' %}">锷犲叆鎴戜滑</a>
+						<li><a href="{% url 'relax' 1 %}">{% trans 'Entertainment' %}</a></li>
+						<li><a href="{% url 'join' %}">{% trans 'Join Us' %}</a>
 						</li>
-						<li><a href="{% url 'about' %}">鍏充簬</a></li>
+						<li><a href="{% url 'about' %}">{% trans 'About' %}</a></li>
 					</ul>
 					<div id="combo-holder"></div>
 				</nav>			
@@ -107,15 +117,14 @@
 				
 			</div>
 		</header>
-		
-		
+        
 		<!-- MAIN -->
 		<div id="main">	
 			<div class="wrapper clearfix">
 
 				<!-- masthead -->
 				<div class="masthead clearfix">
-					<h2>链€鏂板姩镐?/h2><span class="subheading">news</span>
+					<h2>{% trans 'News' %}</h2>
 				</div>
 				<div class='mh-div'></div>
 				<!-- ENDS masthead -->
@@ -149,10 +158,10 @@
 					<!-- page-navigation -->
 					<div class="page-navigation clearfix">
                         {% if has_previous %}
-						<div class="nav-next"><a href="{% url 'news_detail' previous_id  %}">&#8592; 涓娄竴绡?</a></div>
+						<div class="nav-next"><a href="{% url 'news_detail' previous_id  %}">&#8592; {% trans 'Previous' %} </a></div>
                         {% endif %}
                         {% if has_next %}
-						<div class="nav-previous"><a href="{% url 'news_detail' next_id  %}">涓嬩竴绡?&#8594;</a></div>
+						<div class="nav-previous"><a href="{% url 'news_detail' next_id  %}">{% trans 'Next' %} &#8594;</a></div>
                         {% endif %}
 					</div>
 					<!--ENDS page-navigation -->
@@ -169,7 +178,6 @@
 		<!-- ENDS MAIN -->
 		
 		
-	
 		<footer>	
 			
 			<div class="wrapper clearfix">
@@ -179,25 +187,25 @@
 					<li class="first-col">
 						
 						<div class="widget-block">
-							<h4>鍙嬫儏阈炬帴</h4>
+							<h4>{% trans 'Links' %}</h4>
 							<div class="recent-post clearfix">
 								<a href="http://www.cas.cn/" class="thumb"><img src = "{% static "img/logo2.jpg" %}" alt="link"/></a>
 								<div class="post-head">
-									<a href="http://www.cas.cn/">涓浗绉戝闄?/a>
+									<a href="http://www.cas.cn/"> {% trans 'Chinese Academy of Sciences' %}</a>
 										<!-- <span> March 12, 2011</span> -->
 								</div>
 							</div>
 							<div class="recent-post clearfix">
 								<a href="http://www.iscas.ac.cn/" class="thumb"><img src = "{% static "img/logo3.gif" %}" alt="link"/></a>
 								<div class="post-head">
-									<a href="http://www.iscas.ac.cn/">涓浗绉戝闄㈣蒋浠剁爷绌舵墍</a>
+									<a href="http://www.iscas.ac.cn/">{% trans 'Institute of Software, Chinese Academy of Sciences' %}</a>
 									<!-- <span> March 12, 2011</span> -->
 								</div>
 							</div>
 							<div class="recent-post clearfix">
 								<a href="http://pminer.iscas.ac.cn/bbs/forum.php" class="thumb"><img src = "{% static "img/dummies/54x54.gif" %}" alt="link"/></a>
 								<div class="post-head">
-									<a href="http://pminer.iscas.ac.cn/bbs/forum.php">pminer璁哄潧</a>
+									<a href="http://pminer.iscas.ac.cn/bbs/forum.php">pminer {% trans 'forum' %}</a>
 								</div>
 							</div>
 						</div>
@@ -206,10 +214,10 @@
 					<li class="second-col">
 						
 						<div class="widget-block">
-							<h4>鑱旗郴鏂瑰纺</h4>
+							<h4>{% trans 'Contact Us' %}</h4>
 							<ul class="address-block">
-			        			<li class="address">鍖椾含甯傛捣娣€鍖轰腑鍏虫潙鍗楄矾4鍙?/li>
-			        			<li>    闾紪10010</li>
+			        			<li class="address">{% trans 'Haidian district of Beijing zhongguancun south road no. 4' %}</li>
+			        			<li>    {% trans 'postcode' %}: 10010</li>
 			        			<li class="phone">+123 456 789</li>
 			        			<li class="mobile">+123 456 789</li>
 			        			<li class="email"><a href="mailto:email@server.com">email@server.com</a></li>
@@ -235,8 +243,8 @@
 				
 				<!-- bottom -->
 				<div class="footer-bottom">
-					<div class="left">涓浗绉戝闄㈣蒋浠剁爷绌舵墍澶ф暟鎹俊鎭鐞嗙爷绌剁粍 <a href="{% url 'index' %}" target="_blank" title="瀹为獙瀹や富椤?>涓婚〉</a><br>
-						璁块棶閲忥细9999&nbsp&nbsp <a href="#" target="_blank" title="鍚庡彴绠＄悊">鍚庡彴绠＄悊</a>
+					<div class="left">Big Data Intelligence Group <a href="{%url 'index_e'%}" target="_blank" title="Homepage">{% trans 'HomePage' %}</a><br>
+						<a href="#" target="_blank" title="admin">{% trans 'Admin Page' %}</a>
 					</div>
 				</div>	
 				<!-- ENDS bottom -->		

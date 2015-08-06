@@ -43,71 +43,71 @@ msgstr ""
 
 #: .\templates\bigdata\about.html:98
 msgid "Home Page"
-msgstr ""
+msgstr "首页"
 
 #: .\templates\bigdata\about.html:99
 msgid "新闻"
-msgstr ""
+msgstr "News"
 
 #: .\templates\bigdata\about.html:101
 msgid "People"
-msgstr ""
+msgstr "科研团队"
 
 #: .\templates\bigdata\about.html:102
 msgid "Research"
-msgstr ""
+msgstr "科学研究"
 
 #: .\templates\bigdata\about.html:104
 msgid "Academic Exchange"
-msgstr ""
+msgstr "学术交流"
 
 #: .\templates\bigdata\about.html:106
 msgid "Entertainment"
-msgstr ""
+msgstr "活动休闲"
 
 #: .\templates\bigdata\about.html:107
 msgid "Join Us"
-msgstr ""
+msgstr "加入我们"
 
 #: .\templates\bigdata\about.html:109
 msgid "About"
-msgstr ""
+msgstr "关于"
 
 #: .\templates\bigdata\about.html:134
 msgid "Information"
-msgstr ""
+msgstr "简介"
 
 #: .\templates\bigdata\about.html:168
 msgid "Links"
-msgstr ""
+msgstr "友情链接"
 
 #: .\templates\bigdata\about.html:172
 msgid "Chinese Academy of Sciences"
-msgstr ""
+msgstr "中国科学院"
 
 #: .\templates\bigdata\about.html:179
 msgid "Institute of Software, Chinese Academy of Sciences"
-msgstr ""
+msgstr "中科院软件研究所"
 
 #: .\templates\bigdata\about.html:186
 msgid "forum"
-msgstr ""
+msgstr "论坛"
 
 #: .\templates\bigdata\about.html:195
 msgid "Contact Us"
-msgstr ""
+msgstr "联系我们"
 
 #: .\templates\bigdata\about.html:197
 msgid "Haidian district of Beijing zhongguancun south road no. 4"
-msgstr ""
+msgstr "北京市海淀区中国村南路4号"
 
 #: .\templates\bigdata\about.html:224
 msgid "HomePage"
-msgstr ""
+msgstr "实验室主页"
 
 #: .\templates\bigdata\about.html:225
 msgid "Admin Page"
-msgstr ""
+msgstr "后台管理"
 
 #: .\templates\bigdata\test.html:5
 msgid "test for i18n"
