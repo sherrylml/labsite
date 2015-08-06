@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, render_to_response
 from django.template import RequestContext
 from django.utils.translation import LANGUAGE_SESSION_KEY
@@ -290,5 +290,19 @@ def about(request):
     lab_intro = lab.introduction
     Context = {'lab_intro': lab_intro}
     return render(request, 'bigdata/about.html', Context)
+
+def changeHomepage(request):
+    '''
+    首页中英文交替
+    '''
+    if request.method == 'POST':
+        language = request.POST['language']
+        if language == 'en':
+            return HttpResponseRedirect('/')
+        elif language == 'zh':
+            return HttpResponseRedirect('/chinesepage')
+        else:
+           return HttpResponseRedirect('/')
+
 
 

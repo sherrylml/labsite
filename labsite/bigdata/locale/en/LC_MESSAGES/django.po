@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-06 00:08+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\models\team_models.py:6
+msgid "name"
+msgstr ""
+
+#: .\models\team_models.py:10
+msgid "address"
+msgstr ""
+
+#: .\models\team_models.py:11 .\templates\bigdata\about.html:198
+msgid "postcode"
+msgstr ""
+
+#: .\models\team_models.py:12
+msgid "educational_background"
+msgstr ""
+
+#: .\models\team_models.py:13
+msgid "photo"
+msgstr ""
+
+#: .\templates\bigdata\about.html:7 .\templates\bigdata\about.html.py:81
+#: .\templates\bigdata\index_e.html:83
+msgid "Big Data Intelligence Group"
+msgstr ""
+
+#: .\templates\bigdata\about.html:98
+msgid "Home Page"
+msgstr ""
+
+#: .\templates\bigdata\about.html:99
+msgid "新闻"
+msgstr ""
+
+#: .\templates\bigdata\about.html:101
+msgid "People"
+msgstr ""
+
+#: .\templates\bigdata\about.html:102
+msgid "Research"
+msgstr ""
+
+#: .\templates\bigdata\about.html:104
+msgid "Academic Exchange"
+msgstr ""
+
+#: .\templates\bigdata\about.html:106
+msgid "Entertainment"
+msgstr ""
+
+#: .\templates\bigdata\about.html:107
+msgid "Join Us"
+msgstr ""
+
+#: .\templates\bigdata\about.html:109
+msgid "About"
+msgstr ""
+
+#: .\templates\bigdata\about.html:134
+msgid "Information"
+msgstr ""
+
+#: .\templates\bigdata\about.html:168
+msgid "Links"
+msgstr ""
+
+#: .\templates\bigdata\about.html:172
+msgid "Chinese Academy of Sciences"
+msgstr ""
+
+#: .\templates\bigdata\about.html:179
+msgid "Institute of Software, Chinese Academy of Sciences"
+msgstr ""
+
+#: .\templates\bigdata\about.html:186
+msgid "forum"
+msgstr ""
+
+#: .\templates\bigdata\about.html:195
+msgid "Contact Us"
+msgstr ""
+
+#: .\templates\bigdata\about.html:197
+msgid "Haidian district of Beijing zhongguancun south road no. 4"
+msgstr ""
+
+#: .\templates\bigdata\about.html:224
+msgid "HomePage"
+msgstr ""
+
+#: .\templates\bigdata\about.html:225
+msgid "Admin Page"
+msgstr ""
+
+#: .\templates\bigdata\test.html:5
+msgid "test for i18n"
+msgstr ""

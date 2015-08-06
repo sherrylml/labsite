@@ -39,6 +39,9 @@ urlpatterns = patterns(
     url(r'^admin/', include(admin.site.urls), name='admin'),
 
     url(r'^i18n/', include('django.conf.urls.i18n')),
+    # url(r'^set_language/$', 'django.views.i18n.set_language', name='set_language'),
+
+    url(r'^changeHomepage/', 'bigdata.views.changeHomepage', name='changeHomepage'),
 )
 
 # + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
