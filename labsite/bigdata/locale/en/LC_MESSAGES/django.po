@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-07 13:26+0800\n"
+"POT-Creation-Date: 2015-08-07 15:54+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -212,6 +212,14 @@ msgstr ""
 
 #: .\templates\bigdata\academic.html:155 .\templates\bigdata\academic.html:178
 msgid "Conferences"
+msgstr ""
+
+#: .\templates\bigdata\index_.html:83
+msgid "Big Data Intelligence Group????"
+msgstr ""
+
+#: .\templates\bigdata\index_e.html:83
+msgid "Big Data Intelligence Group��"
 msgstr ""
 
 #: .\templates\bigdata\join.html:134 .\templates\bigdata\join.html.py:181
