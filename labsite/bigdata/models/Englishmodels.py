@@ -4,7 +4,7 @@ from django.db import models
 from django.utils import timezone
 
 
-class Base(models.Model):
+class BaseEn(models.Model):
     '''
     基类
     '''
@@ -20,76 +20,76 @@ class Base(models.Model):
         return self.title
 
 
-class News(Base):
+class NewsEn(BaseEn):
     '''
     新闻模板
     '''
     picture = models.ImageField(upload_to='news', blank=True, null=True, verbose_name='照片')
 
     class Meta:
-        verbose_name = "新闻动态"
+        verbose_name = "新闻动态(English)"
 
 
-class Notices(Base):
+class NoticesEn(BaseEn):
     '''
     通知模板
     '''
     picture = models.ImageField(upload_to='notices', blank=True, null=True, verbose_name='照片')
 
     class Meta:
-        verbose_name = "通知公告"
+        verbose_name = "通知公告(English)"
 
 
-class Academic(Base):
+class AcademicEn(BaseEn):
     '''
     学术交流
     '''
     picture = models.ImageField(upload_to='academic', blank=True, null=True, verbose_name='照片')
 
     class Meta:
-        verbose_name = "学术交流活动"
+        verbose_name = "学术交流活动(English)"
 
 
-class Meetings(Base):
+class MeetingsEn(BaseEn):
     '''
     学术会议
     '''
     link = models.URLField(blank=True, verbose_name='url_link')
 
     class Meta:
-        verbose_name = "近期学术会议"
+        verbose_name = "近期学术会议(English)"
 
 
-class Relax(Base):
+class RelaxEn(BaseEn):
     '''
     活动休闲
     '''
     picture = models.ImageField(upload_to='relax', blank=True, null=True, verbose_name='照片')
 
     class Meta:
-        verbose_name = "休闲活动"
+        verbose_name = "休闲活动(English)"
 
 
-class Join1(Base):
+class Join1En(BaseEn):
     '''
     招生信息
     '''
 
     class Meta:
-        verbose_name = "招生信息"
+        verbose_name = "招生信息(English)"
 
 
-class Join2(Base):
+class Join2En(BaseEn):
     '''
     招聘信息
     '''
 
     class Meta:
-        verbose_name = "人才招聘"
+        verbose_name = "人才招聘(English)"
 
 
 # 相关信息
-class Lab(models.Model):
+class LabEn(models.Model):
     '''
     简介+研究方向+研究成果
     '''
@@ -97,36 +97,36 @@ class Lab(models.Model):
     achievement = models.TextField(null=True)
 
     class Meta:
-        verbose_name = "研究组相关信息"
+        verbose_name = "研究组相关信息(English)"
 
     def __str__(self):
         # return "实验室相关信息" + str(self.id)
-        return "研究组相关信息"
+        return "研究组相关信息(English)"
 
 
 
-class Directions(models.Model):
+class DirectionsEn(models.Model):
     research_direction = models.TextField(blank=True, verbose_name='研究方向')
-    lab = models.ForeignKey(Lab)
+    lab = models.ForeignKey(LabEn)
 
 
     def __str__(self):
         return str(self.id)
 
     class Meta:
-        db_table = 'Directions'
+        db_table = 'DirectionsEn'
         # db_table = self.name
 
 
-class Images(models.Model):
+class ImagesEn(models.Model):
     images = models.ImageField(upload_to='research_direction', blank=True, null=True, verbose_name='图片')
-    directions = models.ForeignKey(Directions)
+    directions = models.ForeignKey(DirectionsEn)
     # lab = models.ForeignKey(Lab)
 
     def __str__(self):
         return str(self.id)
 
     class Meta:
-        db_table = 'Images'
+        db_table = 'ImagesEn'
         # db_table = self.name
 
