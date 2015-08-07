@@ -55,6 +55,7 @@ def index_e(request):
         request.session[LANGUAGE_SESSION_KEY] = language
 
     return render(request, 'bigdata/index_e.html', locals())
+    # return render_to_response('bigdata/index_e.html', locals(), RequestContext(request))
 
 
 def news(request):

@@ -2,8 +2,8 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-    {#    <meta charset="utf-8"/>#}
-    <meta http-equiv="Content-Type" content="text/xml; charset=utf-8"/>
+    {#    <meta charset="gbk"/>#}
+    <meta http-equiv="Content-Type" content="text/xml; charset=gbk"/>
     <title>Big Data Intelligence Group</title>
 
     <!--[if lt IE 9]>
@@ -80,14 +80,16 @@
             </a>
 
             <p class="logo" style="font-size: 26px; margin: 25px 0px 0px 20px;">
-                <strong>{% trans 'Big Data Intelligence Group' %}</strong>
+                <strong>{% trans 'Big Data Intelligence GroupÖÐÎÄ' %}</strong>
             </p>
+
             <form action="{% url 'changeHomepage' %}" method="post" class="form_style">
                 {% csrf_token %}
                 <input name="next" type="hidden" value="{{ redirect_to }}"/>
                 <select name="language">
                     {% for language in LANGUAGES %}
-                        <option value="{{ language.0 }}"{% if language.0 == LANGUAGE_CODE %} selected="selected"{% endif %}>
+                        <option value="{{ language.0 }}"{% if language.0 == LANGUAGE_CODE %}
+                                selected="selected"{% endif %}>
                         {{ language.1 }} ({{ language.0 }})
                     {% endfor %}
                 </select>
@@ -173,47 +175,72 @@
 
         <!-- additional blocks -->
         <div class="home-add clearfix">
-        	<h3 style="margin:0px 0px 36px 20px; color:#FD7343">Big Data on Social Media Mining and Analytics</h3>
+            <h3 style="margin:0px 0px 36px 20px; color:#FD7343">Big Data on Social Media Mining and Analytics</h3>
             <!-- left -->
             <div class="left-home-block home-posts">
                 <h4 style="margin-bottom:10px">Social Tie Analysis</h4>
                 <!-- <img style="height:"src="{% static "img/directions/socialAnalysis.png" %}" alt="img"/> -->
-                <div class="excerpt"><img src="{% static "img/directions/socialAnalysis.png" %}" alt="img" align ="left"/>    Interpersonal ties are responsible for the structure of social networks and the transmission of information through these networks. Different types of social ties have essentially different influence on people. Awareness fo the types of social ties can benefit many applictions such as recommendation and community detection.</div>
+                <div class="excerpt"><img src="{% static "img/directions/socialAnalysis.png" %}" alt="img"
+                                          align="left"/> Interpersonal ties are responsible for the structure of social
+                    networks and the transmission of information through these networks. Different types of social ties
+                    have essentially different influence on people. Awareness fo the types of social ties can benefit
+                    many applictions such as recommendation and community detection.
+                </div>
                 <!-- <a href="{% url 'research' %}" class="news-link-button">more>></a> -->
             </div>
             <!-- ENDS left -->
             <!-- right -->
             <div class="right-home-block home-news">
-            <h4 style="margin-bottom:10px">User-level Sentiment Analysis</h4>
+                <h4 style="margin-bottom:10px">User-level Sentiment Analysis</h4>
                 <!-- <img src="{% static "img/directions/sentimentAnalysis.png" %}" alt="img"/> -->
-                <div class="excerpt"><img src="{% static "img/directions/sentimentAnalysis.png" %}" alt="img" align ="left"/>    Information about social relationships can be used to improve user-level sentiment analysis. The main motivation behind our approach is that users that are somehow "connected" may be more likely to hold similar opinions; therefor, relationship informations can complement what we can extract about a user's viewpoints from their utterances.</div>
+                <div class="excerpt"><img src="{% static "img/directions/sentimentAnalysis.png" %}" alt="img"
+                                          align="left"/> Information about social relationships can be used to improve
+                    user-level sentiment analysis. The main motivation behind our approach is that users that are
+                    somehow "connected" may be more likely to hold similar opinions; therefor, relationship informations
+                    can complement what we can extract about a user's viewpoints from their utterances.
+                </div>
             </div>
             <!-- ENDS right -->
             <div class="left-home-block home-posts">
                 <h4 style="margin-bottom:10px">Recommendation</h4>
                 <!-- <img style="height:"src="{% static "img/directions/socialAnalysis.png" %}" alt="img"/> -->
-                <div class="excerpt"><img src="{% static "img/directions/recommendation.png" %}" alt="img" align ="left"/>    Interpersonal ties are responsible for the structure of social networks and the transmission of information through these networks. Different types of social ties have essentially different influence on people. Awareness fo the types of social ties can benefit many applictions such as recommendation and community detection.</div>
+                <div class="excerpt"><img src="{% static "img/directions/recommendation.png" %}" alt="img"
+                                          align="left"/> Interpersonal ties are responsible for the structure of social
+                    networks and the transmission of information through these networks. Different types of social ties
+                    have essentially different influence on people. Awareness fo the types of social ties can benefit
+                    many applictions such as recommendation and community detection.
+                </div>
                 <!-- <a href="{% url 'research' %}" class="news-link-button">more>></a> -->
             </div>
             <!-- ENDS left -->
             <!-- right -->
             <div class="right-home-block home-news">
-            <h4 style="margin-bottom:10px">Information Flow Detection</h4>
+                <h4 style="margin-bottom:10px">Information Flow Detection</h4>
                 <!-- <img src="{% static "img/directions/sentimentAnalysis.png" %}" alt="img"/> -->
-                <div class="excerpt"><img src="{% static "img/directions/informationFlow.png" %}" alt="img" align ="left"/>    The real-time information on news sites, blogs and social networking sites changes dynamically and spreads rapidly through the Web. Developing methods for handling such information at a massive scale requires that we think about how information content varies over time, how it is transmitted, and how it mutates as it spreads.</div>
+                <div class="excerpt"><img src="{% static "img/directions/informationFlow.png" %}" alt="img"
+                                          align="left"/> The real-time information on news sites, blogs and social
+                    networking sites changes dynamically and spreads rapidly through the Web. Developing methods for
+                    handling such information at a massive scale requires that we think about how information content
+                    varies over time, how it is transmitted, and how it mutates as it spreads.
+                </div>
             </div>
 
         </div>
         <!-- ENDS additional blocks -->
 
         <!-- third blocks -->
-       <div class="home-add clearfix">
-        	<h3 style="margin:0px 0px 36px 20px; color:#FD7343">Big Data on Scientific and Information Visualization</h3>
+        <div class="home-add clearfix">
+            <h3 style="margin:0px 0px 36px 20px; color:#FD7343">Big Data on Scientific and Information
+                Visualization</h3>
             <!-- left -->
             <div class="left-home-block home-posts">
                 <h4 style="margin-bottom:10px">Unstructured Text Visualization</h4>
                 <!-- <img style="height:"src="{% static "img/directions/socialAnalysis.png" %}" alt="img"/> -->
-                <div class="excerpt"><img src="{% static "img/directions/textVisual.png" %}" alt="img" align ="left"/>    Text data is used as primary information artifact in current human society. The availability of text data has grown tremendously in recent years due to networking infrastructure. How to effective extract and represent the semantic information among text data via the suitable visual representation is critical to help users in understanding and gathering information from text.
+                <div class="excerpt"><img src="{% static "img/directions/textVisual.png" %}" alt="img" align="left"/>
+                    Text data is used as primary information artifact in current human society. The availability of text
+                    data has grown tremendously in recent years due to networking infrastructure. How to effective
+                    extract and represent the semantic information among text data via the suitable visual
+                    representation is critical to help users in understanding and gathering information from text.
                 </div>
             </div>
             <!-- ENDS left -->
@@ -221,22 +248,42 @@
             <div class="right-home-block home-news">
                 <h4 style="margin-bottom:10px">Resume Information Visualization</h4>
                 <!-- <img style="height:"src="{% static "img/directions/socialAnalysis.png" %}" alt="img"/> -->
-                <div class="excerpt"><img src="{% static "img/directions/infoVisual.png" %}" alt="img" align ="left"/>    Resume data as a special text data contains valuable semantic information regarding spatial-temporal development trajectory of personâ€™s grades. In addition, the latent social relations between different person can be revealed by mining resume data. Extract & visualizing such semantic information and constructing the social network behind resume data can benefit many applications such as appoint-and-dismiss decision supporting and social mining.
-                </div>   
+                <div class="excerpt"><img src="{% static "img/directions/infoVisual.png" %}" alt="img" align="left"/>
+                    Resume data as a special text data contains valuable semantic information regarding spatial-temporal
+                    development trajectory of person??s grades. In addition, the latent social relations between
+                    different person can be revealed by mining resume data. Extract & visualizing such semantic
+                    information and constructing the social network behind resume data can benefit many applications
+                    such as appoint-and-dismiss decision supporting and social mining.
+                </div>
             </div>
             <!-- ENDS right -->
             <div class="left-home-block home-posts">
                 <h4 style="margin-bottom:10px">Event Detection and Visualization</h4>
                 <!-- <img src="{% static "img/directions/sentimentAnalysis.png" %}" alt="img"/> -->
-                <div class="excerpt"><img src="{% static "img/directions/eventVisual.png" %}" alt="img" align ="left"/>    Recently, Event Detection attracts much attention as it can help the decision makers to efficiently detect attractive events. However, it is increasingly difficult for users to hold the full picture of massive events in a comprehensive perspective when facing large-scale online streams. In addition, how to support human on perceiving the important rare events, which may trigger the subsequent emergency events, remains to be a big challenge. We present a framework to detect, visualize and perceive the multi-grained events, which gives users a full picture of relevant events and supports high-quality decision making accordingly
-                </div>    
+                <div class="excerpt"><img src="{% static "img/directions/eventVisual.png" %}" alt="img" align="left"/>
+                    Recently, Event Detection attracts much attention as it can help the decision makers to efficiently
+                    detect attractive events. However, it is increasingly difficult for users to hold the full picture
+                    of massive events in a comprehensive perspective when facing large-scale online streams. In
+                    addition, how to support human on perceiving the important rare events, which may trigger the
+                    subsequent emergency events, remains to be a big challenge. We present a framework to detect,
+                    visualize and perceive the multi-grained events, which gives users a full picture of relevant events
+                    and supports high-quality decision making accordingly
+                </div>
             </div>
             <!-- ENDS left -->
             <!-- right -->
             <div class="right-home-block home-news">
-            <h4 style="margin-bottom:10px">Structured Data Visualization</h4>
+                <h4 style="margin-bottom:10px">Structured Data Visualization</h4>
                 <!-- <img src="{% static "img/directions/sentimentAnalysis.png" %}" alt="img"/> -->
-                <div class="excerpt"><img src="{% static "img/directions/dataVisual.png" %}" alt="img" align ="left"/>    Structured data such as scalar field data can be visualized as a contour map to indicate the latent physical structure and trend behind data itself. Human can gain valuable insights from such contour map accordingly, such as the underground geologic structure and the distribution of mineral resources. However, dealing with increasing amount of data attributes or dimensions arises a challenge: how to visualize the data with multi-dimensions in a cohesive view and explore the relations between the data on various dimensions. To address this challenge, we stand on the perspective of multi-variable data fusion and propose a overlap-based contouring method.</div>
+                <div class="excerpt"><img src="{% static "img/directions/dataVisual.png" %}" alt="img" align="left"/>
+                    Structured data such as scalar field data can be visualized as a contour map to indicate the latent
+                    physical structure and trend behind data itself. Human can gain valuable insights from such contour
+                    map accordingly, such as the underground geologic structure and the distribution of mineral
+                    resources. However, dealing with increasing amount of data attributes or dimensions arises a
+                    challenge: how to visualize the data with multi-dimensions in a cohesive view and explore the
+                    relations between the data on various dimensions. To address this challenge, we stand on the
+                    perspective of multi-variable data fusion and propose a overlap-based contouring method.
+                </div>
             </div>
 
         </div>
@@ -332,5 +379,4 @@
 
 
 </body>
-
-</html>
+<html></html>

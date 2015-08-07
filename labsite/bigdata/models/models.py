@@ -104,7 +104,6 @@ class Lab(models.Model):
         return "研究组相关信息"
 
 
-
 class Directions(models.Model):
     research_direction = models.TextField(blank=True, verbose_name='研究方向')
     lab = models.ForeignKey(Lab)

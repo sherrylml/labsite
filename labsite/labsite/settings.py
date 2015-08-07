@@ -71,10 +71,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'lab_data',
-        'USER': 'root',
-        'PASSWORD': '1994419',
-        # 'USER': 'pipi',
-        # 'PASSWORD': '249784435',
+        # 'USER': 'root',
+        # 'PASSWORD': '1994419',
+        'USER': 'pipi',
+        'PASSWORD': '249784435',
         'HOST': '127.0.0.1',
         'PORT': '3306'
     }
