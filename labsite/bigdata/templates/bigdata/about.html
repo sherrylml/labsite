@@ -73,7 +73,7 @@
 		<header>
 			<div class="wrapper clearfix">
 				<div>
-					<a href="{% url 'index_e' %}" class="logo">
+					<a href="{% url 'changeHomepage' %}" class="logo">
                         {% load staticfiles %}
                         <img src = "{% static "img/logo1.gif" %}" alt="logo"/>
 					</a>
@@ -95,7 +95,7 @@
 				</div>
 				<nav>
 					<ul id="nav" class="sf-menu">
-						<li><a href="{% url 'index_e' %}">{% trans 'Home Page' %}</a></li>
+						<li><a href="{% url 'changeHomepage' %}">{% trans 'Home Page' %}</a></li>
 						<li><a href="{% url 'news' %}">{% trans 'News' %}</a>
 						</li>
 						<li><a href="{% url 'team' %}">{% trans 'People' %}</a></li>
@@ -221,7 +221,7 @@
 				
 				<!-- bottom -->
 				<div class="footer-bottom">
-					<div class="left">Big Data Intelligence Group <a href="{%url 'index_e'%}" target="_blank" title="Homepage">{% trans 'HomePage' %}</a><br>
+					<div class="left">Big Data Intelligence Group <a href="{%url 'changeHomepage'%}" target="_blank" title="Homepage">{% trans 'HomePage' %}</a><br>
 						<a href="#" target="_blank" title="admin">{% trans 'Admin Page' %}</a>
 					</div>
 				</div>	

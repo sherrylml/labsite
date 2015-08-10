@@ -73,7 +73,7 @@
 		<header>
 			<div class="wrapper clearfix">
 				<div>
-					<a href="{% url 'index_e' %}" class="logo">
+					<a href="{% url 'changeHomepage' %}" class="logo">
                         {% load staticfiles %}
                         <img src = "{% static "img/logo1.gif" %}" alt="logo"/>
 					</a>
@@ -95,7 +95,7 @@
 				</div>
 				<nav>
 					<ul id="nav" class="sf-menu">
-						<li><a href="{% url 'index_e' %}">{% trans 'Home Page' %}</a></li>
+						<li><a href="{% url 'changeHomepage' %}">{% trans 'Home Page' %}</a></li>
 						<li><a href="{% url 'news' %}">{% trans 'News' %}</a>
 						</li>
 						<li class="current-menu-item"><a href="{% url 'team' %}">{% trans 'People' %}</a></li>
@@ -133,12 +133,11 @@
 	        		<h4>{% trans 'Faculties' %}</h4>
 	        		<!-- cards -->
 	        		<div class="clearfix" >
-	        			<!-- card部分该成django语法时可使用for循环读取数据库内容 -->
 	        			<div class="card">
 	        				{% for professor in professors_list %}
 	        				{% if professor %}
 	        				    {% if professor.image %}
-	        				    <img src = "{{ professor.image.url }}" alt="头像"/>
+	        				    <img src = "{{ professor.image.url }}" alt="img"/>
                                 {% endif %}
 	        				<div class="card-content">
 	        					<span>{{ professor.name }}</span><br>
@@ -159,7 +158,7 @@
 	        				{% for doctor in doctors_list %}
 	        				{% if doctor %}
                                 {% if doctor.image %}
-	        				    <img src = "{{ doctor.image.url }}" alt="头像"/>
+	        				    <img src = "{{ doctor.image.url }}" alt="img"/>
                                 {% endif %}
 	        				<div class="card-content">
 	        					<span>{{ doctor.name }}</span><br>
@@ -179,7 +178,7 @@
 	        				{% for master in masters_list %}
 	        				{% if master %}
 	        				    {% if master.image %}
-	        				    <img src = "{{ master.image.url }}" alt="头像"/>
+	        				    <img src = "{{ master.image.url }}" alt="img"/>
                                 {% endif %}
 	        				<div class="card-content">
 	        					<span>{{ master.name }}</span><br>
@@ -268,7 +267,7 @@
 				
 				<!-- bottom -->
 				<div class="footer-bottom">
-					<div class="left">Big Data Intelligence Group <a href="{%url 'index_e'%}" target="_blank" title="Homepage">{% trans 'HomePage' %}</a><br>
+					<div class="left">Big Data Intelligence Group <a href="{%url 'changeHomepage'%}" target="_blank" title="Homepage">{% trans 'HomePage' %}</a><br>
 						<a href="#" target="_blank" title="admin">{% trans 'Admin Page' %}</a>
 					</div>
 				</div>	

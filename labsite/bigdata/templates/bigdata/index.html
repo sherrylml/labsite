@@ -95,10 +95,9 @@
             <p class="logo" style="font-size: 26px; margin: 25px 0px 0px 20px;">
                 <strong>大数据智能组</strong>
             </p>
-{#            <a href="{% url 'index_e' %}" class="version">English Version</a>#}
             <form action="{% url 'changeHomepage' %}" method="post" class="form_style">
                 {% csrf_token %}
-{#                <input name="next" type="hidden" value="{{ redirect_to }}"/>#}
+                <input name="next" type="hidden" value="{{ redirect_to }}"/>
                 <select name="language">
                     {% for language in LANGUAGES %}
                         <option value="{{ language.0 }}"{% if language.0 == LANGUAGE_CODE %} selected="selected"{% endif %}>

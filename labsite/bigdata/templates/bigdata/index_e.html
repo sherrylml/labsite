@@ -85,6 +85,7 @@
 
             <form action="{% url 'changeHomepage' %}" method="post" class="form_style">
                 {% csrf_token %}
+                <input name="next" type="hidden" value="{{ redirect_to }}"/>
                 <select name="language">
                     {% for language in LANGUAGES %}
                         <option value="{{ language.0 }}"{% if language.0 == LANGUAGE_CODE %}
@@ -367,7 +368,7 @@
 
         <!-- bottom -->
         <div class="footer-bottom">
-            <div class="left">Big Data Intelligence Group <a href="{% url 'index' %}" target="_blank" title="ghg">HomePage</a><br>
+            <div class="left">Big Data Intelligence Group <a href="{% url 'index_e' %}" target="_blank" title="ghg">HomePage</a><br>
                 Total Visits: <a href="#" target="_blank" title="admin">Admin Page</a>
             </div>
         </div>
