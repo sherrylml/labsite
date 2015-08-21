@@ -95,18 +95,15 @@
 				</div>
 				<nav>
 					<ul id="nav" class="sf-menu">
-						<li><a href="{% url 'changeHomepage' %}">{% trans 'Home Page' %}</a></li>
-						<li><a href="{% url 'news' %}">{% trans 'News' %}</a>
-						</li>
-						<li><a href="{% url 'team' %}">{% trans 'People' %}</a></li>
-						<li><a href="{% url 'research' %}">{% trans 'Research' %}</a>
-						</li>
-						<li><a href="{% url 'academic' %}">{% trans 'Academic Exchange' %}</a>
-						</li>
-						<li><a href="{% url 'relax' 1 %}">{% trans 'Entertainment' %}</a></li>
-						<li><a href="{% url 'join' %}">{% trans 'Join Us' %}</a>
-						</li>
-						<li class="current-menu-item"><a href="{% url 'about' %}">{% trans 'About' %}</a></li>
+						<li><a href="{% url 'changeHomepage' %}">{% trans 'Home' %}</a></li>
+		                <li class="current-menu-item"><a href="{% url 'about' %}">{% trans 'About BDI' %}</a></li>
+		                <li><a href="{% url 'research' %}">{% trans 'Research Topics' %}</a></li>
+		                <li><a href="{% url 'team' %}">{% trans 'Members' %}</a></li>
+		                <li><a href="{% url 'publication' %}">{% trans 'Publications' %}</a></li>
+		                <li><a href="{% url 'academic' %}">{% trans 'Events' %}</a></li>
+		                <li><a href="{% url 'news' %}">{% trans 'News' %}</a></li>
+		                <li><a href="{% url 'relax' 1 %}">{% trans 'Entertainment' %}</a></li>
+		                <li><a href="{% url 'join' %}">{% trans 'Join Us' %}</a></li>
 					</ul>
 					<div id="combo-holder"></div>
 				</nav>			

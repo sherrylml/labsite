@@ -30,6 +30,7 @@ urlpatterns = patterns(
     url(r'^postgraduate/(?P<id>\d+)/$', 'bigdata.views.member_postgraduate',
         name='member_postgraduate'),
     url(r'^research$', 'bigdata.views.research', name='research'),
+    url(r'^publication$', 'bigdata.views.publication', name='publication'),
     url(r'^academic$', 'bigdata.views.academic', name='academic'),
     url(r'^academic/(?P<id>\d+)/$', 'bigdata.views.academic_detail', name='academic_detail'),
     url(r'^relax/(?P<id>\d+)/$', 'bigdata.views.relax', name='relax'),

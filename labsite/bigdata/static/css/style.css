@@ -755,8 +755,10 @@ header .version{
 }
 
 .excerpt img{
-    height: 200px;
-    width: 290px;
+    height: 180px;
+    /*width: 240px;*/
+    width : 100%;
+    padding-bottom: 20px;
 }
 /* HOME POSTS ---------------------------------------------------------*/
 

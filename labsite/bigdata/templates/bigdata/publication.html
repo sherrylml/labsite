@@ -97,9 +97,9 @@
 					<ul id="nav" class="sf-menu">
 						<li><a href="{% url 'changeHomepage' %}">{% trans 'Home' %}</a></li>
 		                <li><a href="{% url 'about' %}">{% trans 'About BDI' %}</a></li>
-		                <li class="current-menu-item"><a href="{% url 'research' %}">{% trans 'Research Topics' %}</a></li>
+		                <li><a href="{% url 'research' %}">{% trans 'Research Topics' %}</a></li>
 		                <li><a href="{% url 'team' %}">{% trans 'Members' %}</a></li>
-		                <li><a href="{% url 'publication' %}">{% trans 'Publications' %}</a></li>
+		                <li class="current-menu-item"><a href="{% url 'publication' %}">{% trans 'Publications' %}</a></li>
 		                <li><a href="{% url 'academic' %}">{% trans 'Events' %}</a></li>
 		                <li><a href="{% url 'news' %}">{% trans 'News' %}</a></li>
 		                <li><a href="{% url 'relax' 1 %}">{% trans 'Entertainment' %}</a></li>
@@ -125,19 +125,33 @@
 	        		<!-- <h1 class="home-headline">FEATURED WORK </h1> -->
 
 	        		<!-- slider holder -->
+					<!-- <div id="slider-holder" class="clearfix tab-content"> -->
+						<!-- Headline -->
+		        		<!-- <div id="headline2">
+{#		        			<h3>{% trans 'Research Direction' %}</h3><br>#}
+{#                            {% if direction_list %}#}
+{#                                {% for ResearchDirection in direction_list %}#}
+                                    <div class="excerpt">
+{#                                    {% for image in ResearchDirection.images %}#}
+{#                                    <img src = "{{ image.images.url }}" alt="image"/>#}
+{#                                    {% endfor %}#}
+{#		        			        <pre class="headline-text">{{ ResearchDirection.direction }}</pre><br>#}
+                                    </div>
+{#                                {% endfor %}#}
+{#                            {% endif %}#}
+		        	    </div> -->
+		        		<!-- ENDS headline	 -->
+
+			       	
+			        	<!-- <div class="home-slider-clearfix "></div> -->
+			        
+					<!-- </div> -->
 					<div id="slider-holder" class="clearfix tab-content">
 						<!-- Headline -->
 		        		<div id="headline2">
-		        			<h3>{% trans 'Research Direction' %}</h3><br>
-                            {% if direction_list %}
-                                {% for ResearchDirection in direction_list %}
-                                    <div class="excerpt">
-                                    {% for image in ResearchDirection.images %}
-                                    <img src = "{{ image.images.url }}" alt="image"/>
-                                    {% endfor %}
-		        			        <pre class="headline-text">{{ ResearchDirection.direction }}</pre><br>
-                                    </div>
-                                {% endfor %}
+		        			<h3>{% trans 'Research Achievement' %}</h3><br>
+		        			{% if research_achievement %}
+		        			<pre class="headline-text">{{ research_achievement }}</pre>
                             {% endif %}
 		        	    </div>
 		        		<!-- ENDS headline	 -->
@@ -146,24 +160,14 @@
 			        	<div class="home-slider-clearfix "></div>
 			        
 					</div>
-					<!-- <div id="slider-holder" class="clearfix tab-content">
-						<!-- Headline -->
-		        		<!-- <div id="headline2">
-{#		        			<h3>{% trans 'Research Achievement' %}</h3><br>#}
-{#		        			{% if research_achievement %}#}
-{#		        			<pre class="headline-text">{{ research_achievement }}</pre>#}
-{#                            {% endif %}#}
-		        	    </div> -->
-		        		<!-- ENDS headline	 -->
-
-			       	
-			        	<!-- <div class="home-slider-clearfix "></div> -->
-			        
-					<!-- </div>  -->
 					<!-- ENDS slider holder -->
 	        		
 	        	</div>
+	        	<!-- <ul class="nav-pills" id="tab-groups">
+{#	        		<li role="presentation" class=""><a href="#"  class="current">{% trans 'Research Direction' %}</a></li>#}
+{#	        		<li role="presentation" class=""><a href="#">{% trans 'Research Achievement' %}</a></li>#}
 
+	        	</ul> -->
 	        	<!-- ENDS home-block
 	        
 	        	

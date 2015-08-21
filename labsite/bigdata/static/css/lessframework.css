@@ -70,7 +70,7 @@ px      68    160    252    344    436    528    620    712    804    896    */
 	}
 	
 	.right-home-block{ 
-		float: right;
+		float: left;
 		margin-left: 0px;
 		margin-right: 25px;
 	}
@@ -80,7 +80,7 @@ px      68    160    252    344    436    528    620    712    804    896    */
 	
 	.home-posts article{ padding-left: 45px;}
 	
-	/*.testimonial-slider{ width: 304px; /* 344 - ( 20 x 2) */ }*/
+	/*.testimonial-slider{ width: 304px; *//* 344 - ( 20 x 2) *//* }*/
 	
 	.masthead{ padding: 54px 28px }
 	

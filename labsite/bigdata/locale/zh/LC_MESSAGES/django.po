@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-07 20:47+0800\n"
+"POT-Creation-Date: 2015-08-17 10:04+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,15 +25,15 @@ msgid "address"
 msgstr "通信地址"
 
 #: .\models\EnglishTeam_models.py:10 .\models\team_models.py:10
-#: .\templates\bigdata\about.html:198 .\templates\bigdata\academic.html:235
-#: .\templates\bigdata\academic_detail.html:220
-#: .\templates\bigdata\join.html:239 .\templates\bigdata\member.html:253
-#: .\templates\bigdata\news.html:235 .\templates\bigdata\news_detail.html:220
-#: .\templates\bigdata\notice_detail.html:220
-#: .\templates\bigdata\relax.html:224 .\templates\bigdata\research.html:228
-#: .\templates\bigdata\team.html:244
+#: .\templates\bigdata\about.html:195 .\templates\bigdata\academic.html:232
+#: .\templates\bigdata\academic_detail.html:217
+#: .\templates\bigdata\join.html:236 .\templates\bigdata\member.html:250
+#: .\templates\bigdata\news.html:232 .\templates\bigdata\news_detail.html:217
+#: .\templates\bigdata\notice_detail.html:217
+#: .\templates\bigdata\publication.html:225 .\templates\bigdata\relax.html:221
+#: .\templates\bigdata\research.html:221 .\templates\bigdata\team.html:241
 msgid "postcode"
-msgstr "邮编"
+msgstr "邮政编码"
 
 #: .\models\EnglishTeam_models.py:11 .\models\team_models.py:11
 msgid "educational_background"
@@ -46,14 +46,15 @@ msgstr "照片"
 #: .\templates\bigdata\about.html:7 .\templates\bigdata\about.html.py:81
 #: .\templates\bigdata\academic.html:7 .\templates\bigdata\academic.html:81
 #: .\templates\bigdata\academic_detail.html:7
-#: .\templates\bigdata\academic_detail.html:81
-#: .\templates\bigdata\index_e.html:83 .\templates\bigdata\join.html:7
+#: .\templates\bigdata\academic_detail.html:81 .\templates\bigdata\join.html:7
 #: .\templates\bigdata\join.html.py:81 .\templates\bigdata\member.html:7
 #: .\templates\bigdata\member.html.py:81 .\templates\bigdata\news.html:7
 #: .\templates\bigdata\news.html.py:81 .\templates\bigdata\news_detail.html:7
 #: .\templates\bigdata\news_detail.html:81
 #: .\templates\bigdata\notice_detail.html:7
-#: .\templates\bigdata\notice_detail.html:81 .\templates\bigdata\relax.html:7
+#: .\templates\bigdata\notice_detail.html:81
+#: .\templates\bigdata\publication.html:7
+#: .\templates\bigdata\publication.html:81 .\templates\bigdata\relax.html:7
 #: .\templates\bigdata\relax.html.py:81 .\templates\bigdata\research.html:7
 #: .\templates\bigdata\research.html:81 .\templates\bigdata\team.html:7
 #: .\templates\bigdata\team.html.py:81
@@ -64,30 +65,41 @@ msgstr "大数据智能组"
 #: .\templates\bigdata\academic_detail.html:98
 #: .\templates\bigdata\join.html:98 .\templates\bigdata\member.html:98
 #: .\templates\bigdata\news.html:98 .\templates\bigdata\news_detail.html:98
-#: .\templates\bigdata\notice_detail.html:98 .\templates\bigdata\relax.html:98
+#: .\templates\bigdata\notice_detail.html:98
+#: .\templates\bigdata\publication.html:98 .\templates\bigdata\relax.html:98
 #: .\templates\bigdata\research.html:98 .\templates\bigdata\team.html:98
-msgid "Home Page"
-msgstr "主页"
+msgid "Home"
+msgstr "首页"
 
 #: .\templates\bigdata\about.html:99 .\templates\bigdata\academic.html:99
 #: .\templates\bigdata\academic_detail.html:99
 #: .\templates\bigdata\join.html:99 .\templates\bigdata\member.html:99
-#: .\templates\bigdata\news.html:99 .\templates\bigdata\news.html.py:155
-#: .\templates\bigdata\news.html:177 .\templates\bigdata\news_detail.html:99
-#: .\templates\bigdata\news_detail.html:127
-#: .\templates\bigdata\notice_detail.html:99 .\templates\bigdata\relax.html:99
+#: .\templates\bigdata\news.html:99 .\templates\bigdata\news_detail.html:99
+#: .\templates\bigdata\notice_detail.html:99
+#: .\templates\bigdata\publication.html:99 .\templates\bigdata\relax.html:99
 #: .\templates\bigdata\research.html:99 .\templates\bigdata\team.html:99
-msgid "News"
-msgstr "新闻动态"
+msgid "About BDI"
+msgstr "关于BDI"
+
+#: .\templates\bigdata\about.html:100 .\templates\bigdata\academic.html:100
+#: .\templates\bigdata\academic_detail.html:100
+#: .\templates\bigdata\join.html:100 .\templates\bigdata\member.html:100
+#: .\templates\bigdata\news.html:100 .\templates\bigdata\news_detail.html:100
+#: .\templates\bigdata\notice_detail.html:100
+#: .\templates\bigdata\publication.html:100 .\templates\bigdata\relax.html:100
+#: .\templates\bigdata\research.html:100 .\templates\bigdata\team.html:100
+msgid "Research Topics"
+msgstr "研究方向"
 
 #: .\templates\bigdata\about.html:101 .\templates\bigdata\academic.html:101
 #: .\templates\bigdata\academic_detail.html:101
 #: .\templates\bigdata\join.html:101 .\templates\bigdata\member.html:101
 #: .\templates\bigdata\news.html:101 .\templates\bigdata\news_detail.html:101
 #: .\templates\bigdata\notice_detail.html:101
-#: .\templates\bigdata\relax.html:101 .\templates\bigdata\research.html:101
-#: .\templates\bigdata\team.html:101 .\templates\bigdata\team.html.py:127
-msgid "People"
+#: .\templates\bigdata\publication.html:101 .\templates\bigdata\relax.html:101
+#: .\templates\bigdata\research.html:101 .\templates\bigdata\team.html:101
+#: .\templates\bigdata\team.html.py:124
+msgid "Members"
 msgstr "科研队伍"
 
 #: .\templates\bigdata\about.html:102 .\templates\bigdata\academic.html:102
@@ -95,230 +107,241 @@ msgstr "科研队伍"
 #: .\templates\bigdata\join.html:102 .\templates\bigdata\member.html:102
 #: .\templates\bigdata\news.html:102 .\templates\bigdata\news_detail.html:102
 #: .\templates\bigdata\notice_detail.html:102
-#: .\templates\bigdata\relax.html:102 .\templates\bigdata\research.html:102
-#: .\templates\bigdata\team.html:102
-msgid "Research"
-msgstr "科学研究"
+#: .\templates\bigdata\publication.html:102 .\templates\bigdata\relax.html:102
+#: .\templates\bigdata\research.html:102 .\templates\bigdata\team.html:102
+msgid "Publications"
+msgstr "研究成果"
+
+#: .\templates\bigdata\about.html:103 .\templates\bigdata\academic.html:103
+#: .\templates\bigdata\academic_detail.html:103
+#: .\templates\bigdata\join.html:103 .\templates\bigdata\member.html:103
+#: .\templates\bigdata\news.html:103 .\templates\bigdata\news_detail.html:103
+#: .\templates\bigdata\notice_detail.html:103
+#: .\templates\bigdata\publication.html:103 .\templates\bigdata\relax.html:103
+#: .\templates\bigdata\research.html:103 .\templates\bigdata\team.html:103
+msgid "Events"
+msgstr "学术活动"
 
 #: .\templates\bigdata\about.html:104 .\templates\bigdata\academic.html:104
-#: .\templates\bigdata\academic.html:134 .\templates\bigdata\academic.html:177
 #: .\templates\bigdata\academic_detail.html:104
-#: .\templates\bigdata\academic_detail.html:127
 #: .\templates\bigdata\join.html:104 .\templates\bigdata\member.html:104
-#: .\templates\bigdata\news.html:104 .\templates\bigdata\news_detail.html:104
+#: .\templates\bigdata\news.html:104 .\templates\bigdata\news.html.py:152
+#: .\templates\bigdata\news.html:174 .\templates\bigdata\news_detail.html:104
+#: .\templates\bigdata\news_detail.html:124
 #: .\templates\bigdata\notice_detail.html:104
-#: .\templates\bigdata\relax.html:104 .\templates\bigdata\research.html:104
-#: .\templates\bigdata\team.html:104
-msgid "Academic Exchange"
-msgstr "学术交流"
+#: .\templates\bigdata\publication.html:104 .\templates\bigdata\relax.html:104
+#: .\templates\bigdata\research.html:104 .\templates\bigdata\team.html:104
+msgid "News"
+msgstr "新闻动态"
+
+#: .\templates\bigdata\about.html:105 .\templates\bigdata\academic.html:105
+#: .\templates\bigdata\academic_detail.html:105
+#: .\templates\bigdata\join.html:105 .\templates\bigdata\member.html:105
+#: .\templates\bigdata\news.html:105 .\templates\bigdata\news_detail.html:105
+#: .\templates\bigdata\notice_detail.html:105
+#: .\templates\bigdata\publication.html:105 .\templates\bigdata\relax.html:105
+#: .\templates\bigdata\relax.html.py:124 .\templates\bigdata\research.html:105
+#: .\templates\bigdata\team.html:105
+msgid "Entertainment"
+msgstr "活动休闲"
 
 #: .\templates\bigdata\about.html:106 .\templates\bigdata\academic.html:106
 #: .\templates\bigdata\academic_detail.html:106
 #: .\templates\bigdata\join.html:106 .\templates\bigdata\member.html:106
 #: .\templates\bigdata\news.html:106 .\templates\bigdata\news_detail.html:106
 #: .\templates\bigdata\notice_detail.html:106
-#: .\templates\bigdata\relax.html:106 .\templates\bigdata\relax.html.py:127
+#: .\templates\bigdata\publication.html:106 .\templates\bigdata\relax.html:106
 #: .\templates\bigdata\research.html:106 .\templates\bigdata\team.html:106
-msgid "Entertainment"
-msgstr "活动休闲"
-
-#: .\templates\bigdata\about.html:107 .\templates\bigdata\academic.html:107
-#: .\templates\bigdata\academic_detail.html:107
-#: .\templates\bigdata\join.html:107 .\templates\bigdata\member.html:107
-#: .\templates\bigdata\news.html:107 .\templates\bigdata\news_detail.html:107
-#: .\templates\bigdata\notice_detail.html:107
-#: .\templates\bigdata\relax.html:107 .\templates\bigdata\research.html:107
-#: .\templates\bigdata\team.html:107
 msgid "Join Us"
 msgstr "加入我们"
 
-#: .\templates\bigdata\about.html:109 .\templates\bigdata\academic.html:109
-#: .\templates\bigdata\academic_detail.html:109
-#: .\templates\bigdata\join.html:109 .\templates\bigdata\member.html:109
-#: .\templates\bigdata\news.html:109 .\templates\bigdata\news_detail.html:109
-#: .\templates\bigdata\notice_detail.html:109
-#: .\templates\bigdata\relax.html:109 .\templates\bigdata\research.html:109
-#: .\templates\bigdata\team.html:109
-msgid "About"
-msgstr "关于"
-
-#: .\templates\bigdata\about.html:134
+#: .\templates\bigdata\about.html:131
 msgid "Information"
-msgstr "介绍信息"
+msgstr "研究组介绍"
 
-#: .\templates\bigdata\about.html:168 .\templates\bigdata\academic.html:205
-#: .\templates\bigdata\academic_detail.html:190
-#: .\templates\bigdata\join.html:209 .\templates\bigdata\member.html:223
-#: .\templates\bigdata\news.html:205 .\templates\bigdata\news_detail.html:190
-#: .\templates\bigdata\notice_detail.html:190
-#: .\templates\bigdata\relax.html:194 .\templates\bigdata\research.html:198
-#: .\templates\bigdata\team.html:214
+#: .\templates\bigdata\about.html:165 .\templates\bigdata\academic.html:202
+#: .\templates\bigdata\academic_detail.html:187
+#: .\templates\bigdata\join.html:206 .\templates\bigdata\member.html:220
+#: .\templates\bigdata\news.html:202 .\templates\bigdata\news_detail.html:187
+#: .\templates\bigdata\notice_detail.html:187
+#: .\templates\bigdata\publication.html:195 .\templates\bigdata\relax.html:191
+#: .\templates\bigdata\research.html:191 .\templates\bigdata\team.html:211
 msgid "Links"
 msgstr "友情链接"
 
-#: .\templates\bigdata\about.html:172 .\templates\bigdata\academic.html:209
-#: .\templates\bigdata\academic_detail.html:194
-#: .\templates\bigdata\join.html:213 .\templates\bigdata\member.html:227
-#: .\templates\bigdata\news.html:209 .\templates\bigdata\news_detail.html:194
-#: .\templates\bigdata\notice_detail.html:194
-#: .\templates\bigdata\relax.html:198 .\templates\bigdata\research.html:202
-#: .\templates\bigdata\team.html:218
+#: .\templates\bigdata\about.html:169 .\templates\bigdata\academic.html:206
+#: .\templates\bigdata\academic_detail.html:191
+#: .\templates\bigdata\join.html:210 .\templates\bigdata\member.html:224
+#: .\templates\bigdata\news.html:206 .\templates\bigdata\news_detail.html:191
+#: .\templates\bigdata\notice_detail.html:191
+#: .\templates\bigdata\publication.html:199 .\templates\bigdata\relax.html:195
+#: .\templates\bigdata\research.html:195 .\templates\bigdata\team.html:215
 msgid "Chinese Academy of Sciences"
 msgstr "中国科学院"
 
-#: .\templates\bigdata\about.html:179 .\templates\bigdata\academic.html:216
-#: .\templates\bigdata\academic_detail.html:201
-#: .\templates\bigdata\join.html:220 .\templates\bigdata\member.html:234
-#: .\templates\bigdata\news.html:216 .\templates\bigdata\news_detail.html:201
-#: .\templates\bigdata\notice_detail.html:201
-#: .\templates\bigdata\relax.html:205 .\templates\bigdata\research.html:209
-#: .\templates\bigdata\team.html:225
+#: .\templates\bigdata\about.html:176 .\templates\bigdata\academic.html:213
+#: .\templates\bigdata\academic_detail.html:198
+#: .\templates\bigdata\join.html:217 .\templates\bigdata\member.html:231
+#: .\templates\bigdata\news.html:213 .\templates\bigdata\news_detail.html:198
+#: .\templates\bigdata\notice_detail.html:198
+#: .\templates\bigdata\publication.html:206 .\templates\bigdata\relax.html:202
+#: .\templates\bigdata\research.html:202 .\templates\bigdata\team.html:222
 msgid "Institute of Software, Chinese Academy of Sciences"
 msgstr "中国科学院软件研究所"
 
-#: .\templates\bigdata\about.html:186 .\templates\bigdata\academic.html:223
-#: .\templates\bigdata\academic_detail.html:208
-#: .\templates\bigdata\join.html:227 .\templates\bigdata\member.html:241
-#: .\templates\bigdata\news.html:223 .\templates\bigdata\news_detail.html:208
-#: .\templates\bigdata\notice_detail.html:208
-#: .\templates\bigdata\relax.html:212 .\templates\bigdata\research.html:216
-#: .\templates\bigdata\team.html:232
+#: .\templates\bigdata\about.html:183 .\templates\bigdata\academic.html:220
+#: .\templates\bigdata\academic_detail.html:205
+#: .\templates\bigdata\join.html:224 .\templates\bigdata\member.html:238
+#: .\templates\bigdata\news.html:220 .\templates\bigdata\news_detail.html:205
+#: .\templates\bigdata\notice_detail.html:205
+#: .\templates\bigdata\publication.html:213 .\templates\bigdata\relax.html:209
+#: .\templates\bigdata\research.html:209 .\templates\bigdata\team.html:229
 msgid "forum"
 msgstr "论坛"
 
-#: .\templates\bigdata\about.html:195 .\templates\bigdata\academic.html:232
-#: .\templates\bigdata\academic_detail.html:217
-#: .\templates\bigdata\join.html:236 .\templates\bigdata\member.html:250
-#: .\templates\bigdata\news.html:232 .\templates\bigdata\news_detail.html:217
-#: .\templates\bigdata\notice_detail.html:217
-#: .\templates\bigdata\relax.html:221 .\templates\bigdata\research.html:225
-#: .\templates\bigdata\team.html:241
+#: .\templates\bigdata\about.html:192 .\templates\bigdata\academic.html:229
+#: .\templates\bigdata\academic_detail.html:214
+#: .\templates\bigdata\join.html:233 .\templates\bigdata\member.html:247
+#: .\templates\bigdata\news.html:229 .\templates\bigdata\news_detail.html:214
+#: .\templates\bigdata\notice_detail.html:214
+#: .\templates\bigdata\publication.html:222 .\templates\bigdata\relax.html:218
+#: .\templates\bigdata\research.html:218 .\templates\bigdata\team.html:238
 msgid "Contact Us"
 msgstr "联系方式"
 
-#: .\templates\bigdata\about.html:197 .\templates\bigdata\academic.html:234
-#: .\templates\bigdata\academic_detail.html:219
-#: .\templates\bigdata\join.html:238 .\templates\bigdata\member.html:252
-#: .\templates\bigdata\news.html:234 .\templates\bigdata\news_detail.html:219
-#: .\templates\bigdata\notice_detail.html:219
-#: .\templates\bigdata\relax.html:223 .\templates\bigdata\research.html:227
-#: .\templates\bigdata\team.html:243
+#: .\templates\bigdata\about.html:194 .\templates\bigdata\academic.html:231
+#: .\templates\bigdata\academic_detail.html:216
+#: .\templates\bigdata\join.html:235 .\templates\bigdata\member.html:249
+#: .\templates\bigdata\news.html:231 .\templates\bigdata\news_detail.html:216
+#: .\templates\bigdata\notice_detail.html:216
+#: .\templates\bigdata\publication.html:224 .\templates\bigdata\relax.html:220
+#: .\templates\bigdata\research.html:220 .\templates\bigdata\team.html:240
 msgid "Haidian district of Beijing zhongguancun south road no. 4"
 msgstr "北京市海淀区中关村南路4号"
 
-#: .\templates\bigdata\about.html:224 .\templates\bigdata\academic.html:261
-#: .\templates\bigdata\academic_detail.html:246
-#: .\templates\bigdata\join.html:265 .\templates\bigdata\member.html:279
-#: .\templates\bigdata\news.html:261 .\templates\bigdata\news_detail.html:246
-#: .\templates\bigdata\notice_detail.html:246
-#: .\templates\bigdata\relax.html:250 .\templates\bigdata\research.html:254
-#: .\templates\bigdata\team.html:270
+#: .\templates\bigdata\about.html:221 .\templates\bigdata\academic.html:258
+#: .\templates\bigdata\academic_detail.html:243
+#: .\templates\bigdata\join.html:262 .\templates\bigdata\member.html:276
+#: .\templates\bigdata\news.html:258 .\templates\bigdata\news_detail.html:243
+#: .\templates\bigdata\notice_detail.html:243
+#: .\templates\bigdata\publication.html:251 .\templates\bigdata\relax.html:247
+#: .\templates\bigdata\research.html:247 .\templates\bigdata\team.html:267
 msgid "HomePage"
-msgstr "研究组主页"
+msgstr "主页"
 
-#: .\templates\bigdata\about.html:225 .\templates\bigdata\academic.html:262
-#: .\templates\bigdata\academic_detail.html:247
-#: .\templates\bigdata\join.html:266 .\templates\bigdata\member.html:280
-#: .\templates\bigdata\news.html:262 .\templates\bigdata\news_detail.html:247
-#: .\templates\bigdata\notice_detail.html:247
-#: .\templates\bigdata\relax.html:251 .\templates\bigdata\research.html:255
-#: .\templates\bigdata\team.html:271
+#: .\templates\bigdata\about.html:222 .\templates\bigdata\academic.html:259
+#: .\templates\bigdata\academic_detail.html:244
+#: .\templates\bigdata\join.html:263 .\templates\bigdata\member.html:277
+#: .\templates\bigdata\news.html:259 .\templates\bigdata\news_detail.html:244
+#: .\templates\bigdata\notice_detail.html:244
+#: .\templates\bigdata\publication.html:252 .\templates\bigdata\relax.html:248
+#: .\templates\bigdata\research.html:248 .\templates\bigdata\team.html:268
 msgid "Admin Page"
 msgstr "后台管理"
 
-#: .\templates\bigdata\academic.html:155 .\templates\bigdata\academic.html:178
+#: .\templates\bigdata\academic.html:131 .\templates\bigdata\academic.html:174
+#: .\templates\bigdata\academic_detail.html:124
+msgid "Academic Events"
+msgstr "学术活动"
+
+#: .\templates\bigdata\academic.html:152 .\templates\bigdata\academic.html:175
 msgid "Conferences"
-msgstr "学术会议"
+msgstr "近期会议"
 
-#: .\templates\bigdata\join.html:134 .\templates\bigdata\join.html.py:181
-msgid "Admission"
-msgstr "招生信息"
-
-#: .\templates\bigdata\join.html:140 .\templates\bigdata\join.html.py:163
-msgid "PubDate"
-msgstr "发布时间"
-
-#: .\templates\bigdata\join.html:157 .\templates\bigdata\join.html.py:182
-msgid "Recruitment"
-msgstr "招聘信息"
-
-#: .\templates\bigdata\member.html:140
-msgid "Email"
-msgstr "Email"
-
-#: .\templates\bigdata\member.html:142
-msgid "Address"
-msgstr "通信地址"
-
-#: .\templates\bigdata\member.html:144
-msgid "Postcode"
-msgstr "邮政编码"
-
-#: .\templates\bigdata\member.html:146
-msgid "Education"
-msgstr "教育背景"
-
-#: .\templates\bigdata\member.html:154 .\templates\bigdata\research.html:134
-#: .\templates\bigdata\research.html:170
-msgid "Research Direction"
-msgstr "研究方向"
-
-#: .\templates\bigdata\member.html:164
-msgid "Work Experience"
-msgstr "工作经历"
-
-#: .\templates\bigdata\member.html:174
-msgid "Patent Award"
-msgstr "专利与奖励"
-
-#: .\templates\bigdata\member.html:184
-msgid "Publish Information"
-msgstr "出版信息"
-
-#: .\templates\bigdata\member.html:194
-msgid "Research Activity"
-msgstr "科研活动"
-
-#: .\templates\bigdata\news.html:134 .\templates\bigdata\news.html.py:176
-#: .\templates\bigdata\notice_detail.html:127
-msgid "Notices"
-msgstr "通知公告"
-
-#: .\templates\bigdata\news_detail.html:161
-#: .\templates\bigdata\notice_detail.html:161
+#: .\templates\bigdata\academic_detail.html:158
+#: .\templates\bigdata\news_detail.html:158
+#: .\templates\bigdata\notice_detail.html:158
 msgid "Previous"
 msgstr "上一篇"
 
-#: .\templates\bigdata\news_detail.html:164
-#: .\templates\bigdata\notice_detail.html:164
+#: .\templates\bigdata\academic_detail.html:161
+#: .\templates\bigdata\news_detail.html:161
+#: .\templates\bigdata\notice_detail.html:161
 msgid "Next"
 msgstr "下一篇"
 
-#: .\templates\bigdata\relax.html:165
-msgid "Previous Page"
-msgstr "上一页"
+#: .\templates\bigdata\join.html:131 .\templates\bigdata\join.html.py:178
+msgid "Admission"
+msgstr "招生信息"
 
-#: .\templates\bigdata\relax.html:168
-msgid "Next Page"
-msgstr "下一页"
+#: .\templates\bigdata\join.html:137 .\templates\bigdata\join.html.py:160
+msgid "PubDate"
+msgstr "发布时间"
 
-#: .\templates\bigdata\research.html:155 .\templates\bigdata\research.html:171
+#: .\templates\bigdata\join.html:154 .\templates\bigdata\join.html.py:179
+msgid "Recruitment"
+msgstr "招聘信息"
+
+#: .\templates\bigdata\member.html:137
+msgid "Email"
+msgstr "Email"
+
+#: .\templates\bigdata\member.html:139
+msgid "Address"
+msgstr "通信地址"
+
+#: .\templates\bigdata\member.html:141
+msgid "Postcode"
+msgstr "邮政编码"
+
+#: .\templates\bigdata\member.html:143
+msgid "Education"
+msgstr "教育背景"
+
+#: .\templates\bigdata\member.html:151
+msgid "Research Intrests"
+msgstr "研究方向"
+
+#: .\templates\bigdata\member.html:161
+msgid "Work Experience"
+msgstr "工作经历"
+
+#: .\templates\bigdata\member.html:171
+msgid "Patent & Award"
+msgstr "专利与奖项"
+
+#: .\templates\bigdata\member.html:181
+msgid "Selected Publications"
+msgstr "出版信息"
+
+#: .\templates\bigdata\member.html:191
+msgid "Professional Activities"
+msgstr "科研活动"
+
+#: .\templates\bigdata\news.html:131 .\templates\bigdata\news.html.py:173
+#: .\templates\bigdata\notice_detail.html:124
+msgid "Notices"
+msgstr "通知"
+
+#: .\templates\bigdata\publication.html:152
 msgid "Research Achievement"
 msgstr "研究成果"
 
-#: .\templates\bigdata\team.html:133
+#: .\templates\bigdata\relax.html:162
+msgid "Previous Page"
+msgstr "上一页"
+
+#: .\templates\bigdata\relax.html:165
+msgid "Next Page"
+msgstr "下一页"
+
+#: .\templates\bigdata\research.html:131
+msgid "Research Direction"
+msgstr "研究方向"
+
+#: .\templates\bigdata\team.html:130
 msgid "Faculties"
 msgstr "教师"
 
-#: .\templates\bigdata\team.html:146 .\templates\bigdata\team.html.py:167
-#: .\templates\bigdata\team.html:187
+#: .\templates\bigdata\team.html:143 .\templates\bigdata\team.html.py:164
+#: .\templates\bigdata\team.html:184
 msgid "Homepage"
 msgstr "个人主页"
 
-#: .\templates\bigdata\team.html:155
+#: .\templates\bigdata\team.html:152
 msgid "PhD student"
 msgstr "博士研究生"
 
-#: .\templates\bigdata\team.html:175
+#: .\templates\bigdata\team.html:172
 msgid "Master"
 msgstr "硕士研究生"
