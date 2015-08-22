@@ -1,48 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88298e5d-0670-45c7-be47-850e98e3e351" name="Default" comment="Merge branch 'dev' of github.com:sherrylml/labsite into dev&#10;&#10;Conflicts:&#10;&#9;labsite/bigdata/templates/bigdata/index.html&#10;&#9;labsite/bigdata/views.py&#10;&#9;labsite/labsite/settings.py&#10;">
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\locale\zh-CN\LC_MESSAGES\django.mo" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\locale\zh-CN\LC_MESSAGES\django.po" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\migrations\0002_auto_20150802_2008.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\migrations\0003_auto_20150802_2106.py" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\static\img\dummies\featured-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\static\img\dummies\featured-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\static\img\dummies\featured-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\static\img\dummies\gallery-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\static\img\dummies\gallery-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\static\img\dummies\gallery-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\static\img\dummies\logo1.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\static\img\dummies\logo2.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\static\img\dummies\logo3.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\static\img\dummies\logo4.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\static\img\dummies\logo5.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\static\img\dummies\logo6.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\static\img\slides\01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\static\img\slides\02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\static\img\slides\03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\static\img\test.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\upload\memberImg\instructorPic.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\upload\news\01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\upload\news\1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\upload\news\1_SKOt3rE.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\upload\news\3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\upload\news\3_5yIheF7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\upload\relax\1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\upload\relax\instructorPic.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\upload\research_direction\1.PNG" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\upload\research_direction\2.PNG" afterPath="" />
-      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\upload\research_direction\980-130315094G3263.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/locale/en/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/labsite/bigdata/locale/en/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/locale/zh/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/labsite/bigdata/locale/zh/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/models/EnglishTeam_models.py" afterPath="$PROJECT_DIR$/labsite/bigdata/models/EnglishTeam_models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/admin.py" afterPath="$PROJECT_DIR$/labsite/bigdata/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/locale/en/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/labsite/bigdata/locale/en/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/locale/zh/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/labsite/bigdata/locale/zh/LC_MESSAGES/django.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/team.html" afterPath="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/team.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/models/team_models.py" afterPath="$PROJECT_DIR$/labsite/bigdata/models/team_models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/labsite/urls.py" afterPath="$PROJECT_DIR$/labsite/labsite/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labsite/bigdata/views.py" afterPath="$PROJECT_DIR$/labsite/bigdata/views.py" />
+    <list default="true" id="88298e5d-0670-45c7-be47-850e98e3e351" name="Default" comment="">
+      <change type="DELETED" beforePath="E:\git_workplace\labsite\labsite\bigdata\migrations\0001_initial.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="labsite.iws" />
@@ -147,12 +107,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="django.po" pinned="false" current-in-tab="true">
+      <file leaf-file-name="django.po" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/labsite/bigdata/locale/zh/LC_MESSAGES/django.po">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7794811" vertical-offset="10439" max-vertical-offset="11310">
+            <state vertical-scroll-proportion="0.0" vertical-offset="10500" max-vertical-offset="10710">
               <caret line="350" column="13" selection-start-line="350" selection-start-column="13" selection-end-line="350" selection-end-column="13" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/labsite/labsite/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8148585" vertical-offset="2729" max-vertical-offset="3600">
+              <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+              <folding>
+                <element signature="e#317#326#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -200,7 +172,6 @@
         <option value="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/news_detail.html" />
         <option value="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/news.html" />
         <option value="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/join.html" />
-        <option value="$PROJECT_DIR$/labsite/labsite/settings.py" />
         <option value="$PROJECT_DIR$/labsite/bigdata/templates/bigdata/academic.html" />
         <option value="$PROJECT_DIR$/labsite/bigdata/locale/en/LC_MESSAGES/django.po" />
         <option value="$PROJECT_DIR$/labsite/bigdata/locale/zh-CN/LC_MESSAGES/django.po" />
@@ -217,6 +188,7 @@
         <option value="$PROJECT_DIR$/labsite/bigdata/views.py" />
         <option value="$PROJECT_DIR$/labsite/labsite/urls.py" />
         <option value="$PROJECT_DIR$/labsite/bigdata/locale/zh/LC_MESSAGES/django.po" />
+        <option value="$PROJECT_DIR$/labsite/labsite/settings.py" />
       </list>
     </option>
   </component>
@@ -252,6 +224,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -298,24 +271,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="labsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="labsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="labsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="labsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="bigdata" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -338,91 +293,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bigdata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="labsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="labsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="labsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bigdata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="labsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="labsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="labsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bigdata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="locale" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LC_MESSAGES" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="labsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="labsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="labsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bigdata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="locale" />
+              <option name="myItemId" value="migrations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -913,16 +789,48 @@
       <option name="project" value="LOCAL" />
       <updated>1438954326867</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Merge branch 'dev' of github.com:sherrylml/labsite into dev&#10;&#10;">
+      <created>1440260728486</created>
+      <option name="number" value="00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1440260728486</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Merge branch 'dev' of github.com:sherrylml/labsite into dev&#10;&#10;">
+      <created>1440261121523</created>
+      <option name="number" value="00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1440261121524</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37566704" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16221985" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1638207" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -991,7 +899,8 @@
     <MESSAGE value="show all pages except team.html" />
     <MESSAGE value="labsite version 1.0 finished" />
     <MESSAGE value="Merge branch 'dev' of github.com:sherrylml/labsite into dev&#10;&#10;Conflicts:&#10;&#9;labsite/bigdata/templates/bigdata/index.html&#10;&#9;labsite/bigdata/views.py&#10;&#9;labsite/labsite/settings.py&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'dev' of github.com:sherrylml/labsite into dev&#10;&#10;Conflicts:&#10;&#9;labsite/bigdata/templates/bigdata/index.html&#10;&#9;labsite/bigdata/views.py&#10;&#9;labsite/labsite/settings.py&#10;" />
+    <MESSAGE value="Merge branch 'dev' of github.com:sherrylml/labsite into dev&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'dev' of github.com:sherrylml/labsite into dev&#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1232,13 +1141,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labsite/labsite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1890" max-vertical-offset="3570">
-          <caret line="73" column="23" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/labsite/bigdata/templates/bigdata/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3120" max-vertical-offset="7140">
@@ -1370,9 +1272,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/labsite/bigdata/locale/zh/LC_MESSAGES/django.po">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7794811" vertical-offset="9839" max-vertical-offset="10710">
+        <state vertical-scroll-proportion="0.0" vertical-offset="10439" max-vertical-offset="11310">
           <caret line="350" column="13" selection-start-line="350" selection-start-column="13" selection-end-line="350" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labsite/labsite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8148585" vertical-offset="2729" max-vertical-offset="3600">
+          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding>
+            <element signature="e#317#326#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
