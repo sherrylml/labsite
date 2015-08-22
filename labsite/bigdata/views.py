@@ -55,7 +55,6 @@ def index_e(request):
         request.session[LANGUAGE_SESSION_KEY] = language
 
     return render(request, 'bigdata/index_e.html', locals())
-    # return render_to_response('bigdata/index_e.html', locals(), RequestContext(request))
 
 
 def news(request):
@@ -280,12 +279,26 @@ def research(request):
             for research_direction in research_directions:
                 direction_images = research_direction.imagesen_set.all()
                 direction_list.append(ResearchDirection(research_direction.research_direction, direction_images))
-            research_achievement = Lab.objects.order_by('-id')[0].achievement
+            research_achievement = LabEn.objects.order_by('-id')[0].achievement
     else:
         research_achievement = " "
     Context = {'direction_list': direction_list, 'research_achievement': research_achievement}
     return render_to_response('bigdata/research.html', Context, RequestContext(request))
 
+def publication(request):
+    '''
+    科学研究
+    '''
+
+    if len(Lab.objects.all()) > 0:
+        if request.LANGUAGE_CODE == 'zh':
+            research_achievement = Lab.objects.order_by('-id')[0].achievement
+        else:
+            research_achievement = LabEn.objects.order_by('-id')[0].achievement
+    else:
+        research_achievement = " "
+    Context = {'research_achievement': research_achievement}
+    return render_to_response('bigdata/publication.html', Context, RequestContext(request))
 
 def academic(request):
     '''
@@ -400,7 +413,7 @@ def relax(request, id):
             has_previous = False
         else:
             has_previous = True
-        if curr_page == all_page:
+        if curr_page == all_page or size == 0:
             has_next = False
         else:
             has_next = True
