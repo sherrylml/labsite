@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-17 10:04+0800\n"
+"POT-Creation-Date: 2015-08-21 15:00+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,7 @@ msgstr ""
 #: .\templates\bigdata\news.html:232 .\templates\bigdata\news_detail.html:217
 #: .\templates\bigdata\notice_detail.html:217
 #: .\templates\bigdata\publication.html:225 .\templates\bigdata\relax.html:221
-#: .\templates\bigdata\research.html:221 .\templates\bigdata\team.html:241
+#: .\templates\bigdata\research.html:221 .\templates\bigdata\team.html:263
 msgid "postcode"
 msgstr ""
 
@@ -165,7 +165,7 @@ msgstr ""
 #: .\templates\bigdata\news.html:202 .\templates\bigdata\news_detail.html:187
 #: .\templates\bigdata\notice_detail.html:187
 #: .\templates\bigdata\publication.html:195 .\templates\bigdata\relax.html:191
-#: .\templates\bigdata\research.html:191 .\templates\bigdata\team.html:211
+#: .\templates\bigdata\research.html:191 .\templates\bigdata\team.html:233
 msgid "Links"
 msgstr ""
 
@@ -175,7 +175,7 @@ msgstr ""
 #: .\templates\bigdata\news.html:206 .\templates\bigdata\news_detail.html:191
 #: .\templates\bigdata\notice_detail.html:191
 #: .\templates\bigdata\publication.html:199 .\templates\bigdata\relax.html:195
-#: .\templates\bigdata\research.html:195 .\templates\bigdata\team.html:215
+#: .\templates\bigdata\research.html:195 .\templates\bigdata\team.html:237
 msgid "Chinese Academy of Sciences"
 msgstr ""
 
@@ -185,7 +185,7 @@ msgstr ""
 #: .\templates\bigdata\news.html:213 .\templates\bigdata\news_detail.html:198
 #: .\templates\bigdata\notice_detail.html:198
 #: .\templates\bigdata\publication.html:206 .\templates\bigdata\relax.html:202
-#: .\templates\bigdata\research.html:202 .\templates\bigdata\team.html:222
+#: .\templates\bigdata\research.html:202 .\templates\bigdata\team.html:244
 msgid "Institute of Software, Chinese Academy of Sciences"
 msgstr ""
 
@@ -195,7 +195,7 @@ msgstr ""
 #: .\templates\bigdata\news.html:220 .\templates\bigdata\news_detail.html:205
 #: .\templates\bigdata\notice_detail.html:205
 #: .\templates\bigdata\publication.html:213 .\templates\bigdata\relax.html:209
-#: .\templates\bigdata\research.html:209 .\templates\bigdata\team.html:229
+#: .\templates\bigdata\research.html:209 .\templates\bigdata\team.html:251
 msgid "forum"
 msgstr ""
 
@@ -205,7 +205,7 @@ msgstr ""
 #: .\templates\bigdata\news.html:229 .\templates\bigdata\news_detail.html:214
 #: .\templates\bigdata\notice_detail.html:214
 #: .\templates\bigdata\publication.html:222 .\templates\bigdata\relax.html:218
-#: .\templates\bigdata\research.html:218 .\templates\bigdata\team.html:238
+#: .\templates\bigdata\research.html:218 .\templates\bigdata\team.html:260
 msgid "Contact Us"
 msgstr ""
 
@@ -215,7 +215,7 @@ msgstr ""
 #: .\templates\bigdata\news.html:231 .\templates\bigdata\news_detail.html:216
 #: .\templates\bigdata\notice_detail.html:216
 #: .\templates\bigdata\publication.html:224 .\templates\bigdata\relax.html:220
-#: .\templates\bigdata\research.html:220 .\templates\bigdata\team.html:240
+#: .\templates\bigdata\research.html:220 .\templates\bigdata\team.html:262
 msgid "Haidian district of Beijing zhongguancun south road no. 4"
 msgstr ""
 
@@ -225,7 +225,7 @@ msgstr ""
 #: .\templates\bigdata\news.html:258 .\templates\bigdata\news_detail.html:243
 #: .\templates\bigdata\notice_detail.html:243
 #: .\templates\bigdata\publication.html:251 .\templates\bigdata\relax.html:247
-#: .\templates\bigdata\research.html:247 .\templates\bigdata\team.html:267
+#: .\templates\bigdata\research.html:247 .\templates\bigdata\team.html:289
 msgid "HomePage"
 msgstr ""
 
@@ -235,7 +235,7 @@ msgstr ""
 #: .\templates\bigdata\news.html:259 .\templates\bigdata\news_detail.html:244
 #: .\templates\bigdata\notice_detail.html:244
 #: .\templates\bigdata\publication.html:252 .\templates\bigdata\relax.html:248
-#: .\templates\bigdata\research.html:248 .\templates\bigdata\team.html:268
+#: .\templates\bigdata\research.html:248 .\templates\bigdata\team.html:290
 msgid "Admin Page"
 msgstr ""
 
@@ -329,19 +329,23 @@ msgstr ""
 msgid "Research Direction"
 msgstr ""
 
-#: .\templates\bigdata\team.html:130
-msgid "Faculties"
+#: .\templates\bigdata\team.html:131
+msgid "Professors"
 msgstr ""
 
-#: .\templates\bigdata\team.html:143 .\templates\bigdata\team.html.py:164
-#: .\templates\bigdata\team.html:184
+#: .\templates\bigdata\team.html:143 .\templates\bigdata\team.html.py:166
+#: .\templates\bigdata\team.html:187 .\templates\bigdata\team.html.py:206
 msgid "Homepage"
 msgstr ""
 
-#: .\templates\bigdata\team.html:152
+#: .\templates\bigdata\team.html:154
+msgid "Faculties"
+msgstr ""
+
+#: .\templates\bigdata\team.html:176
 msgid "PhD student"
 msgstr ""
 
-#: .\templates\bigdata\team.html:172
+#: .\templates\bigdata\team.html:195
 msgid "Master"
 msgstr ""

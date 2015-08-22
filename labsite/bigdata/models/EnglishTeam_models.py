@@ -26,6 +26,14 @@ class ProfessorEn(PeopleEn):
         verbose_name = "老师信息(English)"
 
 
+class VisitingProfessorEn(PeopleEn):
+    job_title = models.CharField(max_length=150, blank=True, verbose_name='职称')
+
+    class Meta:
+        db_table = 'VisitingProfessorEn'
+        verbose_name = "专家信息(English)"
+
+
 class PostgraduateEn(PeopleEn):
     grade = models.CharField(max_length=2, choices=(zip([str(c) for c in range(1, 6)], range(1, 6))), verbose_name='年级')
     # grade = forms.ChoiceField(choices=list(range(8)))
@@ -123,4 +131,49 @@ class ResAct1En(models.Model):
 
     class Meta:
         db_table = 'ResAct1En'
+
+
+class ResDir2En(models.Model):
+    research_direction = models.TextField(blank=True, verbose_name='研究方向')
+    professor = models.ForeignKey(VisitingProfessorEn)
+    # postgraduate = models.ForeignKey(Postgraduate)
+
+    def __str__(self):
+        return str(self.id)
+
+    class Meta:
+        db_table = 'ResDir2En'
+        # db_table = self.name
+
+
+class WorkExp2En(models.Model):
+    work_experience = models.TextField(blank=True, verbose_name='工作经历')
+    professor = models.ForeignKey(VisitingProfessorEn)
+
+    class Meta:
+        db_table = 'WorkExp2En'
+
+
+class PatPri2En(models.Model):
+    patent_prize = models.TextField(blank=True, verbose_name='专利与奖励')
+    professor = models.ForeignKey(VisitingProfessorEn)
+
+    class Meta:
+        db_table = 'PatPri2En'
+
+
+class PubInf2En(models.Model):
+    publish_info = models.TextField(blank=True, verbose_name='出版信息')
+    professor = models.ForeignKey(VisitingProfessorEn)
+
+    class Meta:
+        db_table = 'PubInf2En'
+
+
+class ResAct2En(models.Model):
+    research_activity = models.TextField(blank=True, verbose_name='科研活动')
+    professor = models.ForeignKey(VisitingProfessorEn)
+
+    class Meta:
+        db_table = 'ResAct2En'
 

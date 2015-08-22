@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-17 10:04+0800\n"
+"POT-Creation-Date: 2015-08-21 15:00+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -329,19 +329,23 @@ msgstr "下一页"
 msgid "Research Direction"
 msgstr "研究方向"
 
-#: .\templates\bigdata\team.html:130
-msgid "Faculties"
-msgstr "教师"
+#: .\templates\bigdata\team.html:131
+msgid "Professors"
+msgstr "专家"
 
-#: .\templates\bigdata\team.html:143 .\templates\bigdata\team.html.py:164
-#: .\templates\bigdata\team.html:184
+#: .\templates\bigdata\team.html:143 .\templates\bigdata\team.html.py:166
+#: .\templates\bigdata\team.html:187 .\templates\bigdata\team.html.py:206
 msgid "Homepage"
 msgstr "个人主页"
 
-#: .\templates\bigdata\team.html:152
+#: .\templates\bigdata\team.html:154
+msgid "Faculties"
+msgstr "教师"
+
+#: .\templates\bigdata\team.html:176
 msgid "PhD student"
 msgstr "博士研究生"
 
-#: .\templates\bigdata\team.html:172
+#: .\templates\bigdata\team.html:195
 msgid "Master"
 msgstr "硕士研究生"

@@ -86,6 +86,69 @@ class ProfessorEnAdmin(admin.ModelAdmin):
 admin.site.register(ProfessorEn, ProfessorEnAdmin)
 
 
+
+'''
+专家相关信息
+'''
+
+
+class ResDirInline2(InlineBase):  # 要重启runserver
+    model = ResDir2
+
+
+class WorkExpInline2(InlineBase):
+    model = WorkExp2
+
+
+class PatPriInline2(InlineBase):
+    model = PatPri2
+
+
+class PubInfInline2(InlineBase):
+    model = PubInf2
+
+
+class ResActInline2(InlineBase):
+    model = ResAct2
+
+
+class VisitingProfessorAdmin(admin.ModelAdmin):
+    inlines = [ResDirInline2, WorkExpInline2, PatPriInline2, PubInfInline2, ResActInline2]
+
+
+admin.site.register(VisitingProfessor, VisitingProfessorAdmin)
+
+'''
+English 专家信息
+'''
+class ResDirEnInline2(InlineBase):  # 要重启runserver
+    model = ResDir2En
+
+
+class WorkExpEnInline2(InlineBase):
+    model = WorkExp2En
+
+
+class PatPriEnInline2(InlineBase):
+    model = PatPri2En
+
+
+class PubInfEnInline2(InlineBase):
+    model = PubInf2En
+
+
+class ResActEnInline2(InlineBase):
+    model = ResAct2En
+
+
+class VisitingProfessorEnAdmin(admin.ModelAdmin):
+    inlines = [ResDirEnInline2, WorkExpEnInline2, PatPriEnInline2, PubInfEnInline2, ResActEnInline2]
+
+
+admin.site.register(VisitingProfessorEn, VisitingProfessorEnAdmin)
+
+
+
 '''
 学生相关信息
 '''

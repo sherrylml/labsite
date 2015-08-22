@@ -127,6 +127,30 @@
 				<!-- ENDS masthead -->
 				<!-- page content -->
 	        	<div id="page-content" class="clearfix"> 
+	        		<!-- VisitingProfessor -->
+	        		<h4>{% trans 'Professors' %}</h4>
+	        		<!-- cards -->
+	        		<div class="clearfix" >
+	        			{% for professor in visitingprofessors_list %}
+	        				<div class="card">
+	        				{% if professor %}
+	        				    {% if professor.image %}
+	        				    <img src = "{{ professor.image.url }}" alt="img"/>
+                                {% endif %}
+	        				<div class="card-content">
+	        					<span>{{ professor.name }}</span><br>
+	        					<span>{{ professor.job_title }}</span><br>
+	        					<a style="text-decoration: underline" href="visitingprofessor/{{ professor.id }}">{% trans 'Homepage' %}</a>
+	        				</div>
+	        				{% endif %}
+	        				</div>
+	        			{% endfor %}		        		
+	        		</div>
+	        		<!-- ENDS cards -->
+	        		<div class='section-div'></div>
+
+
+	        		<!-- teachers -->
 	        		<h4>{% trans 'Faculties' %}</h4>
 	        		<!-- cards -->
 	        		<div class="clearfix" >
@@ -139,7 +163,6 @@
 	        				<div class="card-content">
 	        					<span>{{ professor.name }}</span><br>
 	        					<span>{{ professor.job_title }}</span><br>
-{#	        					<span>{{ professor.Email }}</span><br>#}<br>
 	        					<a style="text-decoration: underline" href="professor/{{ professor.id }}">{% trans 'Homepage' %}</a>
 	        				</div>
 	        				{% endif %}
@@ -149,6 +172,7 @@
 	        		<!-- ENDS cards -->
 	        		<div class='section-div'></div>
 
+	        		<!-- students -->
 	        		<h4>{% trans 'PhD student' %}</h4>
 	        		<div class="clearfix" >
 	        			{% for doctor in doctors_list %}
@@ -160,7 +184,6 @@
 	        				<div class="card-content">
 	        					<span>{{ doctor.name }}</span><br>
 	        					<span>{{ doctor.job_title }}</span><br>
-{#	        					<span>{{ doctor.Email }}</span><br>#}<br>
 	        					<a style="text-decoration: underline" href="postgraduate/{{ doctor.id }}">{% trans 'Homepage' %}</a>
 	        				</div>
 	        				{% endif %}
@@ -180,7 +203,6 @@
 	        				<div class="card-content">
 	        					<span>{{ master.name }}</span><br>
 	        					<span>{{ master.job_title }}</span><br>
-{#	        					<span>{{ master.Email }}</span><br>#}<br>
 	        					<a style="text-decoration: underline" href="postgraduate/{{ master.id }}">{% trans 'Homepage' %}</a>
 	        				</div>
 	        				{% endif %}

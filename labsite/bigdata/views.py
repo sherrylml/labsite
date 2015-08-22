@@ -6,7 +6,7 @@ from django.template import RequestContext
 from django.utils.http import is_safe_url
 from django.utils.translation import LANGUAGE_SESSION_KEY, check_for_language
 from .models.models import *
-from .models.team_models import Professor, Postgraduate
+from .models.team_models import *
 from .models.Englishmodels import *
 from .models.EnglishTeam_models import *
 
@@ -199,10 +199,12 @@ def team(request):
     '''
     if request.LANGUAGE_CODE == 'zh':
         professors_list = Professor.objects.all()
+        visitingprofessors_list = VisitingProfessor.objects.all()
         masters_list = Postgraduate.objects.filter(educational_level='master')
         doctors_list = Postgraduate.objects.filter(educational_level='doctor')
     else:
         professors_list = ProfessorEn.objects.all()
+        visitingprofessors_list = VisitingProfessorEn.objects.all()
         masters_list = PostgraduateEn.objects.filter(educational_level='master')
         doctors_list = PostgraduateEn.objects.filter(educational_level='doctor')
 
@@ -229,6 +231,30 @@ def member_professor(request, id):
         patentPri_list = member.patprien_set.all()
         publishInf_list = member.pubinfen_set.all()
         researchAct_list = member.resacten_set.all()
+
+    return render_to_response('bigdata/member.html', locals(), RequestContext(request))
+
+
+def member_visitingprofessor(request, id):
+    '''
+    个人主页
+    '''
+    item_id = int(id)
+
+    if request.LANGUAGE_CODE == 'zh':
+        member = VisitingProfessor.objects.get(id=item_id)
+        researchDir_list = member.resdir2_set.all()
+        workExp_list = member.workexp2_set.all()
+        patentPri_list = member.patpri2_set.all()
+        publishInf_list = member.pubinf2_set.all()
+        researchAct_list = member.resact2_set.all()
+    else:
+        member = VisitingProfessorEn.objects.get(id=item_id)
+        researchDir_list = member.resdir2en_set.all()
+        workExp_list = member.workexp2en_set.all()
+        patentPri_list = member.patpri2en_set.all()
+        publishInf_list = member.pubinf2en_set.all()
+        researchAct_list = member.resact2en_set.all()
 
     return render_to_response('bigdata/member.html', locals(), RequestContext(request))
 
